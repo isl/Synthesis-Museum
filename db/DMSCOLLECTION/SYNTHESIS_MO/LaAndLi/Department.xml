@@ -1,0 +1,30 @@
+
+<!--
+
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Synthesis Museum project.
+-->
+<nodes><node type="Department"><xpath>Department</xpath><gr>Τμήμα</gr><en>Department</en><it>Dati sezione</it><fr>Données service</fr><ar>بيانات القسم</ar><sv>Avdelning</sv><nl>Afdeling</nl></node><node type="Department"><xpath>Department/IdentificationNumber</xpath><gr>Κωδικός αναφοράς</gr><en>Identification Number</en><it/><fr/><ar/><sv/><nl/></node><node type="Department"><xpath>Department/Appellation</xpath><gr>Ονομασία</gr><en>Appellation</en><it>Nome</it><fr>Nom</fr><ar>تسمية</ar><sv>Namn</sv><nl>Naam</nl></node><node type="Department"><xpath>Department/CodeNumber</xpath><gr>Κωδικός Τμήματος</gr><en>Department Code Number</en><it>Codice sezione</it><fr>Code service</fr><ar>رقم القطعة الكودى</ar><sv>Avdelningskod nummer</sv><nl>Codenummer afdeling</nl></node><node type="Department"><xpath>Department/CodeNumber/Value</xpath><gr>Τιμή</gr><en>Value</en><it>Valore</it><fr>Valeur</fr><ar>قيمة</ar><sv>Värde</sv><nl>Waarde</nl></node><node type="Department"><xpath>Department/CodeNumber/Category</xpath><gr>Κατηγορία</gr><en>Category</en><it>Categoria</it><fr>Catégorie</fr><ar>نوع</ar><sv>Kategori</sv><nl>Categorie</nl><vocabulary>DepartmentCodeNumberCategory.xml</vocabulary></node><node type="Department"><xpath>Department/CodeNumber/AttributionDate</xpath><gr>Ημερομηνία Αναφοράς</gr><en>Attribution Date</en><it>Data di attribuzione</it><fr>Date attribution</fr><ar>تاريخ النشر</ar><sv>Tilldelat datum</sv><nl>Datum naamsvermelding</nl></node><node type="Department"><xpath>Department/CodeNumber/AttributionDate/DateValue</xpath><gr>Ημερομηνία</gr><en>Date</en><it>Data</it><fr>Date</fr><ar>تاريخ</ar><sv>Datum</sv><nl>Datum</nl></node><node type="Department"><xpath>Department/CodeNumber/ExpiryDate</xpath><gr>Ημερομηνία Λήξης</gr><en>Expiry Date</en><it>Data scadenza</it><fr>Date fin de validité</fr><ar>تاريخ الإنتهاء</ar><sv>Utgångsdatum</sv><nl>Vervaldatum</nl></node><node type="Department"><xpath>Department/CodeNumber/ExpiryDate/DateValue</xpath><gr>Ημερομηνία</gr><en>Date</en><it>Data</it><fr>Date</fr><ar>تاريخ</ar><sv>Datum</sv><nl>Datum</nl></node><node type="Department"><xpath>Department/CodeNumber/AttributedBy</xpath><gr>Απόδοση Από</gr><en>Attributed by</en><it>Attribuzione da</it><fr>Attribution par</fr><ar>منسوب إلى</ar><sv>Tilldelats av</sv><nl>Toegekend door</nl><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom><valueFrom type="">Department/Appellation</valueFrom></node><node type="Department"><xpath>Department/Organization</xpath><gr>Οργανισμός</gr><en>Institution</en><it>Organismo</it><fr>Organisme</fr><ar>هيئة</ar><sv>Institution</sv><nl>Instelling</nl><valueFrom type="">Organization/Appellation</valueFrom></node><node type="Department"><xpath>Department/Contact</xpath><gr>Στοιχεία Επικοινωνίας</gr><en>Contact Information</en><it>Dati contatto</it><fr>Coordonnées</fr><ar>بيانات الإتصال</ar><sv>Kontaktinformation</sv><nl>Contactinformatie</nl></node><node type="Department"><xpath>Department/Contact/Address</xpath><gr>Διεύθυνση</gr><en>Address</en><it>Indirizzo</it><fr>Adresse</fr><ar>العنوان</ar><sv>Adress</sv><nl>Adres</nl></node><node type="Department"><xpath>Department/Contact/Telephone</xpath><gr>Τηλέφωνο</gr><en>Telephone</en><it>Telefono</it><fr>Téléphone</fr><ar>تليفون</ar><sv>Telefon</sv><nl>Telefoon</nl></node><node type="Department"><xpath>Department/Contact/Fax</xpath><gr>Fax</gr><en>Fax</en><it>Fax</it><fr>Fax</fr><ar> فاكس</ar><sv>Fax</sv><nl>Fax</nl></node><node type="Department"><xpath>Department/Contact/Email</xpath><gr>E-mail</gr><en>E-mail</en><it>E-mail</it><fr>Email</fr><ar>E-mail</ar><sv>E-mail</sv><nl>E-mail</nl></node></nodes>

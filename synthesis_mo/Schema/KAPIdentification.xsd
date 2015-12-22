@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Synthesis Museum project.
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:include schemaLocation="APBasics.xsd"/>
+	<xsd:element name="IdentityOfObject" type="identityOfObject"/>
+	<xsd:complexType name="identityOfObject">
+		<xsd:sequence>
+			<xsd:element name="CodeNumber">
+				<xsd:complexType>
+					<xsd:complexContent>
+						<xsd:extension base="code"/>
+					</xsd:complexContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="OtherCodeNumber" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:complexContent>
+						<xsd:extension base="code"/>
+					</xsd:complexContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="OriginatorOfReference" minOccurs="0">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="link"/>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element ref="Department" maxOccurs="unbounded"/>
+			<xsd:element name="Collection">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element ref="Appellation"/>
+						<xsd:element name="CollectionCodeNumber" type="xsd:string"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element ref="Category" maxOccurs="unbounded"/>
+			<xsd:element name="PrincipalCurrentDenomination" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="PrincipalMaterial" type="link" maxOccurs="unbounded"/>
+			<xsd:element name="BasicColour" type="term" maxOccurs="unbounded"/>
+			<xsd:element name="IncludedIn" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="CodeNumber" type="link" minOccurs="0"/>
+						<xsd:sequence minOccurs="0">
+							<xsd:element name="Category" type="term" minOccurs="0" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:sequence>
+					<xsd:attribute name="sps_link" type="xsd:string" use="required"/>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Composition">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="OverallPartNumber" type="xsd:string"/>
+						<xsd:element name="KindOfComposition" type="term"/>
+						<xsd:element name="Components">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element ref="Description"/>
+									<xsd:sequence>
+										<xsd:element name="Component" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="ComponentCodeNumber" type="link" minOccurs="0"/>
+													<xsd:sequence minOccurs="0">
+														<xsd:element name="Category" type="term" minOccurs="0" maxOccurs="unbounded"/>
+														<xsd:element name="OverallNumber" type="xsd:string"/>
+													</xsd:sequence>
+												</xsd:sequence>
+												<xsd:attribute name="sps_link" type="xsd:string" use="required"/>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="Accessory" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element ref="Category"/>
+									<xsd:element name="OverallNumber" type="xsd:string"/>
+									<xsd:element ref="Description"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element ref="Image" minOccurs="0"/>
+			<xsd:element name="Condition" type="term"/>
+			<xsd:element name="Description" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="MonumentLocation" type="term"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

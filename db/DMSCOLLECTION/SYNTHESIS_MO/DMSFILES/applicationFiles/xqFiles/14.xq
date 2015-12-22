@@ -1,0 +1,1 @@
+string(document('/db/DMSCOLLECTION/SYNTHESIS/DMSFILES/Configuration.xml')//presentations/xpaths//subtree[___XXX___]/@root)

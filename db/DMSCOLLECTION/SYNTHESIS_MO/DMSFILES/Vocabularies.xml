@@ -1,0 +1,1541 @@
+
+<!--
+
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Synthesis Museum project.
+-->
+<Vocabularies>
+	<Person>
+		<displayname>
+			<gr>Πρόσωπο</gr>
+			<en>Person</en>
+			<fr>Personne</fr>
+			<it>Persona</it>
+			<ar>شخص  كيان</ar>
+			<sv>Person</sv>
+			<nl>Persoon</nl>
+		</displayname>
+		<PersonAppellation>
+			<displayname>
+				<gr>Λεξιλόγιο Ονοματεπώνυμου Προσώπου</gr>
+				<en>Vocabulary of Fullname of Person</en>
+				<fr>Vocabulaire de Nom et Prenom</fr>
+				<it>Lessico nome e cognome persona</it>
+				<ar>مفردات إسم ولقب الشخص</ar>
+				<sv>Ordlista över personnamn</sv>
+				<nl>Woordenlijst van Volledige naam van Persoon</nl>
+			</displayname>
+			<file>PersonAppellation.xml</file>
+		</PersonAppellation>
+		<PersonType>
+			<displayname>
+				<gr>Λεξιλόγιο Τύπου</gr>
+				<en>Vocabulary of Type</en>
+				<fr>Vocabulaire de Qualite de Personne</fr>
+				<it>Lessico qualifica persona</it>
+				<ar>مفردات خاصية الشخص</ar>
+				<sv>Ordlista över arbetsförmåga</sv>
+				<nl>Woordenlijst van Capaciteit van Persoon</nl>
+			</displayname>
+			<file>PersonType.xml</file>
+		</PersonType>
+		<PersonResidenceType>
+			<displayname>
+				<gr>Λεξιλόγιο Κοινωνικής Ομάδας Προσώπου</gr>
+				<en>Vocabulary of Social Group of Person</en>
+				<fr>Vocabulaire de Groupe Social de Personne</fr>
+				<it>Lessico gruppo sociale persona</it>
+				<ar>مفردات المجموعة  الإجتماعية للشخص</ar>
+				<sv>Ordlista över personers socialgrupper</sv>
+				<nl>Woordenlijst van Sociale Groep van Persoon</nl>
+			</displayname>
+			<file>PersonResidenceType.xml</file>
+		</PersonResidenceType>
+	</Person>
+	<Organization>
+		<displayname>
+			<gr>Οργανισμός</gr>
+			<en>Organization</en>
+			<fr>Organisme</fr>
+			<it>Organismo</it>
+			<ar>هيئة  كيان</ar>
+			<sv>Organisation</sv>
+			<nl>Organisatie</nl>
+		</displayname>
+		<OrganizationType>
+			<displayname>
+				<gr>Λεξιλόγιο Ιδιότητας Οργανισμού</gr>
+				<en>Vocabulary of Organization Capacity</en>
+				<fr>Vocabulaire de Qualite d' Organisme</fr>
+				<it>Lessico proprietà organismo</it>
+				<ar>مفردات خاصية الهيئة</ar>
+				<sv>Ordlista över organisationers förmåga</sv>
+				<nl>Woordenlijst van Organisatie Capaciteit</nl>
+			</displayname>
+			<file>OrganizationType.xml</file>
+		</OrganizationType>
+	</Organization>
+	<Department>
+		<displayname>
+			<gr>Τμήμα</gr>
+			<en>Department</en>
+			<fr>Service</fr>
+			<it>Sezione</it>
+			<ar>قسم    كيان</ar>
+			<sv>Del</sv>
+			<nl>Deel</nl>
+		</displayname>
+		<DepartmentCodeNumberCategory>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορίας Κωδικού Τμήματος</gr>
+				<en>Vocabulary of Part Code Category</en>
+				<fr>Vocabulaire de Categorie Code de Service</fr>
+				<it>Lessico categoria codice sezione</it>
+				<ar>مفردات فئة الرقم الكودى للقسم</ar>
+				<sv>Ordlista över delkods kategorier</sv>
+				<nl>Woordenlijst van Categorie Deelcode</nl>
+			</displayname>
+			<file>DepartmentCodeNumberCategory.xml</file>
+		</DepartmentCodeNumberCategory>
+	</Department>
+	<Event>
+		<displayname>
+			<gr>Συμβάν</gr>
+			<en>Event</en>
+			<fr>Evenement</fr>
+			<it>Evento</it>
+			<ar>حدث    كيان</ar>
+			<sv>Händelse</sv>
+			<nl>Gebeurtenis</nl>
+		</displayname>
+		<GENGeopoliticalHierarchy>
+			<displayname>
+				<gr>Λεξιλόγιο Γεωπολιτικής Ιεραρχίας ??</gr>
+				<en>Vocabulary of Geopolitical Hierarchy</en>
+				<fr>****</fr>
+				<it>****</it>
+				<ar>***</ar>
+				<sv>***</sv>
+				<nl>***</nl>
+			</displayname>
+			<file>GENGeopoliticalHierarchy.xml</file>
+		</GENGeopoliticalHierarchy>
+		<GENEntityRelationType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Συσχέτισης</gr>
+				<en>Vocabulary of Relation Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>GENEntityRelationType.xml</file>
+		</GENEntityRelationType>
+		<EventType>
+			<displayname>
+				<gr>Λεξιλόγιο Τύπου</gr>
+				<en>Vocabulary of Type</en>
+				<fr>Vocabulaire de Categorie d' Evenement</fr>
+				<it>Lessico categoria evento</it>
+				<ar>مفردات فئة الحدث</ar>
+				<sv>Ordlista över händelsekategorier</sv>
+				<nl>Woordenlijst van Categorie van gebeurtenis</nl>
+			</displayname>
+			<file>EventType.xml</file>
+		</EventType>
+		<GENChronologyEventRelated>
+			<displayname>
+				<gr>Λεξιλόγιο Κοινωνικού Χρόνου</gr>
+				<en>Vocabulary of Related Event</en>
+				<fr>Vocabulaire du Temps Social</fr>
+				<it>Lessico periodo sociale</it>
+				<ar>مفردات الزمن الإجتماعى</ar>
+				<sv>Ordlista över relaterade händelser</sv>
+				<nl>Woordenlijst van Gerelateerde Gebeurtenis</nl>
+			</displayname>
+			<file>GENChronologyEventRelated.xml</file>
+		</GENChronologyEventRelated>
+		<GENCulturalPeriod>
+			<displayname>
+				<gr>Λεξιλόγιο Πολιτισμικής Περιόδου</gr>
+				<en>Vocabulary of Cultural Period</en>
+				<fr>Vocabulaire de Periode Culturelle</fr>
+				<it>Lessico periodo culturale</it>
+				<ar>مفردات الفترة الحضارية</ar>
+				<sv>Ordlista över tidsperioder</sv>
+				<nl>Woordenlijst van Culturele Periode</nl>
+			</displayname>
+			<file>GENCulturalPeriod.xml</file>
+		</GENCulturalPeriod>
+	</Event>
+	<Location>
+		<displayname>
+			<gr>Τόπος</gr>
+			<en>Location</en>
+			<fr>Lieu</fr>
+			<it>Luogo</it>
+			<ar>موقع  كيان</ar>
+			<sv>Plats</sv>
+			<nl>Plaats</nl>
+		</displayname>
+		<LocationName>
+			<displayname>
+				<gr>Λεξιλόγιο Ονομασίας Τόπου</gr>
+				<en>Vocabulary of Location Name</en>
+				<fr>Vocabulaire du Nom du Lieu</fr>
+				<it>Lessico nome luogo</it>
+				<ar>مفردات لإسم الموقع</ar>
+				<sv>Ordlista över platsnamn</sv>
+				<nl>Woordenlijst van Plaatsnaam</nl>
+			</displayname>
+			<file>LocationName.xml</file>
+		</LocationName>
+		<LocationCodeCategory>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορίας Κωδικού Τόπου</gr>
+				<en>Vocabulary of Location Code Catergory</en>
+				<fr>Vocabulaire du Lieu de Code de Categorie</fr>
+				<it>Lessico categoria codice luogo</it>
+				<ar>مفردات فئة الرقم الكودى للموقع</ar>
+				<sv>Ordlista över platsers kodkategorier</sv>
+				<nl>Woordenlijst van Locatiecode Categorie</nl>
+			</displayname>
+			<file>LocationCodeCategory.xml</file>
+		</LocationCodeCategory>
+		<LocationCategory>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορίας Τόπου</gr>
+				<en>Vocabulary of Location Category</en>
+				<fr>Vocabulaire de Categorie de Lieu</fr>
+				<it>Lessico categoria luogo</it>
+				<ar>مفردات فئة الموقع</ar>
+				<sv>Ordlista över platskategorier</sv>
+				<nl>Woordenlijst van Categorie Plaatsnaam</nl>
+			</displayname>
+			<file>LocationCategory.xml</file>
+		</LocationCategory>
+		<GENGeopoliticalHierarchy>
+			<displayname>
+				<gr>Λεξιλόγιο Γεωπολίτικης Ιεραρχίας Τόπου</gr>
+				<en>Vocabulary of Location Geopolitical Coordinates</en>
+				<fr>Vocabulaire d' Hierarchie Geopolitique</fr>
+				<it>Lessico gerarchia geopolitica del luogo</it>
+				<ar>مفردات الترتيب الجيوبوليتيكى للموقع</ar>
+				<sv>Ordlista över platsers geopolitiska koordinater</sv>
+				<nl>Woordenlijst van Plaatsnaam Geopolitieke Coördinaten</nl>
+			</displayname>
+			<file>GENGeopoliticalHierarchy.xml</file>
+		</GENGeopoliticalHierarchy>
+	</Location>
+	<Material>
+		<displayname>
+			<gr>Υλικό</gr>
+			<en>Material</en>
+			<fr>Materiau</fr>
+			<it>Materiale</it>
+			<ar>مادة   كيان</ar>
+			<sv>Material</sv>
+			<nl>Materiaal</nl>
+		</displayname>
+		<MaterialName>
+			<displayname>
+				<gr>Λεξιλόγιο Ονομασίας Υλικού</gr>
+				<en>Vocabulary of Material Name</en>
+				<fr>Vocabulaire des Materiau</fr>
+				<it>Lessico nome materiale</it>
+				<ar>مفردات إسم المادة</ar>
+				<sv>Ordlista över materialnamn</sv>
+				<nl>Woordenlijst van Materiaal naam</nl>
+			</displayname>
+			<file>MaterialName.xml</file>
+		</MaterialName>
+		<MaterialOtherName>
+			<displayname>
+				<gr>Λεξιλόγιο Άλλης Ονομασίας Υλικού</gr>
+				<en>Vocabulary of Material Other Name</en>
+				<fr>Vocabulaire d' Autre noms de Materiau</fr>
+				<it>Lessico altro nome materiale</it>
+				<ar>مفردات إسم أخر للمادة</ar>
+				<sv>Ordlista över annat namn för material</sv>
+				<nl>Woordenlijst van Materiaal Andere Naam</nl>
+			</displayname>
+			<file>MaterialOtherName.xml</file>
+		</MaterialOtherName>
+		<MaterialCategory>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορίας Υλικού</gr>
+				<en>Vocabulary of Material Category</en>
+				<fr>Vocabulaire de Categorie de Materiau</fr>
+				<it>Lessico categoria materiale</it>
+				<ar>مفردات فئة المادة</ar>
+				<sv>Ordlista över materialkategorier</sv>
+				<nl>Woordenlijst van Material Categorie</nl>
+			</displayname>
+			<file>MaterialCategory.xml</file>
+		</MaterialCategory>
+		<MaterialCodeCategory>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορίας Κωδικού Υλικού</gr>
+				<en>Vocabulary of Material Code Category</en>
+				<fr>Vocabulaire du Code de Categorie des Materiau</fr>
+				<it>Lessico categoria codice materiale</it>
+				<ar>مفردات فئة الرقم الكودى للمادة</ar>
+				<sv>Ordlista över materialkodskategorier</sv>
+				<nl>Woordenlijst van Categorie Materiaal Code</nl>
+			</displayname>
+			<file>MaterialCodeCategory.xml</file>
+		</MaterialCodeCategory>
+	</Material>
+	<Bibliography>
+		<displayname>
+			<gr>Βιβλιογραφία</gr>
+			<en>Bibliography</en>
+			<fr>Bibliographie</fr>
+			<it>Bibliografia</it>
+			<ar>قائمة المراجع</ar>
+			<sv>Bibliografi</sv>
+			<nl>Bibliografie</nl>
+		</displayname>
+		<BibliographyKindOfBibliography>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Βιβλιογραφίας</gr>
+				<en>Vocabulary of Kind of Bibliography</en>
+				<fr>Vocabulaire du Type de Bibliographie</fr>
+				<it>Lessico tipo bibliografia</it>
+				<ar>مفردات نوع قائمة المراجع</ar>
+				<sv>Ordlista över bibliografityper</sv>
+				<nl>Woordenlijst van Soort Bibliografie</nl>
+			</displayname>
+			<file>BibliographyKindOfBibliography.xml</file>
+		</BibliographyKindOfBibliography>
+		<BibliographyPublisher>
+			<displayname>
+				<gr>Λεξιλόγιο Εκδοτικού Οίκου Βιβλιογραφίας</gr>
+				<en>Vocabulary of Publisher of Bibliography</en>
+				<fr>Vocabulaire de Maison d' Edition de Bibliographie</fr>
+				<it>Lessico casa editrice bibliografia</it>
+				<ar>مفردات دار نشر المراجع</ar>
+				<sv>Ordlista över utgivare av bibliografier</sv>
+				<nl>Woordenlijst van Uitgever van Bibliografie</nl>
+			</displayname>
+			<file>BibliographyPublisher.xml</file>
+		</BibliographyPublisher>
+		<BibliographyAuthor>
+			<displayname>
+				<gr>Λεξιλόγιο Συγγραφέα Βιβλιογραφίας</gr>
+				<en>Vocabulary of Author of Bibliography</en>
+				<fr>Vocabulaire de Auteur de Bibliographie</fr>
+				<it>Lessico autore bibliografia</it>
+				<ar>مفردات محرر قائمة المراحع</ar>
+				<sv>Ordlista över författare av bibliografier</sv>
+				<nl>Woordenlijst van Auteur van Bibliografie</nl>
+			</displayname>
+			<file>BibliographyAuthor.xml</file>
+		</BibliographyAuthor>
+		<BibliographySupervision>
+			<displayname>
+				<gr>Λεξιλόγιο Επιμέλειας Βιβλιογραφίας</gr>
+				<en>Vocabulary of Editor of Bibliography</en>
+				<fr>Vocabulaire de Direction d' Edition de Bibliographie</fr>
+				<it>Lessico cura della bibliografia</it>
+				<ar>مفردات إعداد قائمة المراجع</ar>
+				<sv>Ordlista över redigerare av bibliografier</sv>
+				<nl>Woordenlijst van Editorof Bibliografie</nl>
+			</displayname>
+			<file>BibliographySupervision.xml</file>
+		</BibliographySupervision>
+		<BibliographyPlaceOfPublication>
+			<displayname>
+				<gr>Λεξιλόγιο Τόπου Έκδοσης Βιβλιογραφίας</gr>
+				<en>Vocabulary of Place of Publication of Bibliography</en>
+				<fr>Vocabulaire de Lieu d' Edition de Bibliographie</fr>
+				<it>Lessico luogo edizione bibliografia</it>
+				<ar>مفردات مكان صدور المراجع</ar>
+				<sv>Ordlista över platser för publication av biografier</sv>
+				<nl>Woordenlijst van Bibliografische Plaats van Publicatie</nl>
+			</displayname>
+			<file>BibliographyPlaceOfPublicationOrConference.xml</file>
+		</BibliographyPlaceOfPublication>
+		<BibliographyPlaceOfConference>
+			<displayname>
+				<gr>Λεξιλόγιο Τόπου Συνεδρίου Βιβλιογραφίας</gr>
+				<en>Vocabulary of Place of Conference of Bibliography</en>
+				<fr>Vocabulaire de Lieu de Conference Bibliographie</fr>
+				<it>Lessico luogo convegno bibliografia</it>
+				<ar>مفردات مكان مؤتمر المراجع</ar>
+				<sv>Ordlista över platser för konferenser rörade bibliografier</sv>
+				<nl>Woordenlijst van Bibliografische Plaats van Conferentie</nl>
+			</displayname>
+			<file>BibliographyPlaceOfPublicationOrConference.xml</file>
+		</BibliographyPlaceOfConference>
+		<BibliographyOrganisation>
+			<displayname>
+				<gr>Λεξιλόγιο Οργανισμού Βιβλιογραφίας</gr>
+				<en>Vocabulary of Organization of Bibliography</en>
+				<fr>Vocabulaire d' Organisme de Bibliographie</fr>
+				<it>Lessico organismo bibliografia</it>
+				<ar>مفردات إسم سلسلة المراجع</ar>
+				<sv>Ordlista över organisationer kopplade till bibliografier</sv>
+				<nl>Woordenlijst van Bibliografische Organisatie</nl>
+			</displayname>
+			<file>BibliographyOrganisation.xml</file>
+		</BibliographyOrganisation>
+		<BibliographyUserRights>
+			<displayname>
+				<gr>Λεξιλόγιο Δικαιώματος Χρήσης Βιβλιογραφίας</gr>
+				<en>Vocabulary of User Rights of Bibliography</en>
+				<fr>Vocabulaire des Droits D' Utilisation de Bibliographie</fr>
+				<it>Lessico diritto uso bibliografia</it>
+				<ar>مفردات حقوق إستخدام قائمة المراجع</ar>
+				<sv>Ordlista över rättigheter för bibliografier</sv>
+				<nl>Woordenlijst van Bibliografische Gebruikersrechten</nl>
+			</displayname>
+			<file>BibliographyUserRights.xml</file>
+		</BibliographyUserRights>
+		<BibliographyNameOfJournalOrPeriodical.xml>
+			<displayname>
+				<gr>Λεξιλόγιο Ονόματος Περιοδικού Βιβλιογραφίας</gr>
+				<en>Vocabulary of Name of Magazine of Bibliography</en>
+				<fr>Vocabulaire du Nom de Revue de Bibliographie</fr>
+				<it>Lessico nome periodico bibliografia</it>
+				<ar>مفردات</ar>
+				<sv>Ordlista över</sv>
+				<nl>Woordenlijst van</nl>
+			</displayname>
+			<file>BibliographyNameOfJournalOrPeriodical.xml</file>
+		</BibliographyNameOfJournalOrPeriodical.xml>
+		<BibliographyAbbreviationOfMagazine>
+			<displayname>
+				<gr>Λεξιλόγιο Συντομογραφίας Περιοδικού Βιβλιογραφίας</gr>
+				<en>Vocabulary of Abbreviation of Magazine of Bibliography</en>
+				<fr>Vocabulaire de Abreviation de Revue de Bibliographie</fr>
+				<it>Lessico sigla periodico bibliografia</it>
+				<ar>مفردات إختصارات دورية المراجع</ar>
+				<sv>Ordlista över förkortningar av bibliografiska tidskrifter</sv>
+				<nl>Woordenlijst van Bibliografische Afkorting van Tijdschrift</nl>
+			</displayname>
+			<file>BibliographyAbbreviationOfMagazine.xml</file>
+		</BibliographyAbbreviationOfMagazine>
+		<BibliographyAbbreviationOfSeries>
+			<displayname>
+				<gr>Λεξιλόγιο Συντομογραφίας Σειράς Βιβλιογραφίας</gr>
+				<en>Vocabulary of Abbreviation of Series of Bibliography</en>
+				<fr>Vocabulaire de Abreviation de Serie de Bibliographie</fr>
+				<it>Lessico sigla serie bibliografia</it>
+				<ar>مفردات إختصارات سلسلة المراجع</ar>
+				<sv>Ordlista över förkortningar av bibliografiska serier</sv>
+				<nl>Woordenlijst van Bibliografische Afkorting van Series</nl>
+			</displayname>
+			<file>BibliographyAbbreviationOfSeries.xml</file>
+		</BibliographyAbbreviationOfSeries>
+		<BibliographySeriesTitle>
+			<displayname>
+				<gr>Λεξιλόγιο Ονόματος Σειράς Βιβλιογραφίας</gr>
+				<en>Vocabulary of Series Title of Bibliography</en>
+				<fr>Vocabulaire du Nom de Collection de Bibliographie</fr>
+				<it>Lessico nome serie bibliografia</it>
+				<ar>مفردات إسم دورية المراجع</ar>
+				<sv>Ordlista över serietitlar av bibliografier</sv>
+				<nl>Woordenlijst van Bibliografische Titelserie</nl>
+			</displayname>
+			<file>BibliographySeriesTitle.xml</file>
+		</BibliographySeriesTitle>
+		<GENLanguage.xml>
+			<displayname>
+				<gr>Λεξιλόγιο Γλώσσας</gr>
+				<en>Vocabulary of Language</en>
+				<fr>Vocabulaire des Langues</fr>
+				<it>Lessico lingua</it>
+				<ar>مفردات اللغة</ar>
+				<sv>Ordlista över språk</sv>
+				<nl>Woordenlijst van Taal</nl>
+			</displayname>
+			<file>GENLanguage.xml</file>
+		</GENLanguage.xml>
+	</Bibliography>
+	<Archive-Vocs>
+		<displayname>
+			<gr>Αρχεία</gr>
+			<en>Archives</en>
+			<fr>Archives</fr>
+			<it>Archivi</it>
+			<ar>ملفات</ar>
+			<sv>Arkiv</sv>
+			<nl>Archieven</nl>
+		</displayname>
+		<ArchiveFileType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Αρχείου</gr>
+				<en>Vocabulary of Archive Kind</en>
+				<fr>Vocabulaire du Type d' Archive</fr>
+				<it>Lessico tipo archivio</it>
+				<ar>مفردات نوع الملف</ar>
+				<sv>Ordlista över arkivtyper</sv>
+				<nl>Woordenlijst van Archiefsoort</nl>
+			</displayname>
+			<file>ArchiveFileType.xml</file>
+		</ArchiveFileType>
+		<ArchiveCodeCategory>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορίας Αρχείακου Κωδικού</gr>
+				<en>Vocabulary of Category of Archive Code</en>
+				<fr>Vocabulaire de Categorie du Code de l' Archive</fr>
+				<it>Lessico categoria codice d'archivio</it>
+				<ar>مفردات فئة رقم الملف الكودى</ar>
+				<sv>Ordlista över arkivkodskategorier</sv>
+				<nl>Woordenlijst van Categorie van Archiefcode</nl>
+			</displayname>
+			<file>ArchiveCodeCategory.xml</file>
+		</ArchiveCodeCategory>
+		<ArchiveFileLanguage>
+			<displayname>
+				<gr>Λεξιλόγιο Γλώσσας</gr>
+				<en>Vocabulary of Language</en>
+				<fr>Vocabulaire des Langues</fr>
+				<it>Lessico lingua</it>
+				<ar>مفردات اللغة</ar>
+				<sv>Ordlista över språk</sv>
+				<nl>Woordenlijst van Taal</nl>
+			</displayname>
+			<file>ArchiveFileLanguage.xml</file>
+		</ArchiveFileLanguage>
+		<ArchiveCreationType.xml>
+			<displayname>
+				<gr>Λεξιλόγιο Τύπου</gr>
+				<en>Vocabulary of Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>ArchiveCreationType.xml</file>
+		</ArchiveCreationType.xml>
+	</Archive-Vocs>
+	<DigitalArchive-vocs>
+		<displayname>
+			<gr>Ψηφιακά Αρχεία</gr>
+			<en>Digital Photo</en>
+			<fr>***</fr>
+			<it>***</it>
+			<ar>***</ar>
+		</displayname>
+		<DigitalArchiveType>
+			<displayname>
+				<gr>Λεξιλόγιο Τύπου Ψηφιακής Φωτογραφίας</gr>
+				<en>Vocabulary of DigitalArchiveType</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>DigitalArchiveType.xml</file>
+		</DigitalArchiveType>
+		<GENPurpose>
+			<displayname>
+				<gr>Λεξιλόγιο Σκοπός</gr>
+				<en>Vocabulary of Purpose</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>GENPurpose.xml</file>
+		</GENPurpose>
+		<GENDigitalRights>
+			<displayname>
+				<gr>Λεξιλόγιο Πνευματικά δικαιώματα (DigitalRights)</gr>
+				<en>Vocabulary of Digital Rights</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>GENDigitalRights.xml</file>
+		</GENDigitalRights>
+		<DigitalArchiveCreationType.xml>
+			<displayname>
+				<gr>Λεξιλόγιο Τύπου</gr>
+				<en>Vocabulary of Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>DigitalArchiveCreationType.xml</file>
+		</DigitalArchiveCreationType.xml>
+		<GENGeopoliticalHierarchy>
+			<displayname>
+				<gr>Λεξιλόγιο Γεωπολίτικης Ιεραρχίας Τόπου</gr>
+				<en>Vocabulary of Location Geopolitical Coordinates</en>
+				<fr>Vocabulaire d' Hierarchie Geopolitique</fr>
+				<it>Lessico gerarchia geopolitica del luogo</it>
+				<ar>مفردات الترتيب الجيوبوليتيكى للموقع</ar>
+				<sv>Ordlista över platsers geopolitiska koordinater</sv>
+				<nl>Woordenlijst van Plaatsnaam Geopolitieke Coördinaten</nl>
+			</displayname>
+			<file>GENGeopoliticalHierarchy.xml</file>
+		</GENGeopoliticalHierarchy>
+		<GENEntityRelationType>
+			<displayname>
+				<gr>Λεξιλόγιο Σχέσης</gr>
+				<en>Vocabulary of Relation</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>GENEntityRelationType.xml</file>
+		</GENEntityRelationType>
+		<GENEntitySubject>
+			<displayname>
+				<gr>Λεξιλόγιο Θέμα</gr>
+				<en>Vocabulary of Subject</en>
+				<fr/>
+				<it/>
+				<ar/>
+			</displayname>
+			<file>GENEntitySubject.xml</file>
+		</GENEntitySubject>
+		<DigitalArchiveSourceType>
+			<displayname>
+				<gr>Λεξιλόγιο Τύπου Πηγής</gr>
+				<en>Vocabulary Source Type</en>
+				<fr/>
+				<it/>
+				<ar/>
+			</displayname>
+			<file>DigitalArchiveSourceType.xml</file>
+		</DigitalArchiveSourceType>
+	</DigitalArchive-vocs>	
+	<Infotext-vocs>
+		<displayname>
+			<gr>Πληροφοριακά Κείμενα</gr>
+			<en>Information Text</en>
+			<fr>***</fr>
+			<it>***</it>
+			<ar>***</ar>
+		</displayname>
+		<InfoTextType>
+			<displayname>
+				<gr>Λεξιλόγιο Τύπου</gr>
+				<en>Vocabulary of Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>InfoTextType.xml</file>
+		</InfoTextType>
+		<InfoTextPresentationType>
+			<displayname>
+				<gr>Λεξιλόγιο Τύπου Παρουσίασης</gr>
+				<en>Vocabulary of Presentation Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>InfoTextPresentationType.xml</file>
+		</InfoTextPresentationType>
+		<GENLanguage>
+			<displayname>
+				<gr>Λεξιλόγιο Γλώσσας</gr>
+				<en>Vocabulary of Language</en>
+				<fr>Vocabulaire des Langues</fr>
+				<it>Lessico lingua</it>
+				<ar>مفردات اللغة</ar>
+			</displayname>
+			<file>GENLanguage.xml</file>
+		</GENLanguage>
+		<GENPurpose.xml>
+			<displayname>
+				<gr>Λεξιλόγιο Γενικός Σκοπός</gr>
+				<en>Vocabulary of General Purpose</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>InfoTextGeneralPurpose.xml</file>
+		</GENPurpose.xml>
+		<InfoTextIntendedUse>
+			<displayname>
+				<gr>Λεξιλόγιο Ειδικός Σκοπός</gr>
+				<en>Vocabulary of Intended Use</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>InfoTextIntendedUse.xml</file>
+		</InfoTextIntendedUse>
+		<GENEntityRelationType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Συσχέτισης</gr>
+				<en>Vocabulary of Relation Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>GENEntityRelationType.xml</file>
+		</GENEntityRelationType>
+		<GENLegalStatus>
+			<displayname>
+				<gr>Λεξιλόγιο Πνευματικά Δικαιώματα</gr>
+				<en>Vocabulary of LegalStatus</en>
+				<fr/>
+				<it/>
+				<ar/>
+			</displayname>
+			<file>GENLegalStatus.xml</file>
+		</GENLegalStatus>
+	</Infotext-vocs>
+	<KAPIdentification>
+		<displayname>
+			<gr>Κινητά - Ταυτότητα</gr>
+			<en>Object - Object Identification</en>
+			<fr>***</fr>
+			<it>***</it>
+			<ar>***</ar>
+		</displayname>
+		<KAPComponentCategory>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορίας Κωδικού</gr>
+				<en>Vocabulary of Code Category</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPComponentCategory.xml</file>
+		</KAPComponentCategory>
+		<KAPCollectionAppellation>
+			<displayname>
+				<gr>Λεξιλόγιο Ονομασίας Συλλογής</gr>
+				<en>Vocabulary of Collection Name</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPCollectionAppellation.xml</file>
+		</KAPCollectionAppellation>
+		<KAPCategoryType>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορίας Διαχείρισης</gr>
+				<en>Vocabulary of Administration Category</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPCategoryType.xml</file>
+		</KAPCategoryType>
+		<KAPColour>
+			<displayname>
+				<gr>Λεξιλόγιο Χρώματος</gr>
+				<en>Vocabulary of Colour</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPColour.xml</file>
+		</KAPColour>
+		<GENIncludedInCategoryTpe>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορία Περιεκτικού Συνόλου</gr>
+				<en>Vocabulary of Type of Included In</en>
+				<fr>****</fr>
+				<it>****</it>
+				<ar>***</ar>
+				<sv>***</sv>
+				<nl>***</nl>
+			</displayname>
+			<file>GENIncludedInCategoryTpe.xml</file>
+		</GENIncludedInCategoryTpe>
+		<KAPCompositionType>
+			<displayname>
+				<gr>Λεξιλόγιο Τύπος Συγκρότησης</gr>
+				<en>Vocabulary of Kind of Composition</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPCompositionType.xml</file>
+		</KAPCompositionType>
+		<KAPCompositionAccessoryCategoryType>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορίας Προσαρτήματος</gr>
+				<en>Vocabulary of Accessory Category</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPCompositionAccessoryCategoryType.xml</file>
+		</KAPCompositionAccessoryCategoryType>
+		<KAPConditionType>
+			<displayname>
+				<gr>Λεξιλόγιο Κατάστασης</gr>
+				<en>Vocabulary of Condition</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPConditionType.xml</file>
+		</KAPConditionType>
+	</KAPIdentification>
+	<ObjectKind>
+		<displayname>
+			<gr>Κινητά - Είδος </gr>
+			<en>Object - Kind</en>
+			<fr>Object - Type</fr>
+			<it>Object - Tipo di oggetto</it>
+			<ar>نوع الأثر</ar>
+			<sv>Monument - Typ</sv>
+			<nl>Monument - Soort</nl>
+		</displayname>
+		<GENFunctionType>
+			<displayname>
+				<gr>Λεξιλόγιο Χρηστικού Είδους Αντικειμένου</gr>
+				<en>Vocabulary of Function of Kind</en>
+				<fr>Vocabulaire de Type Fonctionnel</fr>
+				<it>Lessico tipo utensile</it>
+				<ar>مفردات النوع الوظيفى للعنصر</ar>
+				<sv>Ordlista över funktion för typ</sv>
+				<nl>Woordenlijst van Functie van Soort</nl>
+			</displayname>
+			<file>GENFunctionType.xml</file>
+		</GENFunctionType>
+		<GENMorphologyType>
+			<displayname>
+				<gr>Λεξιλόγιο Μορφολογικού Είδους Αντικειμένου</gr>
+				<en>Vocabulary of Morphology of Kind</en>
+				<fr>Vocabulaire de Type Morphologique</fr>
+				<it>Lessico tipo morfologico d'oggetto</it>
+				<ar>مفردات النوع الشكلى</ar>
+				<sv>Ordlista över morfologi för typ</sv>
+				<nl>Woordenlijst van Morfologie van Soort</nl>
+			</displayname>
+			<file>GENMorphologyType.xml</file>
+		</GENMorphologyType>
+		<GENConstructionType>
+			<displayname>
+				<gr>Λεξιλόγιο Κατασκευαστικού Είδους Αντικειμένου</gr>
+				<en>Vocabulary of Construction of Kind</en>
+				<fr>Vocabulaire de Selon construction Type</fr>
+				<it>Lessico tipo di costruzione oggetto</it>
+				<ar>مفردات نوع إنشاء البند</ar>
+				<sv>Ordlista över konstruktion för typ</sv>
+				<nl>Woordenlijst van Constructie van Soort</nl>
+			</displayname>
+			<file>GENConstructionType.xml</file>
+		</GENConstructionType>
+		<GENThesaurusName>
+			<displayname>
+				<gr>Λεξιλόγιο Θησαυρού Είδους Αντικειμένου</gr>
+				<en>Vocabulary of Thesaurus of Kind</en>
+				<fr>Vocabulaire du Type du Thesaurus</fr>
+				<it>Lessico thesaurus tipo di oggetto</it>
+				<ar>مفردات قائمة مصطلحات نوع البند</ar>
+				<sv>Ordlista över uppslagsverk för typ</sv>
+				<nl>Woordenlijst van Thesaurus van Soort</nl>
+			</displayname>
+			<file>GENThesaurusName.xml</file>
+		</GENThesaurusName>
+		<KAPConstructionType>
+			<displayname>
+				<gr>Λεξιλόγιο Κατασκευαστικού Είδους</gr>
+				<en>Vocabulary of Construction Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPConstructionType.xml</file>
+		</KAPConstructionType>
+		<GENThesaurusName>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Θησαυρού</gr>
+				<en>Vocabulary of Thesaurus Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>GENThesaurusName.xml</file>
+		</GENThesaurusName>
+	</ObjectKind>
+	<KAPVarious>
+		<displayname>
+			<gr>Κινητά - Διάφορα</gr>
+			<en>Objects - Various</en>
+			<fr>***</fr>
+			<it>***</it>
+			<ar>***</ar>
+		</displayname>
+		<KAPLoanOutObjective>
+			<displayname>
+				<gr>Λεξιλόγιο Σκοπού Δανεισμού Διαχείρισης</gr>
+				<en>Vocabulary of Objective of Loan Out</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPLoanOutObjective.xml</file>
+		</KAPLoanOutObjective>
+		<KAPInterventionTechnique>
+			<displayname>
+				<gr>Λεξιλόγιο Τεχνικής Επέμβασης</gr>
+				<en>Vocabulary of Intervention Technique</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPInterventionTechnique.xml</file>
+		</KAPInterventionTechnique>
+		<KAPMorphologyType>
+			<displayname>
+				<gr>Λεξιλόγιο Μορφολογικού Είδους</gr>
+				<en>Vocabulary of Morphology Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPMorphologyType.xml</file>
+		</KAPMorphologyType>
+		<KAPDepictionPosition>
+			<displayname>
+				<gr>Λεξιλόγιο Θέσης Απεικόνισης</gr>
+				<en>Vocabulary of Decoration Position</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPDepictionPosition.xml</file>
+		</KAPDepictionPosition>
+		<KAPTypeOfRepresentation>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Απεικόνισης</gr>
+				<en>Vocabulary of Decoration Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPTypeOfRepresentation.xml</file>
+		</KAPTypeOfRepresentation>
+		<KAPPossessionAppellation>
+			<displayname>
+				<gr>Λεξιλόγιο Ονομασίας Κατοχής</gr>
+				<en>Vocabulary of Ownership Nane</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPPossessionAppellation.xml</file>
+		</KAPPossessionAppellation>
+		<KAPFieldCollectionTechnique>
+			<displayname>
+				<gr>Λεξιλόγιο Τεχνικής Περισυλλογής</gr>
+				<en>Vocabulary of Field Collection Technique</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPFieldCollectionTechnique.xml</file>
+		</KAPFieldCollectionTechnique>
+		<KAPFunctionType>
+			<displayname>
+				<gr>Λεξιλόγιο Χρηστικού Είδους</gr>
+				<en>Vocabulary of Function Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPFunctionType.xml</file>
+		</KAPFunctionType>
+		<KAPFunctionTechniqueType>
+			<displayname>
+				<gr>Λεξιλόγιο Τεχνικής Χρήσης</gr>
+				<en>Vocabulary of Function/Use Technique</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPFunctionTechniqueType.xml</file>
+		</KAPFunctionTechniqueType>
+		<KAPConstructionTechniqueType>
+			<displayname>
+				<gr>Λεξιλόγιο Τεχνικής Κατασκευής</gr>
+				<en>Vocabulary of Construction Technique</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPConstructionTechniqueType.xml</file>
+		</KAPConstructionTechniqueType>
+		<KAPCodeCategory>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορίας Κωδικού</gr>
+				<en>Vocabulary of Code Category</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPCodeCategory.xml</file>
+		</KAPCodeCategory>
+		<KAPConditionType>
+			<displayname>
+				<gr>Λεξιλόγιο Χαρακτηρισμού Κατασκευής</gr>
+				<en>Vocabulary of Construction Characterization</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPConditionType.xml</file>
+		</KAPConditionType>
+		<KAPMarkingPosition>
+			<displayname>
+				<gr>Λεξιλόγιο Θέσης Σήμανσης</gr>
+				<en>Vocabulary of Markings Position</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPMarkingPosition.xml</file>
+		</KAPMarkingPosition>
+		<KAPDepictionTechnique>
+			<displayname>
+				<gr>Λεξιλόγιο Τεχνικής Απεικόνισης</gr>
+				<en>Vocabulary of Decoration Technique</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPDepictionTechnique.xml</file>
+		</KAPDepictionTechnique>
+		<KAPPossessionCategoryType>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορίας Κατοχής</gr>
+				<en>Vocabulary of Ownership Category</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPPossessionCategoryType.xml</file>
+		</KAPPossessionCategoryType>
+		<KAPMarkingType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδος Σήμανσης</gr>
+				<en>Vocabulary of Markings Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPMarkingType.xml</file>
+		</KAPMarkingType>
+		<KAPAccessionType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδος Απόκτηση</gr>
+				<en>Vocabulary of Acquisition Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPAccessionType.xml</file>
+		</KAPAccessionType>
+		<KAPObjectPosition>
+			<displayname>
+				<gr>Λεξιλόγιο Θέσης Διαχείρισης</gr>
+				<en>Vocabulary of Administrator Position</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPObjectPosition.xml</file>
+		</KAPObjectPosition>
+		<KAPInspectionType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Ελέγχου</gr>
+				<en>Vocabulary of Type of Inspectione</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPInspectionType.xml</file>
+		</KAPInspectionType>
+		<KAPNameType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδος Ονομασίας</gr>
+				<en>Vocabulary of Name Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPNameType.xml</file>
+		</KAPNameType>
+		<KAPMarkingTechnique>
+			<displayname>
+				<gr>Λεξιλόγιο Τεχνικής Σήμανσης</gr>
+				<en>Vocabulary of Markings Technique</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPMarkingTechnique.xml</file>
+		</KAPMarkingTechnique>
+		<GENIconographicType>
+			<displayname>
+				<gr>Λεξιλόγιο Εικονογαφικού Τύπου</gr>
+				<en>Vocabulary of Iconographic Type</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>GENIconographicType.xml</file>
+		</GENIconographicType>
+		<KAPMarkingConditionType>
+			<displayname>
+				<gr>Λεξιλόγιο Κατάσταση Σήμανσης</gr>
+				<en>Vocabulary of Markings Condition</en>
+				<fr>***</fr>
+				<it>***</it>
+				<ar>***</ar>
+			</displayname>
+			<file>KAPMarkingConditionType.xml</file>
+		</KAPMarkingConditionType>
+		<GENObjective>
+			<displayname>
+				<gr>Λεξιλόγιο Σκοπού</gr>
+				<en>Vocabulary of Purpose</en>
+				<fr>Vocabulaire d' Objectif</fr>
+				<it>Lessico scopo</it>
+				<ar>مفردات الغرض</ar>
+				<sv>Ordlista över ändamål</sv>
+				<nl>Woordenlijst van Doel</nl>
+			</displayname>
+			<file>GENObjective.xml</file>
+		</GENObjective>
+		<GENChronologyEventRelated>
+			<displayname>
+				<gr>Λεξιλόγιο Κοινωνικού Χρόνου</gr>
+				<en>Vocabulary of Related Event</en>
+				<fr>Vocabulaire du Temps Social</fr>
+				<it>Lessico periodo sociale</it>
+				<ar>مفردات الزمن الإجتماعى</ar>
+				<sv>Ordlista över relaterade händelser</sv>
+				<nl>Woordenlijst van Gerelateerde Gebeurtenis</nl>
+			</displayname>
+			<file>GENChronologyEventRelated.xml</file>
+		</GENChronologyEventRelated>
+		<GENCulturalPeriod>
+			<displayname>
+				<gr>Λεξιλόγιο Πολιτισμικής Περιόδου</gr>
+				<en>Vocabulary of Cultural Period</en>
+				<fr>Vocabulaire de Periode Culturelle</fr>
+				<it>Lessico periodo culturale</it>
+				<ar>مفردات الفترة الحضارية</ar>
+				<sv>Ordlista över tidsperioder</sv>
+				<nl>Woordenlijst van Culturele Periode</nl>
+			</displayname>
+			<file>GENCulturalPeriod.xml</file>
+		</GENCulturalPeriod>
+		<KAPProductionInfluencedByType>
+			<displayname>
+				<gr>Λεξιλόγιο Επιρροή Κατασκευής</gr>
+				<en>Vocabulary of Construction Influence</en>
+				<fr>****</fr>
+				<it>****</it>
+				<ar>***</ar>
+				<sv>***</sv>
+				<nl>***</nl>
+			</displayname>
+			<file>KAPProductionInfluencedByType.xml</file>
+		</KAPProductionInfluencedByType>
+		<GENGeodeticCoordinatesSystem>
+			<displayname>
+				<gr>Λεξιλόγιο Γεωδαιτικού Συστήματος Συντεταγμένων Τόπου Συμβάντος</gr>
+				<en>Vocabulary of Geodetic Coordinates System</en>
+				<fr>Vocabulaire de Systeme de Coordonnees Geodesiques</fr>
+				<it>Lessico sistema geodetico di coordinate del luogo evento</it>
+				<ar>مفردات نظام ربط إحداثيات موقع الحدث</ar>
+				<sv>Ordlista över geodetiska koordinatsystem</sv>
+				<nl>Woordenlijst van Geodetische coördinatenstelsel</nl>
+			</displayname>
+			<file>GENGeodeticCoordinatesSystem.xml</file>
+		</GENGeodeticCoordinatesSystem>
+		<GENEventCharacterization>
+			<displayname>
+				<gr>Λεξιλόγιο Χαρακτηρισμός Συμβάντος</gr>
+				<en>Vocabulary of Event Characterization</en>
+				<fr>****</fr>
+				<it>****</it>
+				<ar>***</ar>
+				<sv>***</sv>
+				<nl>***</nl>
+			</displayname>
+			<file>GENEventCharacterization.xml</file>
+		</GENEventCharacterization>
+		<GENRelatedEventCross>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Συσχέτισης Σχετικού Συμβάντος</gr>
+				<en>Vocabulary of Kind of Cross-Reference of Related Event</en>
+				<fr>Vocabulaire des Types de Correlation de l' Evenement Lie</fr>
+				<it>Lessico tipo di rapporto di evento correlato</it>
+				<ar>مفردات نوع الربط بالحدث</ar>
+				<sv>Ordlista över typ av korsreferens för relaterad händelse</sv>
+				<nl>Woordenlijst van Soort Kruisverwijzing van Gerelateerde Gebeurtenis</nl>
+			</displayname>
+			<file>GENRelatedEventCross-ReferenceType.xml</file>
+		</GENRelatedEventCross>
+		<GENCross-ReferenceType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Συσχέτισης</gr>
+				<en>Vocabulary of Kind of Cross-Reference</en>
+				<fr>Vocabulaire desTypes de Correlation</fr>
+				<it>Lessico tipo di rapporto</it>
+				<ar>مفردات نوع الربط</ar>
+				<sv>Ordlista över typ av korsreferens</sv>
+				<nl>Woordenlijst van Soort Kruisverwijzing</nl>
+			</displayname>
+			<file>GENCross-ReferenceType.xml</file>
+		</GENCross-ReferenceType>
+		<GENEvidenceCategoryType>
+			<displayname>
+				<gr>Λεξιλόγιο Κατηγορίας Μαρτυρίας</gr>
+				<en>Vocabulary of Category of Evidence</en>
+				<fr>Vocabulaire de Categorie des Temoignages</fr>
+				<it>Lessico categoria testimonianza</it>
+				<ar>مفردات فئة  الإثبات</ar>
+				<sv>Ordlista över beläggkategori</sv>
+				<nl>Woordenlijst van Categorie van Bewijs</nl>
+			</displayname>
+			<file>GENEvidenceCategoryType.xml</file>
+		</GENEvidenceCategoryType>
+		<GENMeasurementType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Μέτρησης</gr>
+				<en>Vocabulary of Kind of Measurement</en>
+				<fr>Vocabulaire ds Types des Mesures</fr>
+				<it>Lessico tipo misurazione</it>
+				<ar>مفردات نوع القياس</ar>
+				<sv>Ordlista över mätningstyp</sv>
+				<nl>Woordenlijst van Soort van de meting</nl>
+			</displayname>
+			<file>GENMeasurementType.xml</file>
+		</GENMeasurementType>
+		<GENSizeCapacityType>
+			<displayname>
+				<gr>Λεξιλόγιο Ιδιότητας Μεγέθους Μέτρησης</gr>
+				<en>Vocabulary of Capacity Size of Measurement</en>
+				<fr>Vocabulaire des Methodes des Mesures</fr>
+				<it>Lessico proprietà della grandezza di misurazione</it>
+				<ar>مفردات خاصية  حجم القياس</ar>
+				<sv>Ordlista över måttstorlekar</sv>
+				<nl>Woordenlijst van Capaciteitsformaat van de Meting</nl>
+			</displayname>
+			<file>GENSizeCapacityType.xml</file>
+		</GENSizeCapacityType>
+		<GENLanguage>
+			<displayname>
+				<gr>Λεξιλόγιο Γλώσσας</gr>
+				<en>Vocabulary of Language</en>
+				<fr>Vocabulaire des Langues</fr>
+				<it>Lessico lingua</it>
+				<ar>مفردات اللغة</ar>
+			</displayname>
+			<file>GENLanguage.xml</file>
+		</GENLanguage>
+		<GENPlaceMeasurementMethodType>
+			<displayname>
+				<gr>Λεξιλόγιο Μεθόδου Μέτρησης Τόπου Συμβάντος</gr>
+				<en>Vocabulary of Measurement Method of Event Location</en>
+				<fr>Vocabulaire de Methode de Mesure du Lieu d' Evenement</fr>
+				<it>Lessico metodo misurazione luogo evento</it>
+				<ar>مفردات طريقة قياس موقع الحدث</ar>
+				<sv>Ordlista över händelsers mätmetoder</sv>
+				<nl>Woordenlijst van Meetmethode van Evenement Locatie</nl>
+			</displayname>
+			<file>GENPlaceMeasurementMethodType.xml</file>
+		</GENPlaceMeasurementMethodType>
+		<GENMeasurementUnitType>
+			<displayname>
+				<gr>Λεξιλόγιο Μονάδας Μέτρησης Μεγέθους</gr>
+				<en>Vocabulary of Measurement Unit of Measurement</en>
+				<fr>Vocabulaire de l' Unite des Mesures</fr>
+				<it>Lessico unità di misura della grandezza</it>
+				<ar>مفردات وحدة قياس الحجم</ar>
+				<sv>Ordlista över måttenheter</sv>
+				<nl>Woordenlijst van Meting Meeteenheid</nl>
+			</displayname>
+			<file>GENMeasurementUnitType.xml</file>
+		</GENMeasurementUnitType>
+		<GENMeasurementNameType>
+			<displayname>
+				<gr>Λεξιλόγιο Ονομασίας Μέτρησης</gr>
+				<en>Vocabulary of Name of Measurement</en>
+				<fr>Vocabulaire des Noms des Mesures</fr>
+				<it>Lessico nome misurazione</it>
+				<ar>مفردات إسم القياس</ar>
+				<sv>Ordlista över mätningsnamn</sv>
+				<nl>Woordenlijst van Naam van de meting</nl>
+			</displayname>
+			<file>GENMeasurementNameType.xml</file>
+		</GENMeasurementNameType>
+		<GENEventApellation>
+			<displayname>
+				<gr>Λεξιλόγιο Ονομασίας Συμβάντος</gr>
+				<en>Vocabulary of Event Name</en>
+				<fr>Vocabulaire du Nom d' Evenement</fr>
+				<it>Lessico nome evento</it>
+				<ar>مفردات إسم الحدث</ar>
+				<sv>Ordlista över händelsenamn</sv>
+				<nl>Woordenlijst van Gebeurtenis</nl>
+			</displayname>
+			<file>GENEventApellation.xml</file>
+		</GENEventApellation>
+		<GENMeasurementInstrument>
+			<displayname>
+				<gr>Λεξιλόγιο Οργάνου Μέτρησης</gr>
+				<en>Vocabulary of Measurement Instrument</en>
+				<fr>Vocabulaire de l' Instrument des Mesures</fr>
+				<it>Lessico strumento di misurazione</it>
+				<ar>مفردات جهاز القياس</ar>
+				<sv>Ordlista över mätinstrument</sv>
+				<nl>Woordenlijst van Meetinstrument</nl>
+			</displayname>
+			<file>GENMeasurementInstrument.xml</file>
+		</GENMeasurementInstrument>
+		<KAPCuurentLocationFitness>
+			<displayname>
+				<gr>Λεξιλόγιο Καταλληλότητα Θέσης</gr>
+				<en>Vocabulary of Current Location Fitness</en>	
+			</displayname>
+			<file>KAPCuurentLocationFitness.xml</file>
+		</KAPCuurentLocationFitness>
+		<KAPDeaccessionType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Διαγραφής</gr>
+				<en>Vocabulary of Deaccession Type</en>	
+			</displayname>
+			<file>KAPDeaccessionType.xml</file>
+		</KAPDeaccessionType>
+		<KAPMovementMethod>
+			<displayname>
+				<gr>Λεξιλόγιο Μεθόδου Μετακίνησης</gr>
+				<en>Vocabulary of Movement Method</en>	
+			</displayname>
+			<file>KAPMovementMethod.xml</file>
+		</KAPMovementMethod>
+		<KAPMovementPurpose>
+			<displayname>
+				<gr>Λεξιλόγιο Σκοπού Μετακίνησης</gr>
+				<en>Vocabulary of Movement Purpose</en>	
+			</displayname>
+			<file>KAPMovementPurpose.xml</file>
+		</KAPMovementPurpose>
+		<KAPMovementType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Μετακίνησης</gr>
+				<en>Vocabulary of Movement Type</en>	
+			</displayname>
+			<file>KAPMovementType.xml</file>
+		</KAPMovementType>
+		<KAPMonumentLocation>
+			<displayname>
+				<gr>Λεξιλόγιο Εντός Μουσείου</gr>
+				<en>Vocabulary In house</en>	
+			</displayname>
+			<file>KAPMonumentLocation.xml</file>
+		</KAPMonumentLocation>
+	</KAPVarious>	
+	<RelatedEvent>
+		<displayname>
+			<gr>Σχετικό Συμβάν</gr>
+			<en>Related Event</en>
+			<fr>Evenement Lie</fr>
+			<it>Evento correlato</it>
+			<ar>حدث مرتبط</ar>
+			<sv>Relaterad händelse</sv>
+			<nl>Gerelateerde gebeurtenis</nl>
+		</displayname>
+		<GENRelatedEventCross-ReferenceType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Συσχέτισης Σχετικού Συμβάντος</gr>
+				<en>Vocabulary of Kind of Cross-Reference of Related Event</en>
+				<fr>Vocabulaire des Types de Correlation de l' Evenement Lie</fr>
+				<it>Lessico tipo di rapporto di evento correlato</it>
+				<ar>مفردات نوع الربط بالحدث</ar>
+				<sv>Ordlista över typ av korsreferens för relaterad händelse</sv>
+				<nl>Woordenlijst van Soort Kruisverwijzing van Gerelateerde Gebeurtenis</nl>
+			</displayname>
+			<file>GENRelatedEventCross-ReferenceType.xml</file>
+		</GENRelatedEventCross-ReferenceType>
+	</RelatedEvent>
+	<Parts>
+		<displayname>
+			<gr>Μέρη</gr>
+			<en>Parts</en>
+			<fr>Parties</fr>
+			<it>Parti</it>
+			<ar>أجزاء</ar>
+			<sv>Delar</sv>
+			<nl>Onderdelen</nl>
+		</displayname>
+		<APComponentName>
+			<displayname>
+				<gr>Λεξιλόγιο Ονομασίας Μέρους</gr>
+				<en>Vocabulary of Name of Part</en>
+				<fr>Vocabulaire du Nom de la Partie</fr>
+				<it>Lessico nome parte</it>
+				<ar>مفردات إسم الجزء</ar>
+				<sv>Ordlista över namn för del</sv>
+				<nl>Woordenlijst van Naam van Onderdeel</nl>
+			</displayname>
+			<file>APComponentName.xml</file>
+		</APComponentName>
+		<GENMeasurementNameType>
+			<displayname>
+				<gr>Λεξιλόγιο Ονομασίας Μέτρησης</gr>
+				<en>Vocabulary of Name of Measurement</en>
+				<fr>Vocabulaire des Noms des Mesures</fr>
+				<it>Lessico nome misurazione</it>
+				<ar>مفردات إسم القياس</ar>
+				<sv>Ordlista över mätningsnamn</sv>
+				<nl>Woordenlijst van Naam van de meting</nl>
+			</displayname>
+			<file>GENMeasurementNameType.xml</file>
+		</GENMeasurementNameType>
+		<GENMeasurementType>
+			<displayname>
+				<gr>Λεξιλόγιο Είδους Μέτρησης</gr>
+				<en>Vocabulary of Kind of Measurement</en>
+				<fr>Vocabulaire ds Types des Mesures</fr>
+				<it>Lessico tipo misurazione</it>
+				<ar>مفردات نوع القياس</ar>
+				<sv>Ordlista över mätningstyp</sv>
+				<nl>Woordenlijst van Soort van de meting</nl>
+			</displayname>
+			<file>GENMeasurementType.xml</file>
+		</GENMeasurementType>
+		<GENMeasurementInstrument>
+			<displayname>
+				<gr>Λεξιλόγιο Οργάνου Μέτρησης</gr>
+				<en>Vocabulary of Measurement Instrument</en>
+				<fr>Vocabulaire de l' Instrument des Mesures</fr>
+				<it>Lessico strumento di misurazione</it>
+				<ar>مفردات جهاز القياس</ar>
+				<sv>Ordlista över mätinstrument</sv>
+				<nl>Woordenlijst van Meetinstrument</nl>
+			</displayname>
+			<file>GENMeasurementInstrument.xml</file>
+		</GENMeasurementInstrument>
+		<GENSizeCapacityType>
+			<displayname>
+				<gr>Λεξιλόγιο Ιδιότητας Μεγέθους Μέτρησης</gr>
+				<en>Vocabulary of Capacity Size of Measurement</en>
+				<fr>Vocabulaire des Methodes des Mesures</fr>
+				<it>Lessico proprietà della grandezza di misurazione</it>
+				<ar>مفردات خاصية  حجم القياس</ar>
+				<sv>Ordlista över måttstorlekar</sv>
+				<nl>Woordenlijst van Capaciteitsformaat van de Meting</nl>
+			</displayname>
+			<file>GENSizeCapacityType.xml</file>
+		</GENSizeCapacityType>
+		<GENMeasurementUnitType>
+			<displayname>
+				<gr>Λεξιλόγιο Μονάδας Μέτρησης Μεγέθους</gr>
+				<en>Vocabulary of Measurement Unit of Measurement</en>
+				<fr>Vocabulaire de l' Unite des Mesures</fr>
+				<it>Lessico unità di misura della grandezza</it>
+				<ar>مفردات وحدة قياس الحجم</ar>
+				<sv>Ordlista över måttenheter</sv>
+				<nl>Woordenlijst van Meting Meeteenheid</nl>
+			</displayname>
+			<file>GENMeasurementUnitType.xml</file>
+		</GENMeasurementUnitType>
+	</Parts>	
+	<Collection>
+		<displayname>
+			<gr>Συλλογή</gr>
+			<en>Collection</en>
+			<fr>Collection</fr>
+			<it>Collezione</it>
+			<ar>جمع</ar>
+			<sv>Samling</sv>
+			<nl>Collectie</nl>
+		</displayname>
+		<CollectionType>
+			<displayname>
+				<gr>Λεξιλόγιο Τύπου Συλλογής</gr>
+				<en>Vocabulary of Collection Type</en>
+				<fr>****</fr>
+				<it>****</it>
+				<ar>****</ar>
+				<sv>****</sv>
+				<nl>****</nl>
+			</displayname>
+			<file>CollectionType.xml</file>
+		</CollectionType>
+		<CollectionCondition>
+			<displayname>
+				<gr>Λεξιλόγιο Κατάστασης Συλλογής</gr>
+				<en>Vocabulary of Collection Condition</en>
+				<fr>****</fr>
+				<it>****</it>
+				<ar>****</ar>
+				<sv>****</sv>
+				<nl>****</nl>
+			</displayname>
+			<file>CollectionCondition.xml</file>
+		</CollectionCondition>
+		<CollectionSubject>
+			<displayname>
+				<gr>Λεξιλόγιο Θέματος Συλλογής</gr>
+				<en>Vocabulary of Collection Subject</en>
+				<fr>****</fr>
+				<it>****</it>
+				<ar>****</ar>
+				<sv>****</sv>
+				<nl>****</nl>
+			</displayname>
+			<file>CollectionSubject.xml</file>
+		</CollectionSubject>
+		<CollectionLocation>
+			<displayname>
+				<gr>Λεξιλόγιο Τοποθεσίας Συλλογής</gr>
+				<en>Vocabulary of Collection Location</en>
+				<fr>****</fr>
+				<it>****</it>
+				<ar>****</ar>
+				<sv>****</sv>
+				<nl>****</nl>
+			</displayname>
+			<file>CollectionLocation.xml</file>
+		</CollectionLocation>
+	</Collection>
+	<Contract>
+		<displayname>
+			<gr>Συμβόλαιο</gr>                      
+            <en>Contract</en>
+            <fr>Contrat</fr>
+            <it>Contrarre</it>
+            <ar>عقد</ar>
+            <sv>Kontrakt</sv>
+            <nl>Contract</nl>	
+		</displayname>
+		<ContractType>
+			<displayname>
+				<gr>Λεξιλόγιο Τύπος  Συμβολαίου </gr>
+				<en>Vocabulary of Contract Type</en>
+			</displayname>
+			<file>ContractType.xml</file>
+		</ContractType>
+	</Contract>
+</Vocabularies>

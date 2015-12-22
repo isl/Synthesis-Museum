@@ -1,0 +1,158 @@
+
+<!--
+
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Synthesis Museum project.
+-->
+<leftmenu>
+	<menugroup type="left" id="1">		
+		<menu id="KAP">
+			<userRights href="ListEntity?type=KAP&amp;status=allunpublished&amp;menu=kap">editor</userRights>
+			<userRights href="ListEntity?type=KAP&amp;status=org&amp;menu=kap">guest</userRights>
+			<userRights href="ListEntity?type=KAP&amp;status=allunpublished&amp;menu=kap">admin</userRights>
+			<userRights href="javascript:backupRestore('AdminListEntity?type=KAP&amp;status=pending&amp;mode=sys', '', '', '')">sysadmin</userRights>
+			<label>DeltiaKinitwnMnimeiwn</label>
+		</menu>
+		<menu id="Collection">
+			<userRights href="ListEntity?type=Collection">editor</userRights>
+			<userRights href="ListEntity?type=Collection">guest</userRights>
+			<userRights href="ListEntity?type=Collection">admin</userRights>
+			<userRights href="ListEntity?type=Collection">sysadmin</userRights>
+			<label>Collection</label>
+		</menu>
+		<menu id="Contract">
+			<userRights href="ListEntity?type=Contract">editor</userRights>
+			<userRights href="ListEntity?type=Contract">guest</userRights>
+			<userRights href="ListEntity?type=Contract">admin</userRights>
+			<userRights href="ListEntity?type=Contract">sysadmin</userRights>
+			<label>Contract</label>
+		</menu>
+		<menu id="Person">
+			<userRights href="ListEntity?type=Person">editor</userRights>
+			<userRights href="ListEntity?type=Person">guest</userRights>
+			<userRights href="ListEntity?type=Person">admin</userRights>
+			<userRights href="ListEntity?type=Person">sysadmin</userRights>
+			<label>Proswpa</label>
+		</menu>
+		<menu id="Organization">
+			<userRights href="ListEntity?type=Organization">editor</userRights>
+			<userRights href="ListEntity?type=Organization">guest</userRights>
+			<userRights href="ListEntity?type=Organization">admin</userRights>
+			<userRights href="ListEntity?type=Organization">sysadmin</userRights>
+			<label>Organismoi</label>
+		</menu>
+		<menu id="Department">
+			<userRights href="ListEntity?type=Department">editor</userRights>
+			<userRights href="ListEntity?type=Department">guest</userRights>
+			<userRights href="ListEntity?type=Department">admin</userRights>
+			<userRights href="ListEntity?type=Department">sysadmin</userRights>
+			<label>Tmimata</label>
+		</menu>
+		<menu id="Event">
+			<userRights href="ListEntity?type=Event">editor</userRights>
+			<userRights href="ListEntity?type=Event">guest</userRights>
+			<userRights href="ListEntity?type=Event">admin</userRights>
+			<userRights href="ListEntity?type=Event">sysadmin</userRights>
+			<label>Simbanta</label>
+		</menu>
+		<menu id="Location">
+			<userRights href="ListEntity?type=Location">editor</userRights>
+			<userRights href="ListEntity?type=Location">guest</userRights>
+			<userRights href="ListEntity?type=Location">admin</userRights>
+			<userRights href="ListEntity?type=Location">sysadmin</userRights>
+			<label>Topoi</label>
+		</menu>
+		<menu id="Material" href="ListEntity?type=Material">
+			<userRights href="ListEntity?type=Material">editor</userRights>
+			<userRights href="ListEntity?type=Material">guest</userRights>
+			<userRights href="ListEntity?type=Material">admin</userRights>
+			<userRights href="ListEntity?type=Material">sysadmin</userRights>
+			<label>Ylika</label>
+		</menu>
+		<menu id="Bibliography">
+			<userRights href="ListEntity?type=Bibliography">editor</userRights>
+			<userRights href="ListEntity?type=Bibliography">guest</userRights>
+			<userRights href="ListEntity?type=Bibliography">admin</userRights>
+			<userRights href="ListEntity?type=Bibliography">sysadmin</userRights>
+			<label>Bibliografia</label>
+		</menu>
+		<menu id="Archive">
+			<userRights href="ListEntity?type=Archive">editor</userRights>
+			<userRights href="ListEntity?type=Archive">guest</userRights>
+			<userRights href="ListEntity?type=Archive">admin</userRights>
+			<userRights href="ListEntity?type=Archive">sysadmin</userRights>
+			<label>Arxeia</label>
+		</menu>
+	</menugroup>
+	<menugroup type="left" id="2">
+		<menu id="DigitalArchive">
+			<userRights href="ListEntity?type=DigitalArchive">editor</userRights>
+			<userRights href="ListEntity?type=DigitalArchive">guest</userRights>
+			<userRights href="ListEntity?type=DigitalArchive">admin</userRights>
+			<userRights href="ListEntity?type=DigitalArchive">sysadmin</userRights>
+			<label>DigitalArchive</label>
+		</menu>
+		<menu id="InfoText">
+			<userRights href="ListEntity?type=InfoText">editor</userRights>
+			<userRights href="ListEntity?type=InfoText">guest</userRights>
+			<userRights href="ListEntity?type=InfoText">admin</userRights>
+			<userRights href="ListEntity?type=InfoText">sysadmin</userRights>
+			<label>InfoText</label>
+		</menu>
+	</menugroup>
+	<menugroup type="left" id="3">
+		<menu id="AdminOrg">
+			<userRights href="AdminOrg?action=list">admin</userRights>
+			<userRights href="AdminOrg?action=list&amp;mode=sys">sysadmin</userRights>
+			<label>AdminOrgs</label>
+		</menu>
+		<menu id="AdminUser">
+			<userRights href="AdminUser?action=list">admin</userRights>
+			<userRights href="AdminUser?action=list&amp;mode=sys">sysadmin</userRights>
+			<label>AdminUsers</label>
+		</menu>
+		<menu id="SysAdminVocs" submenu="yes">
+			<userRights>editor</userRights>
+			<userRights>admin</userRights>
+			<label>AdminVocs</label>
+			<submenu id="AdminVoc">
+				<userRights href="AdminVoc?action=list_vocs&amp;menuId=AdminVoc">editor</userRights>
+				<userRights href="AdminVoc?action=list_vocs&amp;menuId=AdminVoc">admin</userRights>
+				<label>AdminVoc</label>
+			</submenu>
+			<submenu id="AdminVocTrans">
+				<userRights href="AdminVoc?action=list_vocs_trans&amp;menuId=AdminVocTrans">editor</userRights>
+				<userRights href="AdminVoc?action=list_vocs_trans&amp;menuId=AdminVocTrans">admin</userRights>
+				<label>AdminVocTrans</label>
+			</submenu>
+		</menu>
+		<menu id="Backup">
+			<userRights href="Storage?action=list&amp;menu=admin&amp;menuId=Backup">admin</userRights>
+			<userRights href="Storage?action=list&amp;menu=sysadmin&amp;menuId=Backup">sysadmin</userRights>
+			<label>Backup</label>
+		</menu>
+	</menugroup>
+</leftmenu>

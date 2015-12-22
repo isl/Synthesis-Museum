@@ -1,0 +1,30 @@
+
+<!--
+
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Synthesis Museum project.
+-->
+<nodes><node type="Collection"><xpath>Collection</xpath><gr>Συλλογή</gr><en>Collection</en></node><node type="Collection"><xpath>Collection/IdentificationNumber</xpath><gr>Κωδικός Αναφοράς</gr><en>Identification Number</en></node><node type="Collection"><xpath>Collection/Title</xpath><gr>Τίτλος</gr><en>Title</en></node><node type="Collection"><xpath>Collection/HasSubject</xpath><gr>Θέμα</gr><en>Subject</en><vocabulary>CollectionSubject.xml</vocabulary></node><node type="Collection"><xpath>Collection/Type</xpath><gr>Είδος</gr><en>Type</en><vocabulary>CollectionType.xml</vocabulary></node><node type="Collection"><xpath>Collection/Condition</xpath><gr>Κατάσταση</gr><en>Condition</en><vocabulary>CollectionCondition.xml</vocabulary></node><node type="Collection"><xpath>Collection/FormerLocation</xpath><gr>Προηγούμενη Τοποθεσία</gr><en>Former Location</en><vocabulary>CollectionLocation.xml</vocabulary></node><node type="Collection"><xpath>Collection/CurrentLocation</xpath><gr>Τρέχουσα Τοποθεσία</gr><en>CurrentLocation</en><vocabulary>CollectionLocation.xml</vocabulary></node><node type="Collection"><xpath>Collection/Curator</xpath><gr>Επιμελητής</gr><en>Curator</en><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom></node><node type="Collection"><xpath>Collection/RightHeldBy</xpath><gr>Δικαιώματα</gr><en>Rights</en><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom></node><node type="Collection"><xpath>Collection/CurrentOwner</xpath><gr>Τρέχων Ιδιοκτήτης</gr><en>Current Owner</en><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom></node><node type="Collection"><xpath>Collection/FormerOwner</xpath><gr>Προηγούμενος Ιδιοκτήτης</gr><en>Former Owner</en><valueFrom type=""/></node><node type="Collection"><xpath>Collection/Description</xpath><gr>Περιγραφή</gr><en>Description</en></node><node type="Collection"><xpath>Collection/ConsistsOf</xpath><gr>Αποτελείται Από</gr><en>ConsistsOf</en><valueFrom type="">KAP/IdentityOfObject/PrincipalCurrentDenomination</valueFrom></node></nodes>

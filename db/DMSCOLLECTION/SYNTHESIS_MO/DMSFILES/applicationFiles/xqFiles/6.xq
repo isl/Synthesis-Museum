@@ -1,0 +1,1 @@
+let $i := document('/db/DMSCOLLECTION/SYNTHESIS/DMSFILES/Presentations.xml')/DMS/presentations/presentation/xsl/text()return if (contains($i, '___XXX___')) then 1 else 0

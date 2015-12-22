@@ -1,0 +1,2296 @@
+
+<!--
+
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Synthesis Museum project.
+-->
+<DMS>
+	<tags>
+		<!-- Person tags-->
+		<tag id="1">
+			<type>target</type>
+			<category>Person</category>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/Person</xpath>
+			<rootxpath>/Person</rootxpath>
+			<uri_name>Person</uri_name>
+			<uri_path>/Person/IdentificationNumber</uri_path>
+			<displayname>
+				<gr>Πρόσωπα</gr>
+				<en>Persons</en>
+				<fr>Personnes</fr>
+				<it>Persone</it>
+				<ar>أشخاص</ar>
+				<sv>Personer</sv>
+				<nl>Personen</nl>
+			</displayname>
+			<order>1</order>
+		</tag>
+		<tag id="100">
+			<type>input</type>
+			<category>Person</category>
+			<xpath>/Person/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+				<sv>överallt</sv>
+				<nl>Overal</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="101">
+			<type>input</type>
+			<category>Person</category>
+			<xpath>/Person/IdentificationNumber</xpath>
+			<displayname>
+				<gr>Κωδικός αναφοράς</gr>
+				<en>Identification Number</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>2</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="102">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>Person</category>
+			<xpath>/Person/Appellation</xpath>
+			<tagname>Ονοματεπώνυμο</tagname>
+			<displayname>
+				<gr>Ονοματεπώνυμο</gr>
+				<en>Name and Surname</en>
+				<fr>Nom Prénom</fr>
+				<it>Nome e cognome</it>
+				<ar>الإسم واللقب</ar>
+				<sv>Efternamn och förnamn</sv>
+				<nl>Naam en achternaam</nl>
+			</displayname>
+			<order>3</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="103">
+			<type>input</type>
+			<category>Person</category>
+			<xpath>/Person/Type</xpath>
+			<displayname>
+				<gr>Ρόλος-Ιδιότητα</gr>
+				<en>Role-Capacity</en>
+				<fr>Rôle-Qualité</fr>
+				<it>Ruolo-Qualifica</it>
+				<ar>دور-صفة</ar>
+				<sv>Roll-Kapacitet</sv>
+				<nl>Rol-Capaciteit</nl>
+			</displayname>
+			<order>4</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="104">
+			<type>input</type>
+			<category>Person</category>
+			<xpath>/Person/BeMemberOf</xpath>
+			<displayname>
+				<gr>Οργανισμός-Τμήμα</gr>
+				<en>Organization-Department</en>
+				<fr>Organisation-Part</fr>
+				<it>Organismo-Sezione</it>
+				<ar>هيئة-جزء</ar>
+				<sv>Institution-Del</sv>
+				<nl>Instelling-Deel</nl>
+			</displayname>
+			<order>5</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="105">
+			<type>adminOutput</type>
+			<category>Person</category>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+		</tag>
+		<!-- End of Person tags-->
+		<!--Tags for Organization-->
+		<tag id="2">
+			<type>target</type>
+			<category>Organization</category>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/Organization</xpath>
+			<rootxpath>/Organization</rootxpath>
+			<uri_name>Organization</uri_name>
+			<uri_path>/Organization/IdentificationNumber</uri_path>
+			<displayname>
+				<gr>Οργανισμούς</gr>
+				<en>Institutions</en>
+				<fr>Organisation</fr>
+				<it>Organismi</it>
+				<ar>هيئات</ar>
+				<sv>Institutioner</sv>
+				<nl>Instellingen</nl>
+			</displayname>
+			<order>1</order>
+		</tag>
+		<tag id="200">
+			<type>input</type>
+			<category>Organization</category>
+			<xpath>/Organization/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+				<sv>överallt</sv>
+				<nl>Overal</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="201">
+			<type>input</type>
+			<category>Organization</category>
+			<xpath>/Organization/IdentificationNumber</xpath>
+			<displayname>
+				<gr>Κωδικός αναφοράς</gr>
+				<en>Identification Number</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>2</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="202">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>Organization</category>
+			<xpath>/Organization/Appellation</xpath>
+			<tagname>Επωνυμία</tagname>
+			<displayname>
+				<gr>Επωνυμία</gr>
+				<en>Name - Denomination</en>
+				<fr>Nom</fr>
+				<it>Nome</it>
+				<ar>اللقب</ar>
+				<sv>Namn - Benämning</sv>
+				<nl>Naam - Benaming</nl>
+			</displayname>
+			<order>3</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="203">
+			<type>input</type>
+			<category>Organization</category>
+			<xpath>/Organization/HeadquartersLocation</xpath>
+			<displayname>
+				<gr>Έδρα</gr>
+				<en>Headquarters</en>
+				<fr>Siège</fr>
+				<it>Sede</it>
+				<ar>مقر</ar>
+				<sv>Huvudkvarter</sv>
+				<nl>Hoofdkantoor</nl>
+			</displayname>
+			<order>4</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="204">
+			<type>input</type>
+			<category>Organization</category>
+			<xpath>/Organization/Type</xpath>
+			<displayname>
+				<gr>Τύπος</gr>
+				<en>Type</en>
+				<fr>xxx</fr>
+				<it>xxx</it>
+				<ar>xxx</ar>
+				<sv>xxx</sv>
+				<nl>xxx</nl>
+			</displayname>
+			<order>5</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="205">
+			<type>input</type>
+			<category>Organization</category>
+			<xpath>/Organization/Location</xpath>
+			<displayname>
+				<gr>Τόπος</gr>
+				<en>Location</en>
+				<fr>Lieu</fr>
+				<it>Luogo</it>
+				<ar>مكان</ar>
+				<sv>Plats</sv>
+				<nl>Plaats</nl>
+			</displayname>
+			<order>6</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="206">
+			<type>input</type>
+			<category>Organization</category>
+			<xpath>/Organization/ContactInfo/Address</xpath>
+			<displayname>
+				<gr>Διεύθυνση</gr>
+				<en>Address</en>
+				<fr>Adresse</fr>
+				<it>Indirizzo</it>
+				<ar>عنوان</ar>
+				<sv>Adress</sv>
+				<nl>Adres</nl>
+			</displayname>
+			<order>7</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="207">
+			<type>input</type>
+			<category>Organization</category>
+			<xpath>/Organization/ContactInfo/Telephone</xpath>
+			<displayname>
+				<gr>Τηλέφωνο</gr>
+				<en>Telephone</en>
+				<fr>Téléphone</fr>
+				<it>Telefono</it>
+				<ar>تليفون</ar>
+				<sv>Telefon</sv>
+				<nl>Telefoon</nl>
+			</displayname>
+			<order>8</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="208">
+			<type>adminOutput</type>
+			<category>Organization</category>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+		</tag>
+		<!--End of Organization-->
+		<!--Tags for Department-->
+		<tag id="3">
+			<type>target</type>
+			<category>Department</category>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/Department</xpath>
+			<rootxpath>/Department</rootxpath>
+			<uri_name>Department</uri_name>
+			<uri_path>/Department/IdentificationNumber</uri_path>
+			<displayname>
+				<gr>Τμήματα</gr>
+				<en>Department</en>
+				<fr>Service</fr>
+				<it>Sezioni</it>
+				<ar>أجزاء</ar>
+				<sv>Avdelning</sv>
+				<nl>Afdeling</nl>
+			</displayname>
+			<order>1</order>
+		</tag>
+		<tag id="300">
+			<type>input</type>
+			<category>Department</category>
+			<xpath>/Department/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+				<sv>överallt</sv>
+				<nl>Overal</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="301">
+			<type>input</type>
+			<category>Department</category>
+			<xpath>/Department/IdentificationNumber</xpath>
+			<displayname>
+				<gr>Κωδικός αναφοράς</gr>
+				<en>Identification Number</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>2</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="302">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>Department</category>
+			<xpath>/Department/Appellation</xpath>
+			<tagname>Ονομασία</tagname>
+			<displayname>
+				<gr>Ονομασία</gr>
+				<en>Name</en>
+				<fr>Nom</fr>
+				<it>Nome</it>
+				<ar>إسم</ar>
+				<sv>Namn</sv>
+				<nl>Naam</nl>
+			</displayname>
+			<order>3</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="303">
+			<type>input</type>
+			<category>Department</category>
+			<xpath>/Department/Organisation</xpath>
+			<tagname>Οργανισμός</tagname>
+			<displayname>
+				<gr>Οργανισμός</gr>
+				<en>Institution</en>
+				<fr>Organisation</fr>
+				<it>Organismo</it>
+				<ar>هيئة</ar>
+				<sv>Institution</sv>
+				<nl>Instelling</nl>
+			</displayname>
+			<order>4</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="304">
+			<type>input</type>
+			<category>Department</category>
+			<xpath>/Department/CodeNumber/Value</xpath>
+			<displayname>
+				<gr>Κωδικός [Τιμή]</gr>
+				<en>Code Number [Value]</en>
+				<fr>Code [Valeur]</fr>
+				<it>Codice [Valore]</it>
+				<ar>. - رقم كودى - قيمة</ar>
+				<sv>Kodnummer [Värde]</sv>
+				<nl>Codenummer [Waarde]</nl>
+			</displayname>
+			<order>5</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="305">
+			<type>input</type>
+			<category>Department</category>
+			<xpath>/Department/CodeNumber/Category</xpath>
+			<displayname>
+				<gr>Κωδικός [Κατηγορία]</gr>
+				<en>Code Number [Category]</en>
+				<fr>Code [Categorie]</fr>
+				<it>Codice [Categoria]</it>
+				<ar>. - رقم كودى - فئة</ar>
+				<sv>Kodnummer [Kategori]</sv>
+				<nl>Codenummer [Categorie]</nl>
+			</displayname>
+			<order>6</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="306">
+			<type>input</type>
+			<category>Department</category>
+			<xpath>/Department/CodeNumber/AttributedBy</xpath>
+			<displayname>
+				<gr>Κωδικός [ΑπόδοσηΑπό]</gr>
+				<en>Code Number [Attributed by]</en>
+				<fr>Code [Attribution par]</fr>
+				<it>Codice [attribuito da]</it>
+				<ar>- رقم كودى - نُشر من</ar>
+				<sv>Kodnummer [Tilldelats av]</sv>
+				<nl>Codenummer [Toegekend door]</nl>
+			</displayname>
+			<order>7</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="307">
+			<type>input</type>
+			<category>Department</category>
+			<xpath>/Department/CodeNumber/AttributionDate/DateValue</xpath>
+			<displayname>
+				<gr>Ημερομηνία Απόδοσης</gr>
+				<en>Attribution Date</en>
+				<fr>Attribution Date</fr>
+				<it>Data di attribuzione</it>
+				<ar>تاريخ النشر</ar>
+				<sv>Tilldelat datum</sv>
+				<nl>Datum naamsvermelding</nl>
+			</displayname>
+			<order>8</order>
+			<oper>contains</oper>
+			<dataType>time</dataType>
+		</tag>
+		<tag id="308">
+			<type>input</type>
+			<category>Department</category>
+			<xpath>/Department/CodeNumber/ExpiryDate/DateValue</xpath>
+			<displayname>
+				<gr>Ημερομηνία Λήξης</gr>
+				<en>Expiry Date</en>
+				<fr>Date fin de validité</fr>
+				<it>Data di scadenza</it>
+				<ar>تاريخ الإنتهاء</ar>
+				<sv>Utgångsdatum</sv>
+				<nl>Vervaldatum</nl>
+			</displayname>
+			<order>9</order>
+			<oper>contains</oper>
+			<dataType>time</dataType>
+		</tag>
+		<tag id="309">
+			<type>input</type>
+			<category>Department</category>
+			<xpath>/Department/Contact/Address</xpath>
+			<displayname>
+				<gr>Διεύθυνση</gr>
+				<en>Address</en>
+				<fr>Adresse</fr>
+				<it>Indirizzo</it>
+				<ar>عنوان</ar>
+				<sv>Adress</sv>
+				<nl>Adres</nl>
+			</displayname>
+			<order>10</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="310">
+			<type>input</type>
+			<category>Department</category>
+			<xpath>/Department/Contact/Telephone</xpath>
+			<displayname>
+				<gr>Τηλέφωνο</gr>
+				<en>Telephone</en>
+				<fr>Téléphone</fr>
+				<it>Telefono</it>
+				<ar>تليفون</ar>
+				<sv>Telefon</sv>
+				<nl>Telefoon</nl>
+			</displayname>
+			<order>11</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="311">
+			<type>adminOutput</type>
+			<category>Department</category>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+		</tag>
+		<!--End of Department-->
+		<!--Event Tags-->
+		<tag id="4">
+			<type>target</type>
+			<category>Event</category>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/Event</xpath>
+			<rootxpath>/Event</rootxpath>
+			<uri_name>Event</uri_name>
+			<uri_path>/Event/IdentificationNumber</uri_path>
+			<displayname>
+				<gr>Συμβάντα</gr>
+				<en>Events</en>
+				<fr>Événements</fr>
+				<it>Eventi</it>
+				<ar>أحداث</ar>
+				<sv>Händelser</sv>
+				<nl>Gebeurtenissen</nl>
+			</displayname>
+			<order>1</order>
+		</tag>
+		<tag id="400">
+			<type>input</type>
+			<category>Event</category>
+			<xpath>/Event/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+				<sv>överallt</sv>
+				<nl>Overal</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="401">
+			<type>input</type>
+			<category>Event</category>
+			<xpath>/Event/IdentificationNumber</xpath>
+			<displayname>
+				<gr>Κωδικός αναφοράς</gr>
+				<en>Identification Number</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>2</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="402">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>Event</category>
+			<xpath>/Event/Appellation</xpath>
+			<tagname>Ονομασία</tagname>
+			<displayname>
+				<gr>Ονομασία</gr>
+				<en>Name</en>
+				<fr>Nom</fr>
+				<it>Nome</it>
+				<ar>إسم</ar>
+				<sv>Namn</sv>
+				<nl>Naam</nl>
+			</displayname>
+			<order>3</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="403">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>Event</category>
+			<xpath>/Event/Type</xpath>
+			<tagname>Κατηγορία</tagname>
+			<displayname>
+				<gr>Κατηγορία</gr>
+				<en>Category</en>
+				<fr>Catégorie</fr>
+				<it>Categoria</it>
+				<ar>فئة</ar>
+				<sv>Kategori</sv>
+				<nl>Categorie</nl>
+			</displayname>
+			<order>4</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="404">
+			<type>input</type>
+			<category>Event</category>
+			<xpath>/Event/Description</xpath>
+			<displayname>
+				<gr>Περιγραφή</gr>
+				<en>Description</en>
+				<fr>Description</fr>
+				<it>Descrizione</it>
+				<sv>Beskrivning</sv>
+				<nl>Beschrijving</nl>
+				<ar>وصف</ar>
+			</displayname>
+			<order>5</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="405">
+			<type>input</type>
+			<category>Event</category>
+			<xpath>/Event/Participant/Link</xpath>
+			<displayname>
+				<gr>Εμπλεκόμενο Πρόσωπο</gr>
+				<en>Person(s) involved</en>
+				<fr>Personne concernée</fr>
+				<it>Luogo</it>
+				<ar>مكان</ar>
+				<sv>Involverade personer</sv>
+				<nl>Betrokken personen</nl>
+			</displayname>
+			<order>6</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="406">
+			<type>input</type>
+			<category>Event</category>
+			<xpath>/Event/Chronology/AtSomeTimeWithin/DateValue</xpath>
+			<displayname>
+				<gr>Κάποτε Εντός</gr>
+				<en>Sometime within</en>
+				<fr>Autrefois en dedans</fr>
+				<it>Oggetto interessato [codice]</it>
+				<ar>-الموضوع المشارك - الرقم الكودى</ar>
+				<sv>Gång under</sv>
+				<nl>Ergens Binnen</nl>
+			</displayname>
+			<order>7</order>
+			<oper>contains</oper>
+			<dataType>time</dataType>
+		</tag>
+		<tag id="407">
+			<type>input</type>
+			<category>Event</category>
+			<xpath>/Event/Chronology/CulturalPeriod</xpath>
+			<displayname>
+				<gr>Πολιτισμική Περίοδος</gr>
+				<en>Cultural Period</en>
+				<fr>Période culturelle</fr>
+				<it>Periodo sociale</it>
+				<ar>زمن إجتماعى</ar>
+				<sv>Kulturell Period</sv>
+				<nl>Culturele periode</nl>
+			</displayname>
+			<order>8</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="408">
+			<type>input</type>
+			<category>Event</category>
+			<xpath>/Event/Location/Link</xpath>
+			<displayname>
+				<gr>Τόπος</gr>
+				<en>Location</en>
+				<fr>Lieu</fr>
+				<it>Periodo culturale</it>
+				<ar>فترة ثقافية</ar>
+				<sv>Plats</sv>
+				<nl>Plaats</nl>
+			</displayname>
+			<order>9</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="409">
+			<type>adminOutput</type>
+			<category>Event</category>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+		</tag>
+		<!--End of Event tags-->
+		<!--Location Tags-->
+		<tag id="5">
+			<type>target</type>
+			<category>Location</category>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/Location</xpath>
+			<rootxpath>/Location</rootxpath>
+			<uri_name>Location</uri_name>
+			<uri_path>/Location/IdentificationNumber</uri_path>
+			<displayname>
+				<gr>Τόπους</gr>
+				<en>Locations</en>
+				<fr>Lieu</fr>
+				<it>Luoghi</it>
+				<ar>أماكن</ar>
+				<sv>Platser</sv>
+				<nl>Locaties</nl>
+			</displayname>
+			<order>1</order>
+		</tag>
+		<tag id="500">
+			<type>input</type>
+			<category>Location</category>
+			<xpath>/Location/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+				<sv>överallt</sv>
+				<nl>Overal</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="501">
+			<type>input</type>
+			<category>Location</category>
+			<xpath>/Location/IdentificationNumber</xpath>
+			<displayname>
+				<gr>Κωδικός αναφοράς</gr>
+				<en>Identification Number</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>2</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="502">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>Location</category>
+			<xpath>/Location/Name</xpath>
+			<tagname>Ονομασία</tagname>
+			<displayname>
+				<gr>Ονομασία</gr>
+				<en>Name</en>
+				<fr>Nom</fr>
+				<it>Nome</it>
+				<ar>إسم</ar>
+				<sv>Namn</sv>
+				<nl>Naam</nl>
+			</displayname>
+			<order>3</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="503">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>Location</category>
+			<xpath>/Location/Category</xpath>
+			<tagname>Κατηγορία</tagname>
+			<displayname>
+				<gr>Κατηγορία</gr>
+				<en>Category</en>
+				<fr>Catégorie</fr>
+				<it>Categoria</it>
+				<ar>فئة</ar>
+				<sv>Kategori</sv>
+				<nl>Categorie</nl>
+			</displayname>
+			<order>4</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="504">
+			<type>input</type>
+			<category>Location</category>
+			<xpath>/Location/GeopoliticalHierarchy</xpath>
+			<displayname>
+				<gr>Γεωπολιτική Ιεραρχία</gr>
+				<en>Geopolitical Coordinates</en>
+				<fr>Hiérarchie géopolitique</fr>
+				<it>Gerarchia geopolitica</it>
+				<ar>تسلسل جيوبوليتيكى</ar>
+				<sv>Geopolitiska koordinater</sv>
+				<nl>Geopolitieke coördinaten</nl>
+			</displayname>
+			<order>5</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="505">
+			<type>input</type>
+			<category>Location</category>
+			<xpath>/Location/CodeNumber/Value</xpath>
+			<displayname>
+				<gr>Κωδικός [Τιμή]</gr>
+				<en>Code Number [value]</en>
+				<fr>Code [Valeur]</fr>
+				<it>Codice [Valore]</it>
+				<ar>. - رقم كودى - قيمة</ar>
+				<sv>Kodnummer [Värde]</sv>
+				<nl>Codenummer [Waarde]</nl>
+			</displayname>
+			<order>6</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="506">
+			<type>input</type>
+			<category>Location</category>
+			<xpath>/Location/CodeNumber/Category</xpath>
+			<displayname>
+				<gr>Κωδικός [Κατηγορία]</gr>
+				<en>Code Number [Category]</en>
+				<fr>Code [Catégorie]</fr>
+				<it>Codice [Categoria]</it>
+				<ar>. - رقم كودى - فئة</ar>
+				<sv>Kodnummer [Kategori]</sv>
+				<nl>Codenummer [Categorie]</nl>
+			</displayname>
+			<order>7</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="507">
+			<type>input</type>
+			<category>Location</category>
+			<xpath>/Location/CodeNumber/AttributedBy</xpath>
+			<displayname>
+				<gr>Κωδικός [ΑπόδοσηΑπό]</gr>
+				<en>Code Number [Attributed by]</en>
+				<fr>Code [Attribution par]</fr>
+				<it>Codice [attribuito da]</it>
+				<ar>- رقم كودى - نُشر من</ar>
+				<sv>Kodnummer [Tilldelats av]</sv>
+				<nl>Codenummer [Toegekend door]</nl>
+			</displayname>
+			<order>8</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="508">
+			<type>input</type>
+			<category>Location</category>
+			<xpath>/Location/CodeNumber/AttributionDate/DateValue</xpath>
+			<displayname>
+				<gr>Ημερομηνία Απόδοσης</gr>
+				<en>Attribution Date</en>
+				<fr>Attribution Date</fr>
+				<it>Data di attribuzione</it>
+				<ar>تاريخ النشر</ar>
+				<sv>Tilldelat datum</sv>
+				<nl>Datum naamsvermelding</nl>
+			</displayname>
+			<order>9</order>
+			<oper>contains</oper>
+			<dataType>time</dataType>
+		</tag>
+		<tag id="509">
+			<type>input</type>
+			<category>Location</category>
+			<xpath>/Location/CodeNumber/ExpiryDate/DateValue</xpath>
+			<displayname>
+				<gr>Ημερομηνία Λήξης</gr>
+				<en>Expiry Date</en>
+				<fr>Date fin de validité</fr>
+				<it>Data di scadenza</it>
+				<ar>تاريخ الإنتهاء</ar>
+				<sv>Utgångsdatum</sv>
+				<nl>Vervaldatum</nl>
+			</displayname>
+			<order>10</order>
+			<oper>contains</oper>
+			<dataType>time</dataType>
+		</tag>
+		<tag id="510">
+			<type>adminOutput</type>
+			<category>Location</category>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+		</tag>
+		<!--End of Location-->
+		<!--Material Tags-->
+		<tag id="6">
+			<type>target</type>
+			<category>Material</category>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/Material</xpath>
+			<rootxpath>/Material</rootxpath>
+			<uri_name>Material</uri_name>
+			<uri_path>/Material/IdentificationNumber</uri_path>
+			<displayname>
+				<gr>Υλικά</gr>
+				<en>Material</en>
+				<fr>Matériau</fr>
+				<it>Materiali</it>
+				<ar>مواد</ar>
+				<sv>Material</sv>
+				<nl>Materiaal</nl>
+			</displayname>
+			<order>1</order>
+		</tag>
+		<tag id="600">
+			<type>input</type>
+			<category>Material</category>
+			<xpath>//Material/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+				<sv>överallt</sv>
+				<nl>Overal</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="601">
+			<type>input</type>
+			<category>Material</category>
+			<xpath>/Material/IdentificationNumber</xpath>
+			<displayname>
+				<gr>Κωδικός αναφοράς</gr>
+				<en>Identification Number</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>2</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="602">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>Material</category>
+			<xpath>/Material/Name</xpath>
+			<tagname>Ονομασία</tagname>
+			<displayname>
+				<gr>Ονομασία</gr>
+				<en>Name</en>
+				<fr>Nom</fr>
+				<it>Nome</it>
+				<ar>إسم</ar>
+				<sv>Namn</sv>
+				<nl>Naam</nl>
+			</displayname>
+			<order>3</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="603">
+			<type>input</type>
+			<category>Material</category>
+			<xpath>/Material/OtherName</xpath>
+			<displayname>
+				<gr>ΆλληΟνομασία</gr>
+				<en>Other Name</en>
+				<fr>Autre Nom</fr>
+				<it>Altro nome</it>
+				<ar>تسمية أخرى</ar>
+				<sv>Annat namn</sv>
+				<nl>Andere naam</nl>
+			</displayname>
+			<order>4</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="604">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>Material</category>
+			<xpath>/Material/Category</xpath>
+			<tagname>Κατηγορία</tagname>
+			<displayname>
+				<gr>Κατηγορία</gr>
+				<en>Category</en>
+				<fr>Catégorie</fr>
+				<it>Categoria</it>
+				<ar>فئة</ar>
+				<sv>Kategori</sv>
+				<nl>Categorie</nl>
+			</displayname>
+			<order/>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="605">
+			<type>input</type>
+			<category>Material</category>
+			<xpath>/Material/CodeNumber/Value</xpath>
+			<displayname>
+				<gr>Κωδικός [Τιμή]</gr>
+				<en>Code Number [Value]</en>
+				<fr>Code [Valeur]</fr>
+				<it>Codice [Valore]</it>
+				<ar>. - رقم كودى - قيمة</ar>
+				<sv>Kodnummer [Värde]</sv>
+				<nl>Codenummer [Waarde] </nl>
+			</displayname>
+			<order>6</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="606">
+			<type>input</type>
+			<category>Material</category>
+			<xpath>/Material/CodeNumber/Category</xpath>
+			<displayname>
+				<gr>Κωδικός [Κατηγορία]</gr>
+				<en>Code Number [Category]</en>
+				<fr>Code [Catégorie]</fr>
+				<it>Codice [Categoria]</it>
+				<ar>. - رقم كودى - فئة</ar>
+				<sv>Kodnummer [Kategori]</sv>
+				<nl>Codenummer [Categorie]</nl>
+			</displayname>
+			<order>7</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="607">
+			<type>input</type>
+			<category>Material</category>
+			<xpath>/Material/CodeNumber/AttributedBy</xpath>
+			<displayname>
+				<gr>Κωδικός [ΑπόδοσηΑπό]</gr>
+				<en>Code Number [Attributed by]</en>
+				<fr>Code [Attribution par]</fr>
+				<it>Codice [attribuito da]</it>
+				<ar>- رقم كودى - نُشر من</ar>
+				<sv>Kodnummer [Tilldelats av]</sv>
+				<nl>Codenummer [Toegekend door]</nl>
+			</displayname>
+			<order>8</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="608">
+			<type>input</type>
+			<category>Material</category>
+			<xpath>/Material/CodeNumber/AttributionDate/DateValue</xpath>
+			<displayname>
+				<gr>Ημερομηνία Απόδοσης</gr>
+				<en>Attribution Date</en>
+				<fr>Attribution Date</fr>
+				<it>Data di attribuzione</it>
+				<ar>تاريخ النشر</ar>
+				<sv>Tilldelat datum</sv>
+				<nl>Datum naamsvermelding</nl>
+			</displayname>
+			<order>9</order>
+			<oper>contains</oper>
+			<dataType>time</dataType>
+		</tag>
+		<tag id="609">
+			<type>input</type>
+			<category>Material</category>
+			<xpath>/Material/CodeNumber/ExpiryDate/DateValue</xpath>
+			<displayname>
+				<gr>Ημερομηνία Λήξης</gr>
+				<en>Expiry Date</en>
+				<fr>Date fin de validité</fr>
+				<it>Data di scadenza</it>
+				<ar>تاريخ الإنتهاء</ar>
+				<sv>Utgångsdatum</sv>
+				<nl>Vervaldatum</nl>
+			</displayname>
+			<order>10</order>
+			<oper>contains</oper>
+			<dataType>time</dataType>
+		</tag>
+		<tag id="610">
+			<type>adminOutput</type>
+			<category>Material</category>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+		</tag>
+		<!--End of Material-->
+		<tag id="7">
+			<type>target</type>
+			<category>Bibliography</category>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/Bibliography</xpath>
+			<rootxpath>/Bibliography</rootxpath>
+			<uri_name>Bibliography</uri_name>
+			<uri_path>/Bibliography/IdentificationNumber</uri_path>
+			<displayname>
+				<gr>Βιβλιογραφία</gr>
+				<en>Bibliography</en>
+				<fr>Bibliographie</fr>
+				<it>Bibliografia</it>
+				<ar>مراجع</ar>
+				<sv>Bibliografi</sv>
+				<nl>Bibliografie</nl>
+			</displayname>
+			<order>1</order>
+		</tag>
+		<tag id="700">
+			<type>input</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+				<sv>överallt</sv>
+				<nl>Overal</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="701">
+			<type>input</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/IdentificationNumber</xpath>
+			<displayname>
+				<gr>Κωδικός αναφοράς</gr>
+				<en>Identification Number</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>2</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="702">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/KindOfBibliography</xpath>
+			<tagname>ΕίδοςΒιβλιογραφίας</tagname>
+			<displayname>
+				<gr>ΕίδοςΒιβλιογραφίας</gr>
+				<en>Kind</en>
+				<fr>Type</fr>
+				<it>Tipo bibliografia</it>
+				<ar>نوع المراجع</ar>
+				<sv>Typ</sv>
+				<nl>Soort</nl>
+			</displayname>
+			<order>3</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="703">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/Title</xpath>
+			<tagname>Τίτλος</tagname>
+			<displayname>
+				<gr>Τίτλος</gr>
+				<en>Title</en>
+				<fr>Titre</fr>
+				<it>Titolo</it>
+				<ar>عنوان</ar>
+				<sv>Titel</sv>
+				<nl>Titel</nl>
+			</displayname>
+			<order>4</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="705">
+			<type>input</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/Author</xpath>
+			<displayname>
+				<gr>Συγγραφέας</gr>
+				<en>Author</en>
+				<fr>Auteur</fr>
+				<it>Autore</it>
+				<ar>كاتب</ar>
+				<sv>Författare</sv>
+				<nl>Auteur</nl>
+			</displayname>
+			<order>6</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="706">
+			<type>input</type>
+			<category>Bibliography</category>
+			<xpath>/&gt;Bibliography/NameOfJournalOrPeriodical</xpath>
+			<displayname>
+				<gr>Όνομα Περιοδικού</gr>
+				<en>Name of Journal / Periodical</en>
+				<fr>Nom revue</fr>
+				<it>Nome del periodico</it>
+				<ar>إسم الدورية</ar>
+				<sv>Namn på Tidskrift / Tidning</sv>
+				<nl>Naam van tijdschrift/periodiek</nl>
+			</displayname>
+			<order>7</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="707">
+			<type>input</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/SeriesTitle</xpath>
+			<displayname>
+				<gr>Όνομα Σειράς</gr>
+				<en>Series Title</en>
+				<fr>Nom collection</fr>
+				<it>Nome della serie</it>
+				<ar>إسم السلسلة</ar>
+				<sv>Serienamn</sv>
+				<nl>Serietitel</nl>
+			</displayname>
+			<order>8</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="708">
+			<type>input</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/ISBN</xpath>
+			<displayname>
+				<gr>ISBN</gr>
+				<en>ISBN</en>
+				<fr>ISBN</fr>
+				<it>ISBN</it>
+				<ar>ISBN</ar>
+				<sv>ISBN</sv>
+				<nl>ISBN</nl>
+			</displayname>
+			<order>9</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="709">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/Publisher</xpath>
+			<tagname>ΕκδοτικόςΟίκος</tagname>
+			<displayname>
+				<gr>Εκδοτικός Οίκος</gr>
+				<en>Publisher</en>
+				<fr>Maison édition</fr>
+				<it>Casa editrice</it>
+				<ar>دار النشر</ar>
+				<sv>Utgivare</sv>
+				<nl>Uitgever</nl>
+			</displayname>
+			<order>710</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="710">
+			<type>input</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/BookTitle</xpath>
+			<displayname>
+				<gr>Τίτλος Τόμου</gr>
+				<en>Book Title</en>
+				<fr>Titre de livre</fr>
+				<it>Titolo del volume</it>
+				<ar>عنوان المجلد</ar>
+				<sv>Titel volym</sv>
+				<nl>Titel Volume</nl>
+			</displayname>
+			<order>11</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="711">
+			<type>input</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/Supervision</xpath>
+			<displayname>
+				<gr>Επιμέλεια</gr>
+				<en>Editor</en>
+				<fr>Direction édition</fr>
+				<it>Cura</it>
+				<ar>إعداد</ar>
+				<sv>Vårdnad</sv>
+				<nl>Bewaring</nl>
+			</displayname>
+			<order>12</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="712">
+			<type>input</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/PublicationDate</xpath>
+			<displayname>
+				<gr>Ημερομηνία Εκδοσης</gr>
+				<en>Publication Date</en>
+				<fr>Date édition</fr>
+				<it>Data di edizione</it>
+				<ar>تاريخ الإصدار</ar>
+				<sv>Datum för Upplagan</sv>
+				<nl>Datum van Afgifte</nl>
+			</displayname>
+			<order>13</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="713">
+			<type>input</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/ISSN</xpath>
+			<displayname>
+				<gr>ISSN</gr>
+				<en>ISSN</en>
+				<fr>ISSN</fr>
+				<it>ISSN</it>
+				<ar>ISSN</ar>
+				<sv>ISSN</sv>
+				<nl>ISSN</nl>
+			</displayname>
+			<order>14</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="714">
+			<type>input</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/URL</xpath>
+			<displayname>
+				<gr>URL</gr>
+				<en>URL</en>
+				<fr>URL</fr>
+				<it>URL</it>
+				<ar>URL</ar>
+				<sv>URL</sv>
+				<nl>URL</nl>
+			</displayname>
+			<order>15</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="715">
+			<type>input</type>
+			<category>Bibliography</category>
+			<xpath>/Bibliography/VolumeNumber</xpath>
+			<displayname>
+				<gr>Αριθμός Τόμου</gr>
+				<en>Volume Number</en>
+				<fr>Numéro tome</fr>
+				<it>Numero volume</it>
+				<ar>رقم الجزء</ar>
+				<sv>Volym nummer</sv>
+				<nl>Volume Aantal</nl>
+			</displayname>
+			<order>16</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="716">
+			<type>adminOutput</type>
+			<category>Bibliography</category>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+		</tag>
+		<!--End of Bibliography-->
+		<!--InfoText tags-->
+		<tag id="8">
+			<type>target</type>
+			<category>InfoText</category>
+			<rootxpath>/InfoText</rootxpath>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/InfoText</xpath>
+			<uri_name>InfoText</uri_name>
+			<uri_path>/InfoText/IdentificationNumber</uri_path>
+			<displayname>
+				<gr>Κείμενα</gr>
+				<en>Texts</en>
+				<fr/>
+				<it/>
+				<ar/>
+			</displayname>
+			<order>1</order>
+		</tag>
+		<tag id="800">
+			<type>input</type>
+			<category>InfoText</category>
+			<xpath>/InfoText/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="801">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>InfoText</category>
+			<xpath>/InfoText/Title</xpath>
+			<tagname>Τίτλος</tagname>
+			<displayname>
+				<gr>Τίτλος</gr>
+				<en>Title</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>2</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="802">
+			<type>input</type>
+			<category>InfoText</category>
+			<xpath>/InfoText/IdentificationNumber</xpath>
+			<displayname>
+				<gr>Κωδικός αναφοράς</gr>
+				<en>Identification Number</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>3</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="803">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>InfoText</category>
+			<xpath>/InfoText/Type</xpath>
+			<tagname>Είδος</tagname>
+			<displayname>
+				<gr>Τύπος</gr>
+				<en>Type</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>4</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="804">
+			<type>input</type>
+			<category>InfoText</category>
+			<xpath>/InfoText/Description/Text</xpath>
+			<displayname>
+				<gr>Περιγραφή</gr>
+				<en>Description</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>5</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="805">
+			<type>input</type>
+			<category>InfoText</category>
+			<xpath>/InfoText/Details/Editor</xpath>
+			<displayname>
+				<gr>Συντάκτης</gr>
+				<en>Editor</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>6</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="806">
+			<type>input</type>
+			<category>InfoText</category>
+			<xpath>/InfoText/Purpose</xpath>
+			<displayname>
+				<gr>Σκοπός</gr>
+				<en>Purpose</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>7</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="807">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>InfoText</category>
+			<xpath>/InfoText/IntendedUse</xpath>
+			<tagname>IntendedUse</tagname>
+			<displayname>
+				<gr>Ειδικός Σκοπός</gr>
+				<en>Intended Use</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>8</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="808">
+			<type>input</type>
+			<category>InfoText</category>
+			<xpath>/InfoText/LegalStatus</xpath>
+			<displayname>
+				<gr>Πνευματικά δικαιώματα</gr>
+				<en>Legal Status</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>9</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="809">
+			<type>input</type>
+			<category>InfoText</category>
+			<xpath>/InfoText/References/Components/Link</xpath>
+			<displayname>
+				<gr>Αναφορές [Μέρη]</gr>
+				<en>References [Components]</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>10</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="810">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>InfoText</category>
+			<xpath>/InfoText/Purpose/GeneralPurpose</xpath>
+			<tagname>GeneralPurpose</tagname>
+			<displayname>
+				<gr>Γενικός Σκοπός</gr>
+				<en>General Purpose</en>
+				<fr>General Purpose</fr>
+				<it>General Purpose</it>
+				<ar>الغرض العام</ar>
+				<sv>General Purpose</sv>
+				<nl>General Purpose</nl>
+			</displayname>
+			<order>4</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="811">
+			<type>adminOutput</type>
+			<category>InfoText</category>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+		</tag>
+		<!--End of InfoText tags-->		
+		<!--KAP tags-->
+		<tag id="17">
+			<type>target</type>
+			<category>KAP</category>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/KAP</xpath>
+			<rootxpath>/KAP</rootxpath>
+			<uri_name>Object</uri_name>
+			<uri_path>/KAP/CardIdentity/CardCodeNumber/CodeValue</uri_path>
+			<displayname>
+				<gr>Δελτία Κινητών Μνημείων</gr>
+				<en>Objects Cards</en>
+				<fr>Bulletins de Objets</fr>
+				<it>here….</it>
+				<ar>here…</ar>
+				<sv>Objekt Kort</sv>
+				<nl>Objecten Kaarten</nl>
+			</displayname>
+			<order>1</order>
+		</tag>
+		<tag id="1700">
+			<type>input</type>
+			<category>KAP</category>
+			<xpath>/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+				<sv>överallt</sv>
+				<nl>Overal</nl>
+			</displayname>
+			<order>0</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1701">
+			<type>input</type>
+			<category>KAP</category>
+			<xpath>/KAP/CardIdentity/CardCodeNumber/CodeValue</xpath>
+			<displayname>
+				<gr>Κωδικός δελτίου Τιμή</gr>
+				<en>Card Code Valu]</en>
+				<fr>Fiche Code Value</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Blankett Kod Värde</sv>
+				<nl>Kaart code Waarde</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1702">
+			<type>input</type>
+			<category>KAP</category>
+			<xpath>/KAP/CardIdentity/CardCodeNumber/Category</xpath>
+			<displayname>
+				<gr>Κωδικός δελτίου Κατηγορία</gr>
+				<en>Card Code Category</en>
+				<fr>Card Code Catégorie</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Blankett Kod Kategori</sv>
+				<nl>Kaart code Categorie</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1703">
+			<type>input</type>
+			<category>KAP</category>
+			<xpath>/KAP/CardIdentity/Edition/ScientificSupervisor</xpath>
+			<displayname>
+				<gr>Ταυτότητα δελτίου / Έκδοση [ΕπιστημονικόςΥπεύθυνος]</gr>
+				<en>Card Identity / Edition [Scientific Supervisor]</en>
+				<fr>Fiche identité  / Édition / [Chef scientifique]</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Blankettidentitet / Upplaga [Vetenskaplig kontrollör]</sv>
+				<nl>Kaart identiteit / Editie [Wetenschappelijke supervisor]</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1704">
+			<type>input</type>
+			<category>KAP</category>
+			<xpath>/KAP/CardIdentity/Edition/ScientificAssociates</xpath>
+			<displayname>
+				<gr>Ταυτότητα δελτίου / Έκδοση [ΕπιστημονικοίΣυνεργάτες]</gr>
+				<en>Card Identity / Edition [Scientific Associates]</en>
+				<fr>Fiche identité  / Édition / [Associés scientifiques]</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Blankettidentitet / Upplaga [Vetenskapliga kopplingar]</sv>
+				<nl>Kaart identiteit / Editie [Wetenschappelijke medewerkers]</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1705">
+			<type>input</type>
+			<category>KAP</category>
+			<xpath>/KAP/IdentityOfObject/CodeNumber/CodeValue</xpath>
+			<displayname>
+				<gr>Κωδικός Αντικειμένου [Τιμή]</gr>
+				<en>Object Code Number [Value]</en>
+				<fr>Object Code Number [Value]</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Föremål [Värde]</sv>
+				<nl>Object code-nummer [Waarde]</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1706">
+			<type>input</type>
+			<category>KAP</category>
+			<xpath>/KAP/IdentityOfObject/CodeNumber/Category</xpath>
+			<displayname>
+				<gr>Κωδικός Αντικειμένου [Κατηγορία]</gr>
+				<en>Object Code Number [Category]</en>
+				<fr>Object Code Number [Catégorie]</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Föremål [Kategori]</sv>
+				<nl>Object code-nummer [Categorie]</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1707">
+			<type>input</type>
+			<category>KAP</category>
+			<xpath>/KAP/IdentityOfObject/OtherCodeNumber/CodeValue</xpath>
+			<displayname>
+				<gr>Ταυτότητα Αντικειμένου / ΆλλοςΚωδικός [Τιμή]</gr>
+				<en>Object Identity / Other Code [Value]</en>
+				<fr>Objet identité / Autre code [Value]</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Föremålsidentitet /Annan kod [Värde]</sv>
+				<nl>Object identieit / Andere code [Waarde]</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1708">
+			<type>input</type>
+			<category>KAP</category>
+			<xpath>/KAP/IdentityOfObject/OtherCodeNumber/Category</xpath>
+			<displayname>
+				<gr>Ταυτότητα Αντικειμένου / ΆλλοςΚωδικός [Κατηγορία]</gr>
+				<en>Object Identity / Other Code [Category]</en>
+				<fr>Objet identité / Autre code [Catégorie]</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Föremålsidentitet /Annan kod [Kategori]</sv>
+				<nl>Object identieit / Andere code [Categorie]</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1710">
+			<type>input</type>
+			<category>KAP</category>
+			<xpath>/KAP/IdentityOfObject/OriginatorOfReference</xpath>
+			<displayname>
+				<gr>Ταυτότητα Αντικειμένου [Αρμόδιος Φορέας]</gr>
+				<en>Object Identity / [Originator of Reference]</en>
+				<fr>Objet identité / [Organisme compétent]</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Föremålsidentitet/[Referensens upphovsman]</sv>
+				<nl>Object identieit / [Opdrachtgever van referentie]</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1711">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>KAP</category>
+			<xpath>/KAP/IdentityOfObject/PrincipalCurrentDenomination</xpath>
+			<tagname>ΚύριαΤρέχουσαΟνομασία</tagname>
+			<displayname>
+				<gr>Ταυτότητα Αντικειμένου [ΚύριαΤρέχουσαΟνομασία]</gr>
+				<en>Object Identity [Principal Current Denomination]</en>
+				<fr>Objet identité [Principal nom actuel]</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Föremålsidentitet [Huvudsaklig nuvarande Benämning]</sv>
+				<nl>Object identieit [Belangrijkste huidige benaming]</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1716">
+			<type>input</type>
+			<category>KAP</category>
+			<xpath>/KAP/IdentityOfObject/PrincipalMaterial</xpath>
+			<displayname>
+				<gr>Ταυτότητα Αντικειμένου [Κύριο Υλικό]</gr>
+				<en>Object Identity [Principal material]</en>
+				<fr>Objet identité [Matériau principal]</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Föremålsidentitet [Huvudmaterial]</sv>
+				<nl>Object identieit [Belangrijkste materiaal]</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="17117">
+			<type>input</type>
+			<category>KAP</category>
+			<xpath>/KAP/IdentityOfObject/BasicColour</xpath>
+			<displayname>
+				<gr>Ταυτότητα Αντικειμένου [Κύριο Χρώμα]</gr>
+				<en>Object Identity [Basic colour]</en>
+				<fr>Objet identité [Basic colour]</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Föremålsidentitet [Standardfärg]</sv>
+				<nl>Object identieit [Basiskleur]</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1718">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>KAP</category>
+			<xpath>/KAP/IdentityOfObject/Category</xpath>
+			<tagname>Κατηγορία</tagname>
+			<displayname>
+				<gr>Ταυτότητα Αντικειμένου / Κατηγορία</gr>
+				<en>Object Identity / Category</en>
+				<fr>Objet identité / Catégorie</fr>
+				<it>here....</it>
+				<ar>here....</ar>
+				<sv>Föremålsidentitet / Kategori</sv>
+				<nl>Object identieit / Categorie</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1604">
+			<type>adminOutput</type>
+			<category>KAP</category>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+			<xpath>//admin/status</xpath>
+			<tagname>AdminStatus</tagname>
+			<xpath>//admin/info</xpath>
+			<tagname>info</tagname>
+		</tag>
+		<!--End of KAP tags-->
+
+		<!--DigitalArchive tags-->
+		<tag id="17">
+			<type>target</type>
+			<category>DigitalArchive</category>
+			<rootxpath>/DigitalArchive</rootxpath>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/DigitalArchive</xpath>
+			<uri_name>DigitalArchive</uri_name>
+			<uri_path>/DigitalArchive/IdentificationNumber</uri_path>
+			<displayname>
+				<gr>Ψηφιακκά Αρχεία</gr>
+				<en>Digital Archives</en>
+				<fr>Archives Numériques</fr>
+				<it>Digital Archivi</it>
+				<ar>صور الرقمية</ar>
+				<sv>Digitala Arkiv</sv>
+			</displayname>
+			<order>1</order>
+		</tag>
+		<tag id="1700">
+			<type>input</type>
+			<category>DigitalArchive</category>
+			<xpath>/DigitalArchive/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1701">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>DigitalArchive</category>
+			<xpath>/DigitalArchive/Title</xpath>
+			<tagname>Τίτλος</tagname>
+			<displayname>
+				<gr>Τίτλος</gr>
+				<en>Title</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>2</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1702">
+			<type>input</type>
+			<category>DigitalArchive</category>
+			<xpath>/DigitalArchive/IdentificationNumber</xpath>
+			<displayname>
+				<gr>Κωδικός αναφοράς</gr>
+				<en>Identification Number</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>3</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1703">
+			<type>input</type>
+			<category>DigitalArchive</category>
+			<xpath>/DigitalArchive/ShortDescription</xpath>
+			<displayname>
+				<gr>Σύντομη Περιγραφή</gr>
+				<en>Short Description</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>4</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1704">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>DigitalArchive</category>
+			<xpath>/DigitalArchive/Type</xpath>
+			<tagname>Είδος</tagname>
+			<displayname>
+				<gr>Είδος</gr>
+				<en>Type</en>
+				<fr>Type</fr>
+				<it>Tipo</it>
+				<ar>نوع</ar>
+				<sv>Type</sv>
+				<nl>Type</nl>
+			</displayname>
+			<order>5</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1705">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>upload</type>
+			<category>DigitalArchive</category>
+			<xpath>/DigitalArchive/DigitalFile/File</xpath>
+			<tagname>ΨηφιακόΑρχείο</tagname>
+			<displayname>
+				<gr>Ψηφιακκά Αρχεία</gr>
+				<en>Digital Archives</en>
+				<fr>Archives Numériques</fr>
+				<it>Digital Archivi</it>
+				<ar>صور الرقمية</ar>
+				<sv>Digitala Arkiv</sv>
+				<nl>Digitale Arkiv's</nl>
+			</displayname>
+			<order>7</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1706">
+			<type>adminOutput</type>
+			<category>DigitalArchive</category>
+			<xpath>//admin/type</xpath>
+			<tagname>type</tagname>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+		</tag>
+		<!--End of DigitalArchive tags-->
+
+		<!--Archive tags-->
+		<tag id="18">
+			<type>target</type>
+			<category>Archive</category>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/Archive</xpath>
+			<rootxpath>/Archive</rootxpath>
+			<uri_name>Archive</uri_name>
+			<uri_path>/Archive/IdentificationNumber</uri_path>
+			<displayname>
+				<gr>Αρχεία</gr>
+				<en>Archives</en>
+				<fr>Archives</fr>
+				<it>Archivi</it>
+				<ar>ملفات</ar>
+				<sv>Arkiv</sv>
+				<nl>Archieven</nl>
+			</displayname>
+			<order>1</order>
+			<oper/>
+			<dataType/>
+		</tag>
+		<tag id="1800">
+			<type>input</type>
+			<category>Archive</category>
+			<xpath>/Archive/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1801">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>Archive</category>
+			<xpath>/Archive/Title</xpath>
+			<tagname>Τίτλος</tagname>
+			<displayname>
+				<gr>Τίτλος</gr>
+				<en>Title</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>2</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1802">
+			<type>input</type>
+			<category>Archive</category>
+			<xpath>/Archive/IdentificationNumber</xpath>
+			<displayname>
+				<gr>Κωδικός αναφοράς</gr>
+				<en>Identification Number</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>3</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1803">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>Archive</category>
+			<xpath>/Archive/ShortDescription</xpath>
+			<tagname>ShortDescription</tagname>
+			<displayname>
+				<gr>Σύντομη Περιγραφή</gr>
+				<en>Short Description</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>4</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1804">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>Archive</category>
+			<xpath>/Archive/Type</xpath>
+			<tagname>Είδος</tagname>
+			<displayname>
+				<gr>Είδος</gr>
+				<en>Type</en>
+				<fr>Type</fr>
+				<it>Tipo</it>
+				<ar>نوع</ar>
+				<sv>Type</sv>
+				<nl>Type</nl>
+			</displayname>
+			<order>5</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1805">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>Archive</category>
+			<xpath>/Archive/Creation/Creator</xpath>
+			<tagname>Δημιουγός</tagname>
+			<displayname>
+				<gr>Δημιουργός</gr>
+				<en>Creator</en>
+				<fr>Créateur</fr>
+				<it>Creatore</it>
+				<ar>منشىء</ar>
+				<sv>Skapare</sv>
+				<nl>Vervaardiger</nl>
+			</displayname>
+			<order>5</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1806">
+			<type>input</type>
+			<type>listOutputExternal</type>
+			<category>Archive</category>
+			<xpath>/DigitalArchive[.//ref_by/@sps_type='Archive' and .//ref_by/@sps_id=$i//admin/id/text()]/DigitalFile/File</xpath>
+			<tagname>ΨηφιακόΑρχείο</tagname>
+			<displayname>
+				<gr>Ψηφιακό Αρχείο</gr>
+				<en>Archive</en>
+				<fr>Archive digitale</fr>
+				<it>Archivio digitale</it>
+				<ar>ملف رقمى</ar>
+				<sv>Arkiv</sv>
+				<nl>Archief</nl>
+			</displayname>
+			<order>5</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="1807">
+			<type>adminOutput</type>
+			<category>Archive</category>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+		</tag>
+		<tag id="1808">
+			<type>adminOutputExt</type>
+			<category>Archive</category>
+			<xpath>//DigitalArchive[.//ref_by/@sps_type='Archive' and .//ref_by/@sps_id=$i//admin/id/text()]//admin/type</xpath>
+			<tagname>type</tagname>
+		</tag>
+		<!--End Archive-->
+
+		<!--Collection tags-->
+		<tag id="21">
+			<type>target</type>
+			<category>Collection</category>
+			<rootxpath>/Collection</rootxpath>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/Collection</xpath>
+			<uri_name>Collection</uri_name>
+			<uri_path>/Collection/IdentificationNumber</uri_path>
+			<displayname>
+				<gr>Συλλογή</gr>
+				<en>Collection</en>
+				<fr/>
+				<it/>
+				<ar/>
+			</displayname>
+			<order>1</order>
+		</tag>
+		<tag id="2100">
+			<type>input</type>
+			<category>Collection</category>
+			<xpath>/Collection/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="2101">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>Collection</category>
+			<xpath>/Collection/Title</xpath>
+			<tagname>Τίτλος</tagname>
+			<displayname>
+				<gr>Τίτλος</gr>
+				<en>Title</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>2</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="2102">
+			<type>input</type>
+			<category>Collection</category>
+			<xpath>/Collection/IdentificationNumber</xpath>
+			<displayname>
+				<gr>Κωδικός αναφοράς</gr>
+				<en>Identification Number</en>
+				<fr>xxxxx</fr>
+				<it>xxxxx</it>
+				<ar>xxxxx</ar>
+			</displayname>
+			<order>3</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="2103">
+			<type>adminOutput</type>
+			<category>Collection</category>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+			<xpath>//admin/status</xpath>
+			<tagname>AdminStatus</tagname>
+			<xpath>//admin/info</xpath>
+			<tagname>info</tagname>
+		</tag>
+		<!--End of Collection tags-->
+		<!--Contract tags-->
+		<tag id="2201">
+			<type>target</type>
+			<category>Contract</category>
+			<xpath>/db/DMSCOLLECTION/FIMS_ENGLISH/Contract</xpath>
+			<rootxpath>/Contract</rootxpath>
+			<uri_name>Contract</uri_name>
+			<displayname>
+			 <gr>Συμβόλαιο</gr>                      
+            <en>Contract</en>
+            <fr>Contrat</fr>
+            <it>Contrarre</it>
+            <ar>عقد</ar>
+            <sv>Kontrakt</sv>
+            <nl>Contract</nl>	
+			</displayname>
+			<order>1</order>
+		</tag>
+		<tag id="2202">
+			<type>input</type>
+			<category>Contract</category>
+			<xpath>/Contract/*</xpath>
+			<displayname>
+				<gr>Παντού</gr>
+				<en>Everywhere</en>
+				<fr>Partout</fr>
+				<it>ovunque</it>
+				<ar>فى كل مكان</ar>
+				<sv>överallt</sv>
+				<nl>Overal</nl>
+			</displayname>
+			<order>1</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>		
+		<tag id="2203">
+			<type>input</type>
+			<type>listOutput</type>
+			<type>title</type>
+			<category>Contract</category>
+			<xpath>/Contract/Subject</xpath>
+			<tagname>Subject</tagname>
+			<displayname>
+				<gr>Θέμα</gr>
+				<en>Subject</en>				
+			</displayname>
+			<order>3</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>
+		<tag id="2204">
+			<type>input</type>
+			<type>listOutput</type>
+			<category>Contract</category>
+			<xpath>/Contract/Type</xpath>
+			<displayname>
+				<gr>Iδιότητα</gr>
+				<en>Type</en>
+			</displayname>
+			<order>4</order>
+			<oper>contains</oper>
+			<dataType>string</dataType>
+		</tag>		
+		<tag id="2205">
+			<type>adminOutput</type>
+			<category>Contract</category>
+			<xpath>//admin/organization</xpath>
+			<tagname>AdminOrganization</tagname>
+		</tag>
+		<!-- End of Contract tags-->
+
+	</tags>
+</DMS>

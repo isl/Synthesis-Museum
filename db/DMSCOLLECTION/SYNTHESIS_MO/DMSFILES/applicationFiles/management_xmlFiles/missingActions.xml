@@ -1,0 +1,334 @@
+
+<!--
+
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Synthesis Museum project.
+-->
+<missingValidActions>	
+	<missingAction type="KAP">
+		<actionPerType id="insert">
+			<userRights href="AdminEntity?type=KAP&amp;action=insert">admin</userRights>
+		</actionPerType>
+		<actionPerType id="info">
+			<userRights href="AdminEntity?type=KAP&amp;action=info">guest</userRights>
+			<userRights href="AdminEntity?type=KAP&amp;action=info">editor</userRights>
+			<userRights href="AdminEntity?type=KAP&amp;action=info">admin</userRights>
+			<userRights href="AdminEntity?type=KAP&amp;action=info">sysadmin</userRights>
+		</actionPerType>
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=KAP&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=KAP&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranlate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=KAP&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=KAP&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=KAP" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=KAP" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;type=KAP&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;type=KAP&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="rejectpublish">
+			<userRights href="AdminEntity?type=KAP&amp;action=rejectpublish">sysadmin</userRights>
+		</actionPerType>
+		<actionPerType id="setrights">
+			<userRights id="AdminEntity?type=KAP&amp;action=setrights&amp;id=" href="">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="Person">
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=Person&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=Person&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranslate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Person&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Person&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=Person" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=Person" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;type=Person&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;action=create&amp;type=Person&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="Contract">
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=Contract&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=Contract&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranslate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Contract&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Contract&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=Contract" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=Contract" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;type=Contract&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;action=create&amp;type=Contract&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="Collection">
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=Collection&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=Collection&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranslate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Collection&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Collection&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=Collection" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=Collection" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;type=Collection&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;action=create&amp;type=Collection&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="Organization">
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=Organization&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=Organization&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranslate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Organization&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Organization&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=Organization" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=Organization" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;action=create&amp;type=Organization&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;type=Organization&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="Location">
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=Location&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=Location&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranlate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Location&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Location&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=Location" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=Location" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;type=Location&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;type=Location&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="Event">
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=Event&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=Event&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranlate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Event&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Event&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=Event" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=Event" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;type=Event&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;type=Event&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="Bibliography">
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=Bibliography&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=Bibliography&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranlate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Bibliography&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Bibliography&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=Bibliography" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=Bibliography" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;type=Bibliography&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;type=Bibliography&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="Archive">
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=Archive&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=Archive&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranlate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Archive&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Archive&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=Archive" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=Archive" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;type=Archive&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;type=Archive&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="Material">
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=Material&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=Material&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranlate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Material&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Material&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=Material" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=Material" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;type=Material&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;type=Material&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="DigitalArchive">
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=DigitalArchive&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=DigitalArchive&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranlate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=DigitalArchive&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=DigitalArchive&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=DigitalArchive" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=DigitalArchive" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;type=DigitalArchive&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;type=DigitalArchive&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="InfoText">
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=InfoText&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=InfoText&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranlate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=InfoText&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=InfoText&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=InfoText" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=InfoText" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;type=InfoText&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;type=InfoText&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="Department">
+		<actionPerType id="translate">
+			<userRights id="TranslateServlet?action=translate&amp;type=Department&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=translate&amp;type=Department&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="unlockTranlate">
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Department&amp;id=" href="">editor</userRights>
+			<userRights id="TranslateServlet?action=unlocktotranslate&amp;type=Department&amp;id=" href="">admin</userRights>
+		</actionPerType>
+		<actionPerType id="ExportVersion">
+			<userRights id="ExportVersions?id=&amp;type=Department" href="#">editor</userRights>
+			<userRights id="ExportVersions?id=&amp;type=Department" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="CreateVersion">
+			<userRights id="CreateVersion?action=create&amp;type=Department&amp;id=" href="#">editor</userRights>
+			<userRights id="CreateVersion?action=create&amp;type=Department&amp;id=" href="#">admin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="Voc">
+		<actionPerType id="list">
+			<userRights href="AdminVoc?action=list&amp;mode=&amp;file=&amp;menuId=AdminVoc">editor</userRights>
+			<userRights href="AdminVoc?action=list&amp;mode=&amp;file=&amp;menuId=AdminVoc">admin</userRights>
+		</actionPerType>
+		<actionPerType id="insert">
+			<userRights href="AdminVoc?action=insert">editor</userRights>
+			<userRights href="AdminVoc?action=insert">admin</userRights>
+		</actionPerType>
+		<actionPerType id="edit">
+			<userRights id="AdminVoc?action=edit" href="#">editor</userRights>
+			<userRights id="AdminVoc?action=edit" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="search">
+			<userRights id="AdminVoc?action=search" href="">admin</userRights>
+			<userRights id="AdminVoc?action=search" href="">editor</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="VocTrans">
+		<actionPerType id="AdminVoc">
+			<userRights href="AdminVoc?action=list_trans">editor</userRights>
+			<userRights href="AdminVoc?action=list_trans">admin</userRights>
+		</actionPerType>
+		<actionPerType id="insert">
+			<userRights href="AdminVoc?action=insert_trans">editor</userRights>
+			<userRights href="AdminVoc?action=insert_trans">admin</userRights>
+		</actionPerType>
+		<actionPerType id="edit">
+			<userRights id="AdminVoc?action=edit_trans" href="#">editor</userRights>
+			<userRights id="AdminVoc?action=edit_trans" href="#">admin</userRights>
+		</actionPerType>
+		<actionPerType id="search_trans">
+			<userRights id="AdminVoc?action=search_trans" href="">admin</userRights>
+			<userRights id="AdminVoc?action=search_trans" href="">editor</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="Org">
+		<actionPerType id="insert">
+			<userRights href="AdminOrg?action=insert">sysadmin</userRights>
+		</actionPerType>
+		<actionPerType id="edit">
+			<userRights id="AdminOrg?action=edit" href="#">admin</userRights>
+			<userRights id="AdminOrg?action=edit" href="#">sysadmin</userRights>
+		</actionPerType>
+	</missingAction>
+	<missingAction type="User">
+		<actionPerType id="insert">
+			<userRights href="AdminUser?action=insert">admin</userRights>
+		</actionPerType>
+		<actionPerType id="edit">
+			<userRights id="AdminUser?action=edit" href="#">admin</userRights>
+			<userRights id="AdminUser?action=edit" href="">sysadmin</userRights>
+		</actionPerType>
+	</missingAction>
+</missingValidActions>

@@ -1,0 +1,31 @@
+
+<!--
+
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Synthesis Museum project.
+-->
+<nodes><node type="Event"><xpath>Event</xpath><gr>Συμβάν</gr><en>Event</en><it>Evento</it><fr>Données événement</fr><ar>بيانات الحدث</ar><sv>Händelse</sv><nl>Gebeurtenis</nl></node><node type="Event"><xpath>Event/IdentificationNumber</xpath><gr>Κωδικός αναφοράς</gr><en>Identification Number</en><it/><fr/><ar/><sv/><nl/></node><node type="Event"><xpath>Event/Appellation</xpath><gr>Ονομασία</gr><en>Name</en><it>Nome</it><fr>Nom</fr><ar>تسمية</ar><sv>Namn</sv><nl>Naam</nl></node><node type="Event"><xpath>Event/Type</xpath><gr>Κατηγορία</gr><en>Category</en><it>Categoria</it><fr>Catégorie</fr><ar>نوع</ar><sv>Kategori</sv><nl>Categorie</nl><vocabulary>EventType.xml</vocabulary></node><node type="Event"><xpath>Event/Chronology</xpath><gr>Χρόνος Συμβάντος</gr><en>Time of Event</en><it>Anno evento</it><fr>Année événement</fr><ar>تاريخ الحدث</ar><sv>Händelseperiod</sv><nl>Gebeurtenis - Datum</nl></node><node type="Event"><xpath>Event/Chronology/AtSomeTimeWithin</xpath><gr>Εντός</gr><en>In</en><it>Dentro</it><fr>En</fr><ar>داخل</ar><sv>I</sv><nl>In</nl></node><node type="Event"><xpath>Event/Chronology/AtSomeTimeWithin/DateValue</xpath><gr>Ημερομηνία</gr><en>Date</en><it>Data</it><fr>Date</fr><ar>تاريخ</ar><sv>Datum</sv><nl>Datum</nl></node><node type="Event"><xpath>Event/Chronology/InTheCourseOf</xpath><gr>Καθόλη Την Διάρκεια</gr><en>In the course of</en><it>Per tutta la durata</it><fr>Toute la période</fr><ar>طيلة الفترة</ar><sv>Skeende</sv><nl>In de loop van</nl></node><node type="Event"><xpath>Event/Chronology/InTheCourseOf/DateValue</xpath><gr>Ημερομηνία</gr><en>Date</en><it>Data</it><fr>Date</fr><ar>تاريخ</ar><sv>Datum</sv><nl>Datum</nl></node><node type="Event"><xpath>Event/Chronology/EventRelated</xpath><gr>Κοινωνικός Χρόνος</gr><en>Event Related</en><it>Tempo sociale</it><fr>Temps social</fr><ar>زمن إجتماعى </ar><sv>Händelserelation</sv><nl>Gerelateerde gebeurtenis</nl><vocabulary>GENChronologyEventRelated.xml</vocabulary></node><node type="Event"><xpath>Event/Chronology/CulturalPeriod</xpath><gr>Πολιτισμική Περίοδος</gr><en>Cultural Period</en><it>Periodo culturale</it><fr>Période culturelle</fr><ar>منشأ / سبب </ar><sv>Kulturell period</sv><nl>Culturele periode</nl><vocabulary>GENCulturalPeriod.xml</vocabulary></node><node type="Event"><xpath>Event/Chronology/Justification</xpath><gr>Αιτιολόγηση</gr><en>Justification</en><it>Motivazione</it><fr>Justification</fr><ar>التبرير</ar><sv>Motivering</sv><nl>Motivering</nl></node><node type="Event"><xpath>Event/Description</xpath><gr>Περιγραφή</gr><en>Description</en><it>Descrizione</it><fr>Description</fr><ar>وصف</ar><sv>Beskrivning</sv><nl>Beschrijving</nl></node><node type="Event"><xpath>Event/Location</xpath><gr>Τόπος Συμβάντος</gr><en>Event Place</en><it>Luogo evento</it><fr>Lieu événement</fr><ar>مكان الحدث</ar><sv>Händelseplats</sv><nl>Plaats gebeurtenis</nl></node><node type="Event"><xpath>Event/Location/GeopoliticalHierarchy</xpath><gr>Γεωπολιτική Ιεραρχία</gr><en>Geopolitical Hierarchy</en><it/><fr/><ar/><sv/><nl/><vocabulary>GENGeopoliticalHierarchy.xml</vocabulary></node><node type="Event"><xpath>Event/Location/Link</xpath><gr>Σύνδεσμος</gr><en>Link</en><it/><fr/><ar/><sv/><nl/><valueFrom type="">Location/Name</valueFrom></node><node type="Event"><xpath>Event/Participant</xpath><gr>Εμπλεκόμενο</gr><en>Involved</en><it>Interessata</it><fr>Personne concernée</fr><ar>الشخص المشارك</ar><sv>Involverade</sv><nl>Betrokken</nl></node><node type="Event"><xpath>Event/Participant/Note</xpath><gr>Σημείωση</gr><en>Note</en><it>Persona interessata</it><fr/><ar/><sv/><nl/></node><node type="Event"><xpath>Event/Participant/Link</xpath><gr>Σύνδεσμος</gr><en>Link</en><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom><valueFrom type="">Department/Appellation</valueFrom>AP/IdentityOfMonument/PrincipalCurrentDenominatio
+		<valueFrom type="">AP/IdentityOfMonument/PrincipalCurrentDenomination</valueFrom></node><node type="Event"><xpath>Event/RelatedToEvent</xpath><gr>Σχετιζόμενο Γεγονός</gr><en>Related Event</en><it/><fr/><ar/><sv/><nl/></node><node type="Event"><xpath>Event/RelatedToEvent/Note</xpath><gr>Σχόλιο</gr><en>Note</en><it/><fr/><ar/><sv/><nl/></node><node type="Event"><xpath>Event/RelatedToEvent/Link</xpath><gr>Σύνδεσμος</gr><en>Link</en><it/><fr/><ar/><sv/><nl/><valueFrom type="">Event/Appellation</valueFrom></node></nodes>

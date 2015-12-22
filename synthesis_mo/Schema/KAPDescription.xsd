@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Synthesis Museum project.
+-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:include schemaLocation="APBasics.xsd"/>
+	<xsd:element name="ObjectDescription">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="ObjectName"/>
+				<xsd:element ref="ObjectKind"/>
+				<xsd:element ref="Depiction" maxOccurs="unbounded"/>
+				<xsd:element ref="Marking" maxOccurs="unbounded"/>
+				<xsd:element ref="ObjectMeasurement" maxOccurs="unbounded"/>
+				<xsd:element ref="ConditionCheck" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ObjectName">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Text" type="xsd:string"/>
+				<xsd:element ref="Language"/>
+				<xsd:element name="NameType" type="term" maxOccurs="unbounded"/>
+				<xsd:element name="Translation" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Text" type="xsd:string"/>
+							<xsd:element ref="Language"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+			
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Depiction">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Position" maxOccurs="unbounded"/>
+				<xsd:element name="Subject" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="IconographicType" type="term"/>
+							<xsd:element ref="Description"/>
+							<xsd:element ref="Reenactment"/>
+						</xsd:sequence>
+						
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element ref="ReferentialElementsOfObject"/>
+				<xsd:element name="Colour" type="term" maxOccurs="unbounded"/>
+				<xsd:element name="TypeOfRepresentation" type="term" maxOccurs="unbounded"/>
+				<xsd:element ref="Measurements"/>
+				<xsd:element name="Technique" type="term" maxOccurs="unbounded"/>
+				<xsd:element ref="Material" maxOccurs="unbounded"/>
+				<xsd:element name="Condition" type="term"/>
+				<xsd:element ref="Objective" maxOccurs="unbounded"/>
+				<xsd:element ref="Chronology"/>
+			</xsd:sequence>
+			
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Marking">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Position" maxOccurs="unbounded"/>
+				<xsd:element name="Content" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element ref="Language" maxOccurs="unbounded"/>
+							<xsd:element name="Transliteration" type="xsd:string"/>
+							<xsd:element name="Attribution" type="xsd:string"/>
+							<xsd:element ref="Reenactment"/>
+						</xsd:sequence>
+						
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element ref="ReferentialElementsOfObject"/>
+				<xsd:element name="MarkingType" type="term" maxOccurs="unbounded"/>
+				<xsd:element ref="Measurements"/>
+				<xsd:element name="Technique" type="term" maxOccurs="unbounded"/>
+				<xsd:element ref="Material" maxOccurs="unbounded"/>
+				<xsd:element name="Condition" type="term"/>
+				<xsd:element ref="Objective" maxOccurs="unbounded"/>
+				<xsd:element ref="Chronology"/>
+			</xsd:sequence>
+			
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ConditionCheck">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="DescriptionOfCondition" type="term" maxOccurs="unbounded"/>
+				<xsd:element name="TypeOfInspection" type="term" maxOccurs="unbounded"/>
+				<xsd:element name="PersonResponsibleForInspection" type="link" maxOccurs="unbounded"/>
+				<xsd:element ref="Date"/>
+				<xsd:element ref="Location"/>
+				<xsd:element name="Study" type="archivalReference" maxOccurs="unbounded"/>
+				<xsd:element ref="Description"/>
+			</xsd:sequence>
+			
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,1 @@
+let $i := document('/db/DMSCOLLECTION/SYNTHESIS/DMSFILES/Presentations.xml')/DMS/presentations/presentation[@id=___XXX___]return $i

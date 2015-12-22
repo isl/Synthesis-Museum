@@ -1,0 +1,1121 @@
+
+<!--
+
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Synthesis Museum project.
+-->
+<actions>
+	<menugroup id="1" type="topcontent">
+		<menu id="New" img_src="/formating/images/create.png" help="newHelp">		
+			<actionPerType id="KAP">
+				<userRights href="AdminEntity?type=KAP&amp;action=toinsert">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Contract">
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Contract&amp;lang=','win_new','800','600','yes');">editor</userRights>
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Contract&amp;lang=','win_new','800','600','yes');">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Person">
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Person&amp;lang=','win_new','800','600','yes');">editor</userRights>
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Person&amp;lang=','win_new','800','600','yes');">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Organization">
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Organization&amp;lang=','win_new','800','600','yes');">editor</userRights>
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Organization&amp;lang=','win_new','800','600','yes');">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Department">
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Department&amp;lang=','win_new','800','600','yes');">editor</userRights>
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Department&amp;lang=','win_new','800','600','yes');">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Event">
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Event&amp;lang=','win_new','800','600','yes');">editor</userRights>
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Event&amp;lang=','win_new','800','600','yes');">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Location">
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Location&amp;lang=','win_new','800','600','yes');">editor</userRights>
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Location&amp;lang=','win_new','800','600','yes');">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Material">
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Material&amp;lang=','win_new','800','600','yes');">editor</userRights>
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Material&amp;lang=','win_new','800','600','yes');">admin</userRights>
+			</actionPerType>
+			<actionPerType id="DigitalArchive">
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=DigitalArchive&amp;lang=','win_new','800','600','yes');">editor</userRights>
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=DigitalArchive&amp;lang=','win_new','800','600','yes');">admin</userRights>
+			</actionPerType>
+			<actionPerType id="InfoText">
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=InfoText&amp;lang=','win_new','800','600','yes');">editor</userRights>
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=InfoText&amp;lang=','win_new','800','600','yes');">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Bibliography">
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Bibliography&amp;lang=','win_new','800','600','yes');">editor</userRights>
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Bibliography&amp;lang=','win_new','800','600','yes');">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Archive">
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Archive&amp;lang=','win_new','800','600','yes');">editor</userRights>
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Archive&amp;lang=','win_new','800','600','yes');">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Collection">
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Collection&amp;lang=','win_new','800','600','yes');">editor</userRights>
+				<userRights href="javascript:centeredPopup('/FeXML_museum/File?action=New&amp;type=Collection&amp;lang=','win_new','800','600','yes');">admin</userRights>
+			</actionPerType>
+			<actionPerType id="AdminUser">
+				<userRights href="AdminUser?action=toinsert">admin</userRights>
+			</actionPerType>
+			<actionPerType id="AdminOrg">
+				<userRights href="AdminOrg?action=toinsert&amp;mode=sys">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="AdminVoc">
+				<userRights href="AdminVoc?action=toinsert&amp;mode=&amp;file=&amp;menuId=AdminVoc">editor</userRights>
+				<userRights href="AdminVoc?action=toinsert&amp;mode=&amp;file=&amp;menuId=AdminVoc">admin</userRights>
+			</actionPerType>
+			<actionPerType id="AdminVocTrans">
+				<userRights href="AdminVoc?action=toinsert_trans&amp;mode=&amp;file=&amp;menuId=AdminVocTrans">editor</userRights>
+				<userRights href="AdminVoc?action=toinsert_trans&amp;mode=&amp;file=&amp;menuId=AdminVocTrans">admin</userRights>
+				<label>AdminVocTrans</label>
+			</actionPerType>
+			<actionPerType id="Backup">
+				<userRights href="javascript:backupRestore('Storage?action=backup', 'backup','', 'true')">admin</userRights>
+				<userRights href="javascript:backupRestore('Storage?action=backup', 'backup','', 'true')">sysadmin</userRights>
+			</actionPerType>
+			<label>Eisagwgi</label>
+		</menu>
+	</menugroup>
+	<menugroup id="2" type="topcontent">
+		<menu id="View" img_src="/formating/images/view.png">			
+			<actionPerType id="KAP">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=KAP&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=KAP&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=KAP&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=KAP&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="Contract">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Contract&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Contract&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Contract&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Contract&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="Person">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Person&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Person&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Person&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Person&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="Organization">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Organization&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Organization&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Organization&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Organization&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="Department">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Department&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Department&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Department&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Department&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="Event">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Event&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Event&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Event&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Event&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="Location">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Location&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Location&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Location&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Location&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="Material">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Material&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Material&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Material&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Material&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="DigitalArchive">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=DigitalArchive&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=DigitalArchive&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=DigitalArchive&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=DigitalArchive&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="InfoText">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=InfoText&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=InfoText&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=InfoText&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=InfoText&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="Bibliography">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Bibliography&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Bibliography&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Bibliography&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Bibliography&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="Archive">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Archive&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Archive&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Archive&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Archive&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="Collection">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Collection&amp;action=view&amp;lang=&amp;id=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Collection&amp;action=view&amp;lang=&amp;id=" onclick="">guest</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Collection&amp;action=view&amp;lang=&amp;id=" onclick="">admin</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Collection&amp;action=view&amp;lang=&amp;id=" onclick="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="AdminUser">
+				<userRights id="AdminUser?action=view&amp;id=" href="">admin</userRights>
+				<userRights id="AdminUser?action=view&amp;id=" href="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="AdminOrg">
+				<userRights id="AdminOrg?action=view&amp;id=" href="">admin</userRights>
+				<userRights id="AdminOrg?action=view&amp;mode=sys&amp;id=" href="">sysadmin</userRights>
+			</actionPerType>
+			<label>Proboli</label>
+		</menu>
+	</menugroup>
+	<menugroup id="3" type="topcontent">
+		<menu id="Edit" img_src="/formating/images/editdoc.gif">			
+			<actionPerType id="KAP">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=KAP&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=KAP&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Contract">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Contract&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Contract&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Person">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Person&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Person&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Organization">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Organization&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Organization&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Department">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Department&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Department&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Event">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Event&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Event&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Location">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Location&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Location&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Material">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Material&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Material&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="DigitalArchive">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=DigitalArchive&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=DigitalArchive&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="InfoText">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=InfoText&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=InfoText&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Bibliography">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Bibliography&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Bibliography&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Archive">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Archive&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Archive&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="Collection">
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Collection&amp;id=&amp;lang=" onclick="">editor</userRights>
+				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=Collection&amp;id=&amp;lang=" onclick="">admin</userRights>
+			</actionPerType>
+			<actionPerType id="AdminUser">
+				<userRights id="AdminUser?action=toedit&amp;mode=&amp;id=" href="#">admin</userRights>
+				<userRights id="AdminUser?action=toedit&amp;mode=sys&amp;id=" href="">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="AdminOrg">
+				<userRights id="AdminOrg?action=toedit&amp;id=" href="#">admin</userRights>
+				<userRights id="AdminOrg?action=toedit&amp;mode=sys&amp;id=" href="#">sysadmin</userRights>
+			</actionPerType>
+			<actionPerType id="AdminVoc">
+				<userRights id="javascript:location.href='AdminVoc?action=toedit&amp;id=&amp;mode=&amp;file=&amp;menuId=AdminVoc';" href="#">editor</userRights>
+				<userRights id="javascript:location.href='AdminVoc?action=toedit&amp;id=&amp;mode=&amp;file=&amp;menuId=AdminVoc';" href="#">admin</userRights>
+			</actionPerType>
+			<actionPerType id="AdminVocTrans">
+				<userRights id="AdminVoc?action=toedit_trans&amp;id=&amp;mode=&amp;file=&amp;menuId=AdminVocTrans" href="#">editor</userRights>
+				<userRights id="AdminVoc?action=toedit_trans&amp;id=&amp;mode=&amp;file=&amp;menuId=AdminVocTrans" href="#">admin</userRights>
+				<label>AdminVocTrans</label>
+			</actionPerType>
+			<label>Epexergasia</label>
+		</menu>
+	</menugroup>
+	<menugroup id="6" type="topcontent" img_src="formating/images/arrow_down.png">
+		<menu id="Dimosieusi">
+			<submenu id="AitisiDimosieusis" img_src="/formating/images/requestpublishdoc.png">			
+				<actionPerType id="KAP">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminEntity?action=reqpublish&amp;type=KAP&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminEntity?action=reqpublish&amp;type=KAP&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<label>AitisiDimosieusis</label>
+			</submenu>
+			<submenu id="Dimosieusi" img_src="/formating/images/publish.png">				
+				<actionPerType id="KAP">
+					<userRights id="AdminEntity?type=KAP&amp;action=publish&amp;id=" href="">sysadmin</userRights>
+				</actionPerType>
+				<label>Dimosieusi</label>
+			</submenu>
+			<submenu id="AporipsiDimosieusis" img_src="/formating/images/rejectpublishdoc.png">				
+				<actionPerType id="KAP">
+					<userRights id="AdminEntity?type=KAP&amp;action=torejectpublish&amp;id=" href="">sysadmin</userRights>
+				</actionPerType>
+				<label>AporipsiDimosieusis</label>
+			</submenu>
+			<submenu id="Apodimosieusi" img_src="/formating/images/unpublishdoc.png">				
+				<actionPerType id="KAP">
+					<userRights id="AdminEntity?type=KAP&amp;action=unpublish&amp;id=" href="">sysadmin</userRights>
+				</actionPerType>
+				<label>Apodimosieusi</label>
+			</submenu>
+			<label>DimosieusiLabel</label>
+		</menu>
+		<menu id="Eisagwgh_Eksagwgh">
+			<submenu id="EksagwghProtipu" img_src="/formating/images/export.png">				
+				<actionPerType id="KAP">
+					<userRights href="ExportTemplate?type=KAP">editor</userRights>
+					<userRights href="ExportTemplate?type=KAP">admin</userRights>
+					<userRights href="ExportTemplate?type=KAP">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Contract">
+					<userRights href="ExportTemplate?type=Contract">editor</userRights>
+					<userRights href="ExportTemplate?type=Contract">admin</userRights>
+					<userRights href="ExportTemplate?type=Contract">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Person">
+					<userRights href="ExportTemplate?type=Person">editor</userRights>
+					<userRights href="ExportTemplate?type=Person">admin</userRights>
+					<userRights href="ExportTemplate?type=Person">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Organization">
+					<userRights href="ExportTemplate?type=Organization">editor</userRights>
+					<userRights href="ExportTemplate?type=Organization">admin</userRights>
+					<userRights href="ExportTemplate?type=Organization">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Department">
+					<userRights href="ExportTemplate?type=Department">editor</userRights>
+					<userRights href="ExportTemplate?type=Department">admin</userRights>
+					<userRights href="ExportTemplate?type=Department">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Event">
+					<userRights href="ExportTemplate?type=Event">editor</userRights>
+					<userRights href="ExportTemplate?type=Event">admin</userRights>
+					<userRights href="ExportTemplate?type=Event">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Location">
+					<userRights href="ExportTemplate?type=Location">editor</userRights>
+					<userRights href="ExportTemplate?type=Location">admin</userRights>
+					<userRights href="ExportTemplate?type=Location">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Material">
+					<userRights href="ExportTemplate?type=Material">editor</userRights>
+					<userRights href="ExportTemplate?type=Material">admin</userRights>
+					<userRights href="ExportTemplate?type=Material">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="InfoText">
+					<userRights href="ExportTemplate?type=InfoText">editor</userRights>
+					<userRights href="ExportTemplate?type=InfoText">admin</userRights>
+					<userRights href="ExportTemplate?type=InfoText">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="DigitalArchive">
+					<userRights href="ExportTemplate?type=DigitalArchive">editor</userRights>
+					<userRights href="ExportTemplate?type=DigitalArchive">admin</userRights>
+					<userRights href="ExportTemplate?type=DigitalArchive">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Bibliography">
+					<userRights href="ExportTemplate?type=Bibliography">editor</userRights>
+					<userRights href="ExportTemplate?type=Bibliography">admin</userRights>
+					<userRights href="ExportTemplate?type=Bibliography">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Archive">
+					<userRights href="ExportTemplate?type=Archive">editor</userRights>
+					<userRights href="ExportTemplate?type=Archive">admin</userRights>
+					<userRights href="ExportTemplate?type=Archive">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Collection">
+					<userRights href="ExportTemplate?type=Collection">editor</userRights>
+					<userRights href="ExportTemplate?type=Collection">admin</userRights>
+					<userRights href="ExportTemplate?type=Collection">sysadmin</userRights>
+				</actionPerType>
+				<label>EksagwghProtipu</label>
+			</submenu>
+			<submenu id="EksagwghXML" img_src="/formating/images/export.png">				
+				<actionPerType id="KAP">
+					<userRights id="ExportXML?type=KAP&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=KAP&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=KAP&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Contract">
+					<userRights id="ExportXML?type=Contract&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=Contract&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=Contract&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Person">
+					<userRights id="ExportXML?type=Person&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=Person&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=Person&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Organization">
+					<userRights id="ExportXML?type=Organization&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=Organization&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=Organization&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Department">
+					<userRights id="ExportXML?type=Department&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=Department&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=Department&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Event">
+					<userRights id="ExportXML?type=Event&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=Event&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=Event&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Location">
+					<userRights id="ExportXML?type=Location&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=Location&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=Location&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Material">
+					<userRights id="ExportXML?type=Material&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=Material&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=Material&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="InfoText">
+					<userRights id="ExportXML?type=InfoText&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=InfoText&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=InfoText&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="DigitalArchive">
+					<userRights id="ExportXML?type=DigitalArchive&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=DigitalArchive&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=DigitalArchive&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Bibliography">
+					<userRights id="ExportXML?type=Bibliography&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=Bibliography&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=Bibliography&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Archive">
+					<userRights id="ExportXML?type=Archive&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=Archive&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=Archive&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Collection">
+					<userRights id="ExportXML?type=Collection&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportXML?type=Collection&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportXML?type=Collection&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<label>EksagwghXML</label>
+			</submenu>
+			<submenu id="EksagwghRDF" img_src="/formating/images/export.png">				
+				<actionPerType id="KAP">
+					<userRights id="ExportRDF?type=KAP&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=KAP&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=KAP&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Contract">
+					<userRights id="ExportRDF?type=Contract&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=Contract&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=Contract&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Person">
+					<userRights id="ExportRDF?type=Person&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=Person&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=Person&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Organization">
+					<userRights id="ExportRDF?type=Organization&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=Organization&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=Organization&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Department">
+					<userRights id="ExportRDF?type=Department&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=Department&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=Department&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Event">
+					<userRights id="ExportRDF?type=Event&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=Event&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=Event&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Location">
+					<userRights id="ExportRDF?type=Location&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=Location&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=Location&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Material">
+					<userRights id="ExportRDF?type=Material&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=Material&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=Material&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="InfoText">
+					<userRights id="ExportRDF?type=InfoText&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=InfoText&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=InfoText&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="DigitalArchive">
+					<userRights id="ExportRDF?type=DigitalArchive&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=DigitalArchive&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=DigitalArchive&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Bibliography">
+					<userRights id="ExportRDF?type=Bibliography&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=Bibliography&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=Bibliography&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Archive">
+					<userRights id="ExportRDF?type=Archive&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=Archive&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=Archive&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Collection">
+					<userRights id="ExportRDF?type=Collection&amp;id=" href="#">editor</userRights>
+					<userRights id="ExportRDF?type=Collection&amp;id=" href="#">admin</userRights>
+					<userRights id="ExportRDF?type=Collection&amp;id=" href="#">sysadmin</userRights>
+				</actionPerType>
+				<label>EksagwghRDF</label>
+			</submenu>
+			<submenu id="ExportVoc" img_src="/formating/images/export.png">
+				<actionPerType id="AdminVoc">
+					<userRights href="ExportVocabulary?type=AdminVoc&amp;file=&amp;menuId=AdminVoc">editor</userRights>
+					<userRights href="ExportVocabulary?type=AdminVoc&amp;file=&amp;menuId=AdminVoc">admin</userRights>
+				</actionPerType>
+				<label>ExportVoc</label>
+			</submenu>
+			<submenu id="ImportVoc" img_src="/formating/images/import.png">
+				<actionPerType id="AdminVoc">
+					<userRights href="ImportVocabulary?type=AdminVoc&amp;file=&amp;menuId=AdminVoc">editor</userRights>
+					<userRights href="ImportVocabulary?type=AdminVoc&amp;file=&amp;menuId=AdminVoc">admin</userRights>
+				</actionPerType>
+				<label>ImportVoc</label>
+			</submenu>
+			<submenu id="EisagwghXML" img_src="/formating/images/import.png">				
+				<actionPerType id="KAP">
+					<userRights href="ImportXML?type=KAP">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Contract">
+					<userRights href="ImportXML?type=Contract">editor</userRights>
+					<userRights href="ImportXML?type=Contract">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Person">
+					<userRights href="ImportXML?type=Person">editor</userRights>
+					<userRights href="ImportXML?type=Person">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Organization">
+					<userRights href="ImportXML?type=Organization">editor</userRights>
+					<userRights href="ImportXML?type=Organization">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Department">
+					<userRights href="ImportXML?type=Department">editor</userRights>
+					<userRights href="ImportXML?type=Department">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Event">
+					<userRights href="ImportXML?type=Event">editor</userRights>
+					<userRights href="ImportXML?type=Event">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Location">
+					<userRights href="ImportXML?type=Location">editor</userRights>
+					<userRights href="ImportXML?type=Location">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Material">
+					<userRights href="ImportXML?type=Material">editor</userRights>
+					<userRights href="ImportXML?type=Material">admin</userRights>
+				</actionPerType>
+				<actionPerType id="InfoText">
+					<userRights href="ImportXML?type=InfoText">editor</userRights>
+					<userRights href="ImportXML?type=InfoText">admin</userRights>
+				</actionPerType>
+				<actionPerType id="DigitalArchive">
+					<userRights href="ImportXML?type=DigitalArchive">editor</userRights>
+					<userRights href="ImportXML?type=DigitalArchive">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Bibliography">
+					<userRights href="ImportXML?type=Bibliography">editor</userRights>
+					<userRights href="ImportXML?type=Bibliography">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Archive">
+					<userRights href="ImportXML?type=Archive">editor</userRights>
+					<userRights href="ImportXML?type=Archive">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Collection">
+					<userRights href="ImportXML?type=Collection">editor</userRights>
+					<userRights href="ImportXML?type=Collection">admin</userRights>
+				</actionPerType>
+				<label>EisagwghXML</label>
+			</submenu>
+			<label>Eisagwgh_Eksagwgh</label>
+		</menu>
+		<menu id="Versions">
+			<submenu id="CreateVersion" img_src="/formating/images/create.png">				
+				<actionPerType id="KAP">
+					<userRights id="CreateVersion?action=insertComment&amp;type=KAP&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertComment&amp;type=KAP&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Contract">
+					<userRights id="CreateVersion?action=insertComment&amp;type=Contract&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertComment&amp;action=insertComment&amp;type=Contract&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Person">
+					<userRights id="CreateVersion?action=insertComment&amp;type=Person&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertComment&amp;action=insertComment&amp;type=Person&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Organization">
+					<userRights id="CreateVersion?action=insertComment&amp;action=insertComment&amp;type=Organization&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertComment&amp;type=Organization&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Department">
+					<userRights id="CreateVersion?action=insertComment&amp;type=Department&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertComment&amp;type=Department&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Event">
+					<userRights id="CreateVersion?action=insertComment&amp;type=Event&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertComment&amp;type=Event&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Location">
+					<userRights id="CreateVersion?action=insertComment&amp;type=Location&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertComment&amp;type=Location&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Material">
+					<userRights id="CreateVersion?action=insertComment&amp;type=Material&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertComment&amp;type=Material&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="InfoText">
+					<userRights id="CreateVersion?action=insertComment&amp;type=InfoText&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertComment&amp;type=InfoText&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="DigitalArchive">
+					<userRights id="CreateVersion?action=insertComment&amp;type=DigitalArchive&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertComment&amp;type=DigitalArchive&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Bibliography">
+					<userRights id="CreateVersion?action=insertComment&amp;type=Bibliography&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertComment&amp;type=Bibliography&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Archive">
+					<userRights id="CreateVersion?action=insertArchive&amp;type=Archive&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertArchive&amp;type=Archive&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Collection">
+					<userRights id="CreateVersion?action=insertCollection&amp;type=Collection&amp;id=" href="#">editor</userRights>
+					<userRights id="CreateVersion?action=insertCollection&amp;type=Collection&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<label>Create_Version</label>
+			</submenu>
+			<submenu id="ViewVersion" img_src="/formating/images/view.png">
+							<actionPerType id="KAP">
+					<userRights id="ViewVersions?type=KAP&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=KAP&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Contract">
+					<userRights id="ViewVersions?type=Contract&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=Contract&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Person">
+					<userRights id="ViewVersions?type=Person&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=Person&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Organization">
+					<userRights id="ViewVersions?type=Organization&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=Organization&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Department">
+					<userRights id="ViewVersions?type=Department&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=Department&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Event">
+					<userRights id="ViewVersions?type=Event&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=Event&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Location">
+					<userRights id="ViewVersions?type=Location&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=Location&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Material">
+					<userRights id="ViewVersions?type=Material&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=Material&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="InfoText">
+					<userRights id="ViewVersions?type=InfoText&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=InfoText&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="DigitalArchive">
+					<userRights id="ViewVersions?type=DigitalArchive&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=DigitalArchive&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Bibliography">
+					<userRights id="ViewVersions?type=Bibliography&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=Bibliography&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Archive">
+					<userRights id="ViewVersions?type=Archive&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=Archive&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Collection">
+					<userRights id="ViewVersions?type=Collection&amp;id=" href="#">editor</userRights>
+					<userRights id="ViewVersions?type=Collection&amp;id=" href="#">admin</userRights>
+				</actionPerType>
+				<label>View_Version</label>
+			</submenu>
+			<label>Versions</label>
+		</menu>
+		<menu id="Delete" img_src="/formating/images/deletedoc.gif">
+			<submenu id="deleteSub">
+								<actionPerType id="KAP">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=KAP&amp;status=&amp;mode=&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Contract">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Contract&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Contract&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Person">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Person&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Person&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Organization">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Organization&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Organization&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Department">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Department&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Department&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Event">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Event&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Event&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Location">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Location&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Location&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Material">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Material&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Material&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="InfoText">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=InfoText&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=InfoText&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="DigitalArchive">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=DigitalArchive&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=DigitalArchive&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Bibliography">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Bibliography&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Bibliography&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Archive">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Archive&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Archive&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Collection">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Collection&amp;id=';" href="">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Collection&amp;id=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="AdminUser">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminUser?action=delete&amp;id=&amp;mode=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="AdminOrg">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminOrg?action=delete&amp;id=&amp;mode=sys';" href="">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="AdminVoc">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminVoc?action=delete&amp;id=&amp;file=&amp;menuId=AdminVoc';" href="#">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminVoc?action=delete&amp;id=&amp;file=&amp;menuId=AdminVoc';" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="AdminVocTrans">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminVoc?action=delete_trans&amp;id=&amp;mode=&amp;file=&amp;menuId=AdminVocTrans'" href="#">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminVoc?action=delete_trans&amp;id=&amp;mode=&amp;file=&amp;menuId=AdminVocTrans'" href="#">admin</userRights>
+					<label>AdminVocTrans</label>
+				</actionPerType>
+				<actionPerType id="Backup">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='Storage?action=delete&amp;menuId=Backup&amp;id='" href="#">sysadmin</userRights>
+				</actionPerType>
+				<label>Diagrafi</label>
+			</submenu>
+		</menu>
+		<menu id="Metafrasi" img_src="/formating/images/translate.png">
+			<submenu id="MetafrasiSub">				
+				<actionPerType id="KAP">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=KAP&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=KAP&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Contract">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Contract&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Contract&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Person">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Person&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Person&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Organization">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Organization&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Organization&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Department">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Department&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Department&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Event">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Event&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Event&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Location">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Location&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Location&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Material">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Material&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Material&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="InfoText">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=InfoText&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=InfoText&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="DigitalArchive">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=DigitalArchive&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=DigitalArchive&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Bibliography">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Bibliography&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Bibliography&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Archive">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Archive&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Archive&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Collection">
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Collection&amp;id=" href="">editor</userRights>
+					<userRights id="TranslateServlet?action=totranslate&amp;type=Collection&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<label>Metafrasi</label>
+			</submenu>
+		</menu>
+		<menu id="Copy" img_src="/formating/images/copy.png">
+			<submenu id="CopySub">				
+				<actionPerType id="KAP">
+					<userRights id="CreateCopy?type=KAP&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Contract">
+					<userRights id="CreateCopy?type=Contract&amp;id=" href="">editor</userRights>
+					<userRights id="CreateCopy?type=Contract&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Person">
+					<userRights id="CreateCopy?type=Person&amp;id=" href="">editor</userRights>
+					<userRights id="CreateCopy?type=Person&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Organization">
+					<userRights id="CreateCopy?type=Organization&amp;id=" href="">editor</userRights>
+					<userRights id="CreateCopy?type=Organization&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Department">
+					<userRights id="CreateCopy?type=Department&amp;id=" href="">editor</userRights>
+					<userRights id="CreateCopy?type=Department&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Event">
+					<userRights id="CreateCopy?type=Event&amp;id=" href="">editor</userRights>
+					<userRights id="CreateCopy?type=Event&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Location">
+					<userRights id="CreateCopy?type=Location&amp;id=" href="">editor</userRights>
+					<userRights id="CreateCopy?type=Location&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Material">
+					<userRights id="CreateCopy?type=Material&amp;id=" href="">editor</userRights>
+					<userRights id="CreateCopy?type=Material&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="InfoText">
+					<userRights id="CreateCopy?type=InfoText&amp;id=" href="">editor</userRights>
+					<userRights id="CreateCopy?type=InfoText&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="DigitalArchive">
+					<userRights id="CreateCopy?type=DigitalArchive&amp;id=" href="">editor</userRights>
+					<userRights id="CreateCopy?type=DigitalArchive&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Bibliography">
+					<userRights id="CreateCopy?type=Bibliography&amp;id=" href="">editor</userRights>
+					<userRights id="CreateCopy?type=Bibliography&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Archive">
+					<userRights id="CreateCopy?type=Archive&amp;id=" href="">editor</userRights>
+					<userRights id="CreateCopy?type=Archive&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="Collection">
+					<userRights id="CreateCopy?type=Collection&amp;id=" href="">editor</userRights>
+					<userRights id="CreateCopy?type=Collection&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<label>Copy</label>
+			</submenu>
+		</menu>
+		<menu id="Dikaiwmata" img_src="/formating/images/admindocrights.gif">
+			<submenu id="DikaiwmataSub">				
+				<actionPerType id="KAP">
+					<userRights id="AdminEntity?type=KAP&amp;action=tosetrights&amp;id=" href="">admin</userRights>
+				</actionPerType>
+				<label>Dikaiwmata</label>
+			</submenu>
+		</menu>
+		<menu id="restore_backup" img_src="/formating/images/restore.gif">
+			<submenu id="restore_backupSub">
+				<actionPerType id="Backup">
+					<userRights id="javascript:  var date=  $('tr.highlighted_resultRow').find('#date')[0].innerHTML; var time=  $('tr.highlighted_resultRow').find('#time')[0].innerHTML; if ( confirmActionRestore(strRestore,date,time)) backupRestore('Storage?action=restore&amp;menu=admin&amp;menuId=Backup&amp;id=', 'restore', '','true')" href="#">sysadmin</userRights>
+				</actionPerType>
+				<label>restore_backup</label>
+			</submenu>
+		</menu>
+		<label>Perissotera</label>
+	</menugroup>
+	<menugroup id="Anazitisi" type="topcontent" img_src="formating/images/arrow_down.png">
+		<menu id="taDikaMu">
+			<submenu id="taDikaMuSub">				
+				<actionPerType id="KAP">
+					<userRights href="ListEntity?type=KAP&amp;status=allunpublished">editor</userRights>
+					<userRights href="ListEntity?type=KAP&amp;status=allunpublished">admin</userRights>
+				</actionPerType>
+				<label>taDikaMu</label>
+			</submenu>
+		</menu>
+		<menu id="Allwn">
+			<submenu id="AllwnSub">				
+				<actionPerType id="KAP">
+					<userRights href="ListEntity?type=KAP&amp;status=org">guest</userRights>
+					<userRights href="ListEntity?type=KAP&amp;status=org">editor</userRights>
+					<userRights href="ListEntity?type=KAP&amp;status=org">admin</userRights>
+					<userRights href="ListEntity?type=KAP&amp;status=org">sysadmin</userRights>
+				</actionPerType>
+				<label>Allwn</label>
+			</submenu>
+		</menu>
+		<menu id="ProboliDimosieumenwn">
+			<submenu id="ProboliDimosieumenwnSub">			
+				<actionPerType id="KAP">
+					<userRights href="ListEntity?type=KAP&amp;status=published">guest</userRights>
+					<userRights href="ListEntity?type=KAP&amp;status=published">editor</userRights>
+					<userRights href="ListEntity?type=KAP&amp;status=published">admin</userRights>
+					<userRights href="ListEntity?type=KAP&amp;status=published">sysadmin</userRights>
+				</actionPerType>
+				<label>ProboliDimosieumenwn</label>
+			</submenu>
+		</menu>
+		<menu id="ProboliMhDimosieumenwn">
+			<submenu id="ProboliMhDimosieumenwnSub">				
+				<actionPerType id="KAP">
+					<userRights href="ListEntity?type=KAP&amp;status=unpublished">guest</userRights>
+					<userRights href="ListEntity?type=KAP&amp;status=unpublished">editor</userRights>
+					<userRights href="AdminListEntity?type=KAP&amp;status=unpublished">admin</userRights>
+					<userRights href="AdminListEntity?type=KAP&amp;status=unpublished&amp;mode=sys">sysadmin</userRights>
+				</actionPerType>
+				<label>ProboliMhDimosieumenwn</label>
+			</submenu>
+		</menu>
+		<menu id="pending">
+			<submenu id="pendingSub">				
+				<actionPerType id="KAP">
+					<userRights href="ListEntity?type=KAP&amp;status=pending">guest</userRights>
+					<userRights href="ListEntity?type=KAP&amp;status=pending">editor</userRights>
+					<userRights href="AdminListEntity?type=KAP&amp;status=pending">admin</userRights>
+					<userRights href="AdminListEntity?type=KAP&amp;status=pending&amp;mode=sys">sysadmin</userRights>
+				</actionPerType>
+				<label>pending</label>
+			</submenu>
+		</menu>
+		<menu id="Ola">
+			<submenu id="OlaSub">				
+				<actionPerType id="KAP">
+					<userRights href="ListEntity?type=KAP">editor</userRights>
+					<userRights href="ListEntity?type=KAP">guest</userRights>
+					<userRights href="AdminListEntity?type=KAP">admin</userRights>
+					<userRights href="AdminListEntity?type=KAP&amp;mode=sys">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Contract">
+					<userRights href="ListEntity?type=Contract">editor</userRights>
+					<userRights href="ListEntity?type=Contract">guest</userRights>
+					<userRights href="ListEntity?type=Contract">admin</userRights>
+					<userRights href="ListEntity?type=Contract">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Person">
+					<userRights href="ListEntity?type=Person">editor</userRights>
+					<userRights href="ListEntity?type=Person">guest</userRights>
+					<userRights href="ListEntity?type=Person">admin</userRights>
+					<userRights href="ListEntity?type=Person">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Organization">
+					<userRights href="ListEntity?type=Organization">editor</userRights>
+					<userRights href="ListEntity?type=Organization">guest</userRights>
+					<userRights href="ListEntity?type=Organization">admin</userRights>
+					<userRights href="ListEntity?type=Organization">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Department">
+					<userRights href="ListEntity?type=Department">editor</userRights>
+					<userRights href="ListEntity?type=Department">guest</userRights>
+					<userRights href="ListEntity?type=Department">admin</userRights>
+					<userRights href="ListEntity?type=Department">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Event">
+					<userRights href="ListEntity?type=Event">editor</userRights>
+					<userRights href="ListEntity?type=Event">guest</userRights>
+					<userRights href="ListEntity?type=Event">admin</userRights>
+					<userRights href="ListEntity?type=Event">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Location">
+					<userRights href="ListEntity?type=Location">editor</userRights>
+					<userRights href="ListEntity?type=Location">guest</userRights>
+					<userRights href="ListEntity?type=Location">admin</userRights>
+					<userRights href="ListEntity?type=Location">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Material">
+					<userRights href="ListEntity?type=Material">editor</userRights>
+					<userRights href="ListEntity?type=Material">guest</userRights>
+					<userRights href="ListEntity?type=Material">admin</userRights>
+					<userRights href="ListEntity?type=Material">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="InfoText">
+					<userRights href="ListEntity?type=InfoText">editor</userRights>
+					<userRights href="ListEntity?type=InfoText">guest</userRights>
+					<userRights href="ListEntity?type=InfoText">admin</userRights>
+					<userRights href="ListEntity?type=InfoText">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="DigitalArchive">
+					<userRights href="ListEntity?type=DigitalArchive">editor</userRights>
+					<userRights href="ListEntity?type=DigitalArchive">guest</userRights>
+					<userRights href="ListEntity?type=DigitalArchive">admin</userRights>
+					<userRights href="ListEntity?type=DigitalArchive">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Bibliography">
+					<userRights href="ListEntity?type=Bibliography">editor</userRights>
+					<userRights href="ListEntity?type=Bibliography">guest</userRights>
+					<userRights href="ListEntity?type=Bibliography">admin</userRights>
+					<userRights href="ListEntity?type=Bibliography">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Glossary">
+					<userRights href="ListEntity?type=Glossary">editor</userRights>
+					<userRights href="ListEntity?type=Glossary">guest</userRights>
+					<userRights href="ListEntity?type=Glossary">admin</userRights>
+					<userRights href="ListEntity?type=Glossary">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Archive">
+					<userRights href="ListEntity?type=Archive">editor</userRights>
+					<userRights href="ListEntity?type=Archive">guest</userRights>
+					<userRights href="AdminListEntity?type=Archive">admin</userRights>
+					<userRights href="AdminListEntity?type=Archive&amp;=sys">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Collection">
+					<userRights href="ListEntity?type=Collection">editor</userRights>
+					<userRights href="ListEntity?type=Collection">guest</userRights>
+					<userRights href="AdminListEntity?type=Collection">admin</userRights>
+					<userRights href="AdminListEntity?type=Collection&amp;=sys">sysadmin</userRights>
+				</actionPerType>
+				<label>Ola</label>
+			</submenu>
+		</menu>
+		<menu id="sunthethAnazhthsh">
+			<submenu id="sunthethAnazhthshSub">				
+				<actionPerType id="KAP">
+					<userRights href="Search?category=KAP&amp;status=all&amp;type=KAP">editor</userRights>
+					<userRights href="Search?category=KAP&amp;status=all&amp;type=KAP">guest</userRights>
+					<userRights href="Search?category=KAP&amp;status=all&amp;type=KAP">admin</userRights>
+					<userRights href="Search?category=KAP&amp;status=all&amp;type=KAP">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Contract">
+					<userRights href="Search?category=Contract&amp;status=all">editor</userRights>
+					<userRights href="Search?category=Contract&amp;status=all">guest</userRights>
+					<userRights href="Search?category=Contract&amp;status=all">admin</userRights>
+					<userRights href="Search?category=Contract&amp;status=all">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Person">
+					<userRights href="Search?category=Person&amp;status=all">editor</userRights>
+					<userRights href="Search?category=Person&amp;status=all">guest</userRights>
+					<userRights href="Search?category=Person&amp;status=all">admin</userRights>
+					<userRights href="Search?category=Person&amp;status=all">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Organization">
+					<userRights href="Search?category=Organization&amp;status=all">editor</userRights>
+					<userRights href="Search?category=Organization&amp;status=all">guest</userRights>
+					<userRights href="Search?category=Organization&amp;status=all">admin</userRights>
+					<userRights href="Search?category=Organization&amp;status=all">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Department">
+					<userRights href="Search?category=Department&amp;status=all">editor</userRights>
+					<userRights href="Search?category=Department&amp;status=all">guest</userRights>
+					<userRights href="Search?category=Department&amp;status=all">admin</userRights>
+					<userRights href="Search?category=Department&amp;status=all">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Event">
+					<userRights href="Search?category=Event&amp;status=all">editor</userRights>
+					<userRights href="Search?category=Event&amp;status=all">guest</userRights>
+					<userRights href="Search?category=Event&amp;status=all">admin</userRights>
+					<userRights href="Search?category=Event&amp;status=all">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Location">
+					<userRights href="Search?category=Location&amp;status=all">editor</userRights>
+					<userRights href="Search?category=Location&amp;status=all">guest</userRights>
+					<userRights href="Search?category=Location&amp;status=all">admin</userRights>
+					<userRights href="Search?category=Location&amp;status=all">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Material">
+					<userRights href="Search?category=Material&amp;status=all">editor</userRights>
+					<userRights href="Search?category=Material&amp;status=all">guest</userRights>
+					<userRights href="Search?category=Material&amp;status=all">admin</userRights>
+					<userRights href="Search?category=Material&amp;status=all">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="InfoText">
+					<userRights href="Search?category=InfoText&amp;status=all">editor</userRights>
+					<userRights href="Search?category=InfoText&amp;status=all">guest</userRights>
+					<userRights href="Search?category=InfoText&amp;status=all">admin</userRights>
+					<userRights href="Search?category=InfoText&amp;status=all">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="DigitalArchive">
+					<userRights href="Search?category=DigitalArchive&amp;status=all">editor</userRights>
+					<userRights href="Search?category=DigitalArchive&amp;status=all">guest</userRights>
+					<userRights href="Search?category=DigitalArchive&amp;status=all">admin</userRights>
+					<userRights href="Search?category=DigitalArchive&amp;status=all">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Bibliography">
+					<userRights href="Search?category=Bibliography&amp;status=all">editor</userRights>
+					<userRights href="Search?category=Bibliography&amp;status=all">guest</userRights>
+					<userRights href="Search?category=Bibliography&amp;status=all">admin</userRights>
+					<userRights href="Search?category=Bibliography&amp;status=all">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Archive">
+					<userRights href="Search?category=Archive&amp;status=all&amp;type=Archive">editor</userRights>
+					<userRights href="Search?category=Archive&amp;status=all&amp;type=Archive">guest</userRights>
+					<userRights href="Search?category=Archive&amp;status=all&amp;type=Archive">admin</userRights>
+					<userRights href="Search?category=Archive&amp;status=all&amp;type=Archive">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="Collection">
+					<userRights href="Search?category=Collection&amp;status=all&amp;type=Collection">editor</userRights>
+					<userRights href="Search?category=Collection&amp;status=all&amp;type=Collection">guest</userRights>
+					<userRights href="Search?category=Collection&amp;status=all&amp;type=Collection">admin</userRights>
+					<userRights href="Search?category=Collection&amp;status=all&amp;type=Collection">sysadmin</userRights>
+				</actionPerType>
+				<label>sunthethAnazhthsh</label>
+			</submenu>
+		</menu>
+		<label>Anazitisi</label>
+	</menugroup>
+</actions>

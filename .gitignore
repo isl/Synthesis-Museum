@@ -31,13 +31,9 @@ $RECYCLE.BIN/
 # Thumbnails
 ._*
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
+# Files that might appear on external disk
 .Spotlight-V100
-.TemporaryItems
 .Trashes
-.VolumeIcon.icns
 
 # Directories potentially created on remote AFP share
 .AppleDB
@@ -45,3 +41,17 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_trans/ContractType.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_trans/KAPCuurentLocationFitness.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_trans/KAPDeaccessionType.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_trans/KAPMonumentLocation.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_trans/KAPMovementMethod.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_trans/KAPMovementType.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_trans/KAPMovementPurpose.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_vocs/ContractType.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_vocs/KAPCuurentLocationFitness.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_vocs/KAPDeaccessionType.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_vocs/KAPMonumentLocation.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_vocs/KAPMovementMethod.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_vocs/KAPMovementPurpose.xml
+db/DMSCOLLECTION/SYNTHESIS_MO/Vocabulary/new_vocs/KAPMovementType.xml

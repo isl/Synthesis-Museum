@@ -1,0 +1,70 @@
+<nodes>
+    <node type="Contract">
+        <xpath>Contract</xpath>
+        <gr>Συμβόλαιο</gr>
+        <en>Contract</en>
+    </node>
+    <node type="Contract">
+        <xpath>Contract/PersonInvolved</xpath>
+        <gr>Εμπλεκόμενο Πρόσωπο</gr>
+        <en>Person's Involved</en>
+        <valueFrom type="">Person/Appellation</valueFrom>
+    </node>
+    <node type="Contract">
+        <xpath>Contract/OrganisationInvolved</xpath>
+        <gr>Εμπλεκόμενος Οργανισμός</gr>
+        <en>Organisation's Involved</en>
+        <valueFrom type="">Organization/Appellation</valueFrom>
+    </node>
+	    <node type="Contract">
+        <xpath>Contract/Subject</xpath>
+        <gr>Θέμα</gr>
+        <en>Subject</en>
+    </node>
+    <node type="Contract">
+        <xpath>Contract/Type</xpath>
+        <gr>Τύπος</gr>
+        <en>Type</en>
+        <vocabulary>ContractType.xml</vocabulary>
+    </node>
+    <node type="Contract">
+        <xpath>Contract/Description</xpath>
+        <gr>Περιγραφή</gr>
+        <en>Description</en>
+    </node>
+    <node type="Contract">
+        <xpath>Contract/Date</xpath>
+        <gr>Ημερομηνία</gr>
+        <en>Date</en>
+    </node>
+    <node type="Contract">
+        <xpath>Contract/Date/DateValue</xpath>
+        <gr>Τιμή</gr>
+        <en>Date Value</en>
+    </node>
+    <node type="Contract">
+        <xpath>Contract/OfficialDocument</xpath>
+        <gr>Διοικητικό Έγγραφο</gr>
+        <en>Official Document</en>
+    </node>
+    <node type="Contract">
+        <xpath>Contract/OfficialDocument/ReferenceNumber</xpath>
+        <gr>Κωδικός Εγγράφου</gr>
+        <en>Reference Number</en>
+    </node>
+    <node type="Contract">
+        <xpath>Contract/OfficialDocument/DigitalFile</xpath>
+        <gr>Ψηφιακό Αρχείο</gr>
+        <en>Digital File</en>
+    </node>
+    <node type="Contract">
+        <xpath>Contract/OfficialDocument/DigitalFile/File</xpath>
+        <gr>Αρχείο</gr>
+        <en>File</en>
+    </node>
+    <node type="Contract">
+        <xpath>Contract/OfficialDocument/Comment</xpath>
+        <gr>Σχόλιο</gr>
+        <en>Comment</en>
+    </node>
+</nodes>

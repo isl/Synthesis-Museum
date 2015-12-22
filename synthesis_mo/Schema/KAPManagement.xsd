@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Synthesis Museum project.
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:include schemaLocation="APBasics.xsd"/>
+	<xsd:element name="ObjectManagement">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="OtherAccession" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="Packaging" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element ref="OfficialDocument" minOccurs="0"/>
+							<xsd:element name="MeasurementDimensions" type="size" minOccurs="0"/>
+							<xsd:element name="Recommendations" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="Notes" type="xsd:string" minOccurs="0"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="ValueEstimation" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ValuationReferenceNumber" type="code" minOccurs="0"/>
+							<xsd:element name="Valuer" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element ref="Person" minOccurs="0" maxOccurs="unbounded"/>
+										<xsd:element ref="Organisation" minOccurs="0" maxOccurs="unbounded"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element ref="Date" minOccurs="0"/>
+							<xsd:element name="Note" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="Cost" type="xsd:string" minOccurs="0"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Deaccession" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element ref="OfficialDocument" minOccurs="0"/>
+							<xsd:element name="DeaccessionType" type="term" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element ref="Description" minOccurs="0"/>
+							<xsd:element ref="Date" minOccurs="0"/>
+							<xsd:element name="RelatedEvent" type="link" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element name="Notes" type="xsd:string"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Rights" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element ref="OfficialDocument" minOccurs="0"/>
+							<xsd:element name="Period" type="date" minOccurs="0"/>
+							<xsd:element name="Notes" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="Requester" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element ref="Person"/>
+										<xsd:element ref="Organisation"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element ref="Acquisition" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="Locations" minOccurs="0"/>
+				<xsd:element name="Movement" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element ref="OfficialDocument" minOccurs="0"/>
+							<xsd:element name="Type" type="term"/>
+							<xsd:element name="Purpose" type="term" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element name="Notes" type="xsd:string" minOccurs="0"/>
+							<xsd:element ref="Date"/>
+							<xsd:element name="Authoriser" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element ref="Person" minOccurs="0" maxOccurs="unbounded"/>
+										<xsd:element ref="Organisation" minOccurs="0" maxOccurs="unbounded"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="Method" type="term" minOccurs="0"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element ref="LoanOut" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="OtherAccession">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="AccessionID" type="code" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="Remarks" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Acquisition">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="OfficialDocument" minOccurs="0"/>
+				<xsd:element name="AccessionType" type="term" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="Date" minOccurs="0"/>
+				<xsd:element ref="Location" minOccurs="0"/>
+				<xsd:element ref="Description" minOccurs="0"/>
+				<xsd:element name="Reason" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="Provisos" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="PersonInvolved" type="link" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="OrganisationInvolved" type="link" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="Contract" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Locations">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="CurrentLocation" minOccurs="0">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Position" type="term" minOccurs="0"/>
+							<xsd:element name="PositionTimeSpan" type="date" minOccurs="0"/>
+							<xsd:element ref="Remarks" minOccurs="0"/>
+							<xsd:element name="Fitness" type="term" minOccurs="0"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="PermanentLocation" type="term" minOccurs="0" maxOccurs="1"/>
+				<xsd:element name="PreviousLocation" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Position" type="term" minOccurs="0"/>
+							<xsd:element name="PositionTimeSpan" type="date" minOccurs="0"/>
+							<xsd:element ref="Remarks" minOccurs="0"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="LoanOut">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="OfficialDocument" minOccurs="0"/>
+				<xsd:element name="Period" type="TimePeriod" minOccurs="0"/>
+				<xsd:element ref="Objective" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="DespatchAuthoriser" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element ref="Person" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element ref="Organisation" minOccurs="0" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="RecipientAuthoriser" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element ref="Person" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element ref="Organisation" minOccurs="0" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element ref="Remarks" minOccurs="0"/>
+				<xsd:element ref="Contract"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="size">
+		<xsd:sequence>
+			<xsd:element name="Capacity" type="term"/>
+			<xsd:element name="Value" type="value"/>
+			<xsd:element name="MeasurementUnit" type="term"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>
