@@ -26,1145 +26,1144 @@ Authors : Konstantina Konsolaki, Georgios Samaritakis
 
 This file is part of the Synthesis Museum project.
 -->
-
 <KAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="KAP.xsd">
-    <CardIdentity>
-        <CardCodeNumber>
-            <CodeValue sps_fixed=""/>
-            <Category sps_vocabulary="" sps_id=""/>
-            <AttributedBy sps_type="" sps_id=""/>
-            <AttributionDate>
-                <DateValue y="" x=""/>
-            </AttributionDate>
-            <ExpiryDate>
-                <DateValue y="" x=""/>
-            </ExpiryDate>
-        </CardCodeNumber>
-        <Edition>
-            <EditionCode>
-                <CodeValue/>
-                <Category sps_vocabulary="" sps_id=""/>
-                <AttributedBy sps_type="" sps_id=""/>
-                <AttributionDate>
-                    <DateValue y="" x=""/>
-                </AttributionDate>
-                <ExpiryDate>
-                    <DateValue y="" x=""/>
-                </ExpiryDate>
-            </EditionCode>
-            <ScientificSupervisor sps_type="" sps_id=""/>
-            <ScientificAssociates sps_type="" sps_id=""/>
-        </Edition>
-    </CardIdentity>
-    <IdentityOfObject>
-        <CodeNumber>
-            <CodeValue/>
-            <Category sps_vocabulary="" sps_id=""/>
-            <AttributedBy sps_type="" sps_id=""/>
-            <AttributionDate>
-                <DateValue y="" x=""/>
-            </AttributionDate>
-            <ExpiryDate>
-                <DateValue y="" x=""/>
-            </ExpiryDate>
-        </CodeNumber>
-        <OtherCodeNumber>
-            <CodeValue/>
-            <Category sps_vocabulary="" sps_id=""/>
-            <AttributedBy sps_type="" sps_id=""/>
-            <AttributionDate>
-                <DateValue y="" x=""/>
-            </AttributionDate>
-            <ExpiryDate>
-                <DateValue y="" x=""/>
-            </ExpiryDate>
-        </OtherCodeNumber>
-        <OriginatorOfReference sps_type="" sps_id=""/>
-        <Department sps_type="" sps_id=""/>
-        <Collection>
-            <Appellation sps_vocabulary="" sps_id=""/>
-            <CollectionCodeNumber/>
-        </Collection>
-        <Category sps_vocabulary="" sps_id=""/>
-        <PrincipalCurrentDenomination/>
-        <PrincipalMaterial sps_type="" sps_id=""/>
-        <BasicColour sps_vocabulary="" sps_id=""/>
-        <IncludedIn sps_link="">
-            <CodeNumber sps_type="" sps_id=""/>
-            <Category sps_vocabulary="" sps_id=""/>
-        </IncludedIn>
-        <Composition>
-            <OverallPartNumber/>
-            <KindOfComposition sps_vocabulary="" sps_id=""/>
-            <Components>
-                <Description/>
-                <Component sps_link="">
-                    <ComponentCodeNumber sps_type="" sps_id=""/>
-                    <Category sps_vocabulary="" sps_id=""/>
-                    <OverallNumber/>
-                </Component>
-            </Components>
-            <Accessory>
-                <Category sps_vocabulary="" sps_id=""/>
-                <OverallNumber/>
-                <Description/>
-            </Accessory>
-        </Composition>
-        <Image>
-            <Link sps_type="" sps_id=""/>
-            <Comment/>
-        </Image>
-        <Condition sps_vocabulary="" sps_id=""/>
-        <Description/>
-        <MonumentLocation sps_vocabulary="" sps_id=""/>
-    </IdentityOfObject>
-    <DetailedObjectDocumentation>
-        <ObjectDescription>
-            <ObjectName>
-                <Text/>
-                <Language sps_vocabulary="" sps_id=""/>
-                <NameType sps_vocabulary="" sps_id=""/>
-                <Translation>
-                    <Text/>
-                    <Language sps_vocabulary="" sps_id=""/>
-                </Translation>
-            </ObjectName>
-            <ObjectKind>
-                <FunctionType>
-                    <Appellation sps_vocabulary="" sps_id=""/>
-                    <Thesaurus sps_vocabulary="" sps_id=""/>
-                </FunctionType>
-                <MorphologyType>
-                    <Appellation sps_vocabulary="" sps_id=""/>
-                    <Thesaurus sps_vocabulary="" sps_id=""/>
-                </MorphologyType>
-                <ConstructionType>
-                    <Appellation sps_vocabulary="" sps_id=""/>
-                    <Thesaurus sps_vocabulary="" sps_id=""/>
-                </ConstructionType>
-            </ObjectKind>
-            <Depiction>
-                <Position sps_vocabulary="" sps_id=""/>
-                <Subject>
-                    <IconographicType sps_vocabulary="" sps_id=""/>
-                    <Description/>
-                    <Reenactment>
-                        <Photo>
-                            <Link sps_type="" sps_id=""/>
-                            <Comment/>
-                        </Photo>
-                        <Drawing>
-                            <Link sps_type="" sps_id=""/>
-                            <Comment/>
-                        </Drawing>
-                    </Reenactment>
-                </Subject>
-                <ReferentialElementsOfObject>
-                    <Date>
-                        <DateValue y="" x=""/>
-                    </Date>
-                    <Location sps_type="" sps_id=""/>
-                    <Person sps_type="" sps_id=""/>
-                    <Organisation sps_type="" sps_id=""/>
-                    <Event sps_type="" sps_id=""/>
-                    <MobileObject sps_link="">
-                        <CodeNumber sps_type="" sps_id=""/>
-                        <Appellation/>
-                        <ObjectKind>
-                            <FunctionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </FunctionType>
-                            <MorphologyType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </MorphologyType>
-                            <ConstructionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </ConstructionType>
-                        </ObjectKind>
-                    </MobileObject>
-                </ReferentialElementsOfObject>
-                <Colour sps_vocabulary="" sps_id=""/>
-                <TypeOfRepresentation sps_vocabulary="" sps_id=""/>
-                <Measurements/>
-                <Technique sps_vocabulary="" sps_id=""/>
-                <Material sps_type="" sps_id=""/>
-                <Condition sps_vocabulary="" sps_id=""/>
-                <Objective sps_vocabulary="" sps_id=""/>
-                <Chronology>
-                    <AtSomeTimeWithin>
-                        <DateValue y="" x=""/>
-                    </AtSomeTimeWithin>
-                    <InTheCourseOf>
-                        <DateValue y="" x=""/>
-                    </InTheCourseOf>
-                    <EventRelated sps_vocabulary="" sps_id=""/>
-                    <CulturalPeriod sps_vocabulary="" sps_id=""/>
-                    <Justification/>
-                </Chronology>
-            </Depiction>
-            <Marking>
-                <Position sps_vocabulary="" sps_id=""/>
-                <Content>
-                    <Language sps_vocabulary="" sps_id=""/>
-                    <Transliteration/>
-                    <Attribution/>
-                    <Reenactment>
-                        <Photo>
-                            <Link sps_type="" sps_id=""/>
-                            <Comment/>
-                        </Photo>
-                        <Drawing>
-                            <Link sps_type="" sps_id=""/>
-                            <Comment/>
-                        </Drawing>
-                    </Reenactment>
-                </Content>
-                <ReferentialElementsOfObject>
-                    <Date>
-                        <DateValue y="" x=""/>
-                    </Date>
-                    <Location sps_type="" sps_id=""/>
-                    <Person sps_type="" sps_id=""/>
-                    <Organisation sps_type="" sps_id=""/>
-                    <Event sps_type="" sps_id=""/>
-                    <MobileObject sps_link="">
-                        <CodeNumber sps_type="" sps_id=""/>
-                        <Appellation/>
-                        <ObjectKind>
-                            <FunctionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </FunctionType>
-                            <MorphologyType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </MorphologyType>
-                            <ConstructionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </ConstructionType>
-                        </ObjectKind>
-                    </MobileObject>
-                </ReferentialElementsOfObject>
-                <MarkingType sps_vocabulary="" sps_id=""/>
-                <Measurements/>
-                <Technique sps_vocabulary="" sps_id=""/>
-                <Material sps_type="" sps_id=""/>
-                <Condition sps_vocabulary="" sps_id=""/>
-                <Objective sps_vocabulary="" sps_id=""/>
-                <Chronology>
-                    <AtSomeTimeWithin>
-                        <DateValue y="" x=""/>
-                    </AtSomeTimeWithin>
-                    <InTheCourseOf>
-                        <DateValue y="" x=""/>
-                    </InTheCourseOf>
-                    <EventRelated sps_vocabulary="" sps_id=""/>
-                    <CulturalPeriod sps_vocabulary="" sps_id=""/>
-                    <Justification/>
-                </Chronology>
-            </Marking>
-            <ObjectMeasurement>
-                <Appellation sps_vocabulary="" sps_id=""/>
-                <KindOfMeasurement sps_vocabulary="" sps_id=""/>
-                <MeasurementInstrument sps_vocabulary="" sps_id=""/>
-                <Size>
-                    <Capacity sps_vocabulary="" sps_id=""/>
-                    <Value>
-                        <From/>
-                        <To/>
-                    </Value>
-                    <MeasurementUnit sps_vocabulary="" sps_id=""/>
-                </Size>
-                <PersonResponsibleForMeasurement>
-                    <Person sps_type="" sps_id=""/>
-                    <Institution sps_type="" sps_id=""/>
-                </PersonResponsibleForMeasurement>
-                <Date>
-                    <DateValue y="" x=""/>
-                </Date>
-                <Remarks/>
-            </ObjectMeasurement>
-            <ConditionCheck>
-                <DescriptionOfCondition sps_vocabulary="" sps_id=""/>
-                <TypeOfInspection sps_vocabulary="" sps_id=""/>
-                <PersonResponsibleForInspection sps_type="" sps_id=""/>
-                <Date>
-                    <DateValue y="" x=""/>
-                </Date>
-                <Location sps_type="" sps_id=""/>
-                <Study>
-                    <Link sps_type="" sps_id=""/>
-                    <Comment/>
-                </Study>
-                <Description/>
-            </ConditionCheck>
-        </ObjectDescription>
-        <ObjectHistory>
-            <Construction>
-                <ConstructionPhase>
-                    <Constructor>
-                        <Person sps_type="" sps_id=""/>
-                        <Organisation sps_type="" sps_id=""/>
-                    </Constructor>
-                    <Chronology>
-                        <AtSomeTimeWithin>
-                            <DateValue y="" x=""/>
-                        </AtSomeTimeWithin>
-                        <InTheCourseOf>
-                            <DateValue y="" x=""/>
-                        </InTheCourseOf>
-                        <EventRelated sps_vocabulary="" sps_id=""/>
-                        <CulturalPeriod sps_vocabulary="" sps_id=""/>
-                        <Justification/>
-                    </Chronology>
-                    <Characterization sps_vocabulary="" sps_id=""/>
-                    <PersonInvolved sps_type="" sps_id=""/>
-                    <OrganisationInvolved sps_type="" sps_id=""/>
-                    <ObjectInvolvedForMobileObject sps_link="">
-                        <CodeNumber sps_type="" sps_id=""/>
-                        <Appellation/>
-                        <ObjectKind>
-                            <FunctionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </FunctionType>
-                            <MorphologyType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </MorphologyType>
-                            <ConstructionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </ConstructionType>
-                        </ObjectKind>
-                    </ObjectInvolvedForMobileObject>
-                    <ConciseDescription/>
-                    <Location sps_type="" sps_id=""/>
-                    <RelatedEvent>
-                        <KindOfCross-Reference sps_vocabulary="" sps_id=""/>
-                        <Event sps_type="" sps_id=""/>
-                    </RelatedEvent>
-                    <Material sps_type="" sps_id=""/>
-                    <Objective sps_vocabulary="" sps_id=""/>
-                    <Technique sps_vocabulary="" sps_id=""/>
-                    <StateOfCompletion/>
-                    <InfluencedBy sps_vocabulary="" sps_id=""/>
-                    <Authenticity/>
-                </ConstructionPhase>
-            </Construction>
-            <Function>
-                <FunctionPhase>
-                    <Appellation sps_vocabulary="" sps_id=""/>
-                    <Chronology>
-                        <AtSomeTimeWithin>
-                            <DateValue y="" x=""/>
-                        </AtSomeTimeWithin>
-                        <InTheCourseOf>
-                            <DateValue y="" x=""/>
-                        </InTheCourseOf>
-                        <EventRelated sps_vocabulary="" sps_id=""/>
-                        <CulturalPeriod sps_vocabulary="" sps_id=""/>
-                        <Justification/>
-                    </Chronology>
-                    <Characterization sps_vocabulary="" sps_id=""/>
-                    <PersonInvolved sps_type="" sps_id=""/>
-                    <OrganisationInvolved sps_type="" sps_id=""/>
-                    <ObjectInvolvedForMobileObject sps_link="">
-                        <CodeNumber sps_type="" sps_id=""/>
-                        <Appellation/>
-                        <ObjectKind>
-                            <FunctionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </FunctionType>
-                            <MorphologyType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </MorphologyType>
-                            <ConstructionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </ConstructionType>
-                        </ObjectKind>
-                    </ObjectInvolvedForMobileObject>
-                    <ConciseDescription/>
-                    <Location sps_type="" sps_id=""/>
-                    <Objective sps_vocabulary="" sps_id=""/>
-                    <RelatedEvent>
-                        <KindOfCross-Reference sps_vocabulary="" sps_id=""/>
-                        <Event sps_type="" sps_id=""/>
-                    </RelatedEvent>
-                    <Technique sps_vocabulary="" sps_id=""/>
-                </FunctionPhase>
-                <Exhibition>
-                    <Title sps_html=""/>
-                    <Location sps_type="" sps_id=""/>
-                    <Duration>
-                        <DateValue y="" x=""/>
-                    </Duration>
-                    <Organizer sps_type="" sps_id=""/>
-                    <PrintedMaterial>
-                        <BibliographicReference>
-                            <Chapters/>
-                            <Pages/>
-                            <Drawings/>
-                            <Tables/>
-                            <Link sps_type="" sps_id=""/>
-                            <Photos/>
-                        </BibliographicReference>
-                        <ArchivalReference>
-                            <Link sps_type="" sps_id=""/>
-                            <Comment/>
-                        </ArchivalReference>
-                        <OtherClassification>
-                            <Classification/>
-                            <Source/>
-                        </OtherClassification>
-                        <Evidences>
-                            <Appellation/>
-                            <Category sps_vocabulary="" sps_id=""/>
-                            <Chronology>
-                                <AtSomeTimeWithin>
-                                    <DateValue y="" x=""/>
-                                </AtSomeTimeWithin>
-                                <InTheCourseOf>
-                                    <DateValue y="" x=""/>
-                                </InTheCourseOf>
-                                <EventRelated sps_vocabulary="" sps_id=""/>
-                                <CulturalPeriod sps_vocabulary="" sps_id=""/>
-                                <Justification/>
-                            </Chronology>
-                            <OriginatorOfEvidence>
-                                <Person sps_type="" sps_id=""/>
-                                <Organisation sps_type="" sps_id=""/>
-                            </OriginatorOfEvidence>
-                            <MobileObject sps_link="">
-                                <CodeNumber sps_type="" sps_id=""/>
-                                <Appellation/>
-                                <ObjectKind>
-                                    <FunctionType>
-                                        <Appellation sps_vocabulary="" sps_id=""/>
-                                        <Thesaurus sps_vocabulary="" sps_id=""/>
-                                    </FunctionType>
-                                    <MorphologyType>
-                                        <Appellation sps_vocabulary="" sps_id=""/>
-                                        <Thesaurus sps_vocabulary="" sps_id=""/>
-                                    </MorphologyType>
-                                    <ConstructionType>
-                                        <Appellation sps_vocabulary="" sps_id=""/>
-                                        <Thesaurus sps_vocabulary="" sps_id=""/>
-                                    </ConstructionType>
-                                </ObjectKind>
-                            </MobileObject>
-                            <Content>
-                                <Description/>
-                                <EvidenceReferences>
-                                    <Date>
-                                        <DateValue y="" x=""/>
-                                    </Date>
-                                    <Location sps_type="" sps_id=""/>
-                                    <Person sps_type="" sps_id=""/>
-                                    <Organisation sps_type="" sps_id=""/>
-                                    <Event sps_type="" sps_id=""/>
-                                    <MobileObject sps_link="">
-                                        <CodeNumber sps_type="" sps_id=""/>
-                                        <Appellation/>
-                                        <ObjectKind>
-                                            <FunctionType>
-                                                <Appellation sps_vocabulary="" sps_id=""/>
-                                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                                            </FunctionType>
-                                            <MorphologyType>
-                                                <Appellation sps_vocabulary="" sps_id=""/>
-                                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                                            </MorphologyType>
-                                            <ConstructionType>
-                                                <Appellation sps_vocabulary="" sps_id=""/>
-                                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                                            </ConstructionType>
-                                        </ObjectKind>
-                                    </MobileObject>
-                                </EvidenceReferences>
-                            </Content>
-                            <Place>
-                                <Location sps_type="" sps_id=""/>
-                                <Address/>
-                                <Coordinates>
-                                    <Values>
-                                        <Χ1/>
-                                        <Χ2/>
-                                        <Υ1/>
-                                        <Υ2/>
-                                        <Ζ1/>
-                                        <Ζ2/>
-                                    </Values>
-                                    <MeasurementMethod sps_vocabulary="" sps_id=""/>
-                                    <MeasurementAccuracy/>
-                                    <GeodeticCoordinatesSystem sps_vocabulary="" sps_id=""/>
-                                </Coordinates>
-                                <Image>
-                                    <Link sps_type="" sps_id=""/>
-                                    <Comment/>
-                                </Image>
-                            </Place>
-                            <BibliographicReference>
-                                <Chapters/>
-                                <Pages/>
-                                <Drawings/>
-                                <Tables/>
-                                <Link sps_type="" sps_id=""/>
-                                <Photos/>
-                            </BibliographicReference>
-                        </Evidences>
-                        <Texts>
-                            <Title sps_html=""/>
-                            <Paragraph/>
-                            <Language sps_vocabulary="" sps_id=""/>
-                            <CreationDate>
-                                <DateValue y="" x=""/>
-                            </CreationDate>
-                            <Editor sps_type="" sps_id=""/>
-                        </Texts>
-                    </PrintedMaterial>
-                </Exhibition>
-            </Function>
-            <FieldCollection>
-                <FieldCollectionEvent>
-                    <Appellation sps_vocabulary="" sps_id=""/>
-                    <Chronology>
-                        <AtSomeTimeWithin>
-                            <DateValue y="" x=""/>
-                        </AtSomeTimeWithin>
-                        <InTheCourseOf>
-                            <DateValue y="" x=""/>
-                        </InTheCourseOf>
-                        <EventRelated sps_vocabulary="" sps_id=""/>
-                        <CulturalPeriod sps_vocabulary="" sps_id=""/>
-                        <Justification/>
-                    </Chronology>
-                    <Characterization sps_vocabulary="" sps_id=""/>
-                    <PersonInvolved sps_type="" sps_id=""/>
-                    <OrganisationInvolved sps_type="" sps_id=""/>
-                    <ObjectInvolvedForMobileObject sps_link="">
-                        <CodeNumber sps_type="" sps_id=""/>
-                        <Appellation/>
-                        <ObjectKind>
-                            <FunctionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </FunctionType>
-                            <MorphologyType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </MorphologyType>
-                            <ConstructionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </ConstructionType>
-                        </ObjectKind>
-                    </ObjectInvolvedForMobileObject>
-                    <ConciseDescription/>
-                    <Location sps_type="" sps_id=""/>
-                    <ExcavationLayer/>
-                    <FieldCollectionNumber>
-                        <CodeValue/>
-                        <Category sps_vocabulary="" sps_id=""/>
-                        <AttributedBy sps_type="" sps_id=""/>
-                        <AttributionDate>
-                            <DateValue y="" x=""/>
-                        </AttributionDate>
-                        <ExpiryDate>
-                            <DateValue y="" x=""/>
-                        </ExpiryDate>
-                    </FieldCollectionNumber>
-                    <FindingReport>
-                        <BibliographicReference>
-                            <Chapters/>
-                            <Pages/>
-                            <Drawings/>
-                            <Tables/>
-                            <Link sps_type="" sps_id=""/>
-                            <Photos/>
-                        </BibliographicReference>
-                        <ArchivalReference>
-                            <Link sps_type="" sps_id=""/>
-                            <Comment/>
-                        </ArchivalReference>
-                        <OtherClassification>
-                            <Classification/>
-                            <Source/>
-                        </OtherClassification>
-                        <Evidences>
-                            <Appellation/>
-                            <Category sps_vocabulary="" sps_id=""/>
-                            <Chronology>
-                                <AtSomeTimeWithin>
-                                    <DateValue y="" x=""/>
-                                </AtSomeTimeWithin>
-                                <InTheCourseOf>
-                                    <DateValue y="" x=""/>
-                                </InTheCourseOf>
-                                <EventRelated sps_vocabulary="" sps_id=""/>
-                                <CulturalPeriod sps_vocabulary="" sps_id=""/>
-                                <Justification/>
-                            </Chronology>
-                            <OriginatorOfEvidence>
-                                <Person sps_type="" sps_id=""/>
-                                <Organisation sps_type="" sps_id=""/>
-                            </OriginatorOfEvidence>
-                            <MobileObject sps_link="">
-                                <CodeNumber sps_type="" sps_id=""/>
-                                <Appellation/>
-                                <ObjectKind>
-                                    <FunctionType>
-                                        <Appellation sps_vocabulary="" sps_id=""/>
-                                        <Thesaurus sps_vocabulary="" sps_id=""/>
-                                    </FunctionType>
-                                    <MorphologyType>
-                                        <Appellation sps_vocabulary="" sps_id=""/>
-                                        <Thesaurus sps_vocabulary="" sps_id=""/>
-                                    </MorphologyType>
-                                    <ConstructionType>
-                                        <Appellation sps_vocabulary="" sps_id=""/>
-                                        <Thesaurus sps_vocabulary="" sps_id=""/>
-                                    </ConstructionType>
-                                </ObjectKind>
-                            </MobileObject>
-                            <Content>
-                                <Description/>
-                                <EvidenceReferences>
-                                    <Date>
-                                        <DateValue y="" x=""/>
-                                    </Date>
-                                    <Location sps_type="" sps_id=""/>
-                                    <Person sps_type="" sps_id=""/>
-                                    <Organisation sps_type="" sps_id=""/>
-                                    <Event sps_type="" sps_id=""/>
-                                    <MobileObject sps_link="">
-                                        <CodeNumber sps_type="" sps_id=""/>
-                                        <Appellation/>
-                                        <ObjectKind>
-                                            <FunctionType>
-                                                <Appellation sps_vocabulary="" sps_id=""/>
-                                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                                            </FunctionType>
-                                            <MorphologyType>
-                                                <Appellation sps_vocabulary="" sps_id=""/>
-                                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                                            </MorphologyType>
-                                            <ConstructionType>
-                                                <Appellation sps_vocabulary="" sps_id=""/>
-                                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                                            </ConstructionType>
-                                        </ObjectKind>
-                                    </MobileObject>
-                                </EvidenceReferences>
-                            </Content>
-                            <Place>
-                                <Location sps_type="" sps_id=""/>
-                                <Address/>
-                                <Coordinates>
-                                    <Values>
-                                        <Χ1/>
-                                        <Χ2/>
-                                        <Υ1/>
-                                        <Υ2/>
-                                        <Ζ1/>
-                                        <Ζ2/>
-                                    </Values>
-                                    <MeasurementMethod sps_vocabulary="" sps_id=""/>
-                                    <MeasurementAccuracy/>
-                                    <GeodeticCoordinatesSystem sps_vocabulary="" sps_id=""/>
-                                </Coordinates>
-                                <Image>
-                                    <Link sps_type="" sps_id=""/>
-                                    <Comment/>
-                                </Image>
-                            </Place>
-                            <BibliographicReference>
-                                <Chapters/>
-                                <Pages/>
-                                <Drawings/>
-                                <Tables/>
-                                <Link sps_type="" sps_id=""/>
-                                <Photos/>
-                            </BibliographicReference>
-                        </Evidences>
-                        <Texts>
-                            <Title sps_html=""/>
-                            <Paragraph/>
-                            <Language sps_vocabulary="" sps_id=""/>
-                            <CreationDate>
-                                <DateValue y="" x=""/>
-                            </CreationDate>
-                            <Editor sps_type="" sps_id=""/>
-                        </Texts>
-                    </FindingReport>
-                    <ResearchActivity>
-                        <Name/>
-                        <Duration>
-                            <DateValue y="" x=""/>
-                        </Duration>
-                        <Researcher sps_type="" sps_id=""/>
-                        <Institution sps_type="" sps_id=""/>
-                    </ResearchActivity>
-                    <RelatedFind>
-                        <OverallNumber/>
-                        <ObjectKind>
-                            <FunctionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </FunctionType>
-                            <MorphologyType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </MorphologyType>
-                            <ConstructionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </ConstructionType>
-                        </ObjectKind>
-                    </RelatedFind>
-                    <RelatedEvent>
-                        <KindOfCross-Reference sps_vocabulary="" sps_id=""/>
-                        <Event sps_type="" sps_id=""/>
-                    </RelatedEvent>
-                    <Objective sps_vocabulary="" sps_id=""/>
-                    <Technique sps_vocabulary="" sps_id=""/>
-                </FieldCollectionEvent>
-            </FieldCollection>
-            <Intervention>
-                <InterventionPhase>
-                    <Appellation sps_vocabulary="" sps_id=""/>
-                    <Chronology>
-                        <AtSomeTimeWithin>
-                            <DateValue y="" x=""/>
-                        </AtSomeTimeWithin>
-                        <InTheCourseOf>
-                            <DateValue y="" x=""/>
-                        </InTheCourseOf>
-                        <EventRelated sps_vocabulary="" sps_id=""/>
-                        <CulturalPeriod sps_vocabulary="" sps_id=""/>
-                        <Justification/>
-                    </Chronology>
-                    <Characterization sps_vocabulary="" sps_id=""/>
-                    <PersonInvolved sps_type="" sps_id=""/>
-                    <OrganisationInvolved sps_type="" sps_id=""/>
-                    <ObjectInvolvedForMobileObject sps_link="">
-                        <CodeNumber sps_type="" sps_id=""/>
-                        <Appellation/>
-                        <ObjectKind>
-                            <FunctionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </FunctionType>
-                            <MorphologyType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </MorphologyType>
-                            <ConstructionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </ConstructionType>
-                        </ObjectKind>
-                    </ObjectInvolvedForMobileObject>
-                    <ConciseDescription/>
-                    <Location sps_type="" sps_id=""/>
-                    <RelatedEvent>
-                        <KindOfCross-Reference sps_vocabulary="" sps_id=""/>
-                        <Event sps_type="" sps_id=""/>
-                    </RelatedEvent>
-                    <Material sps_type="" sps_id=""/>
-                    <Objective sps_vocabulary="" sps_id=""/>
-                    <Technique sps_vocabulary="" sps_id=""/>
-                    <Conservator sps_type="" sps_id=""/>
-                    <StateOfCompletion/>
-                    <AlterationSigns/>
-                </InterventionPhase>
-            </Intervention>
-            <Possessions>
-                <Possession>
-                    <Appellation sps_vocabulary="" sps_id=""/>
-                    <Category sps_vocabulary="" sps_id=""/>
-                    <Chronology>
-                        <AtSomeTimeWithin>
-                            <DateValue y="" x=""/>
-                        </AtSomeTimeWithin>
-                        <InTheCourseOf>
-                            <DateValue y="" x=""/>
-                        </InTheCourseOf>
-                        <EventRelated sps_vocabulary="" sps_id=""/>
-                        <CulturalPeriod sps_vocabulary="" sps_id=""/>
-                        <Justification/>
-                    </Chronology>
-                    <Location sps_type="" sps_id=""/>
-                    <ConciseDescription/>
-                    <PersonInvolved sps_type="" sps_id=""/>
-                    <OrganisationInvolved sps_type="" sps_id=""/>
-                    <ObjectInvolvedForMobileObject sps_link="">
-                        <CodeNumber sps_type="" sps_id=""/>
-                        <Appellation/>
-                        <ObjectKind>
-                            <FunctionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </FunctionType>
-                            <MorphologyType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </MorphologyType>
-                            <ConstructionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </ConstructionType>
-                        </ObjectKind>
-                    </ObjectInvolvedForMobileObject>
-                </Possession>
-            </Possessions>
-        </ObjectHistory>
-        <CrossReferences>
-            <ObjectCorrelation>
-                <KindOfCross-Reference sps_vocabulary="" sps_id=""/>
-                <Description/>
-                <Event sps_type="" sps_id=""/>
-                <CompareWith sps_link="">
-                    <CodeNumber sps_type="" sps_id=""/>
-                    <Appellation/>
-                    <ObjectKind>
-                        <FunctionType>
-                            <Appellation sps_vocabulary="" sps_id=""/>
-                            <Thesaurus sps_vocabulary="" sps_id=""/>
-                        </FunctionType>
-                        <MorphologyType>
-                            <Appellation sps_vocabulary="" sps_id=""/>
-                            <Thesaurus sps_vocabulary="" sps_id=""/>
-                        </MorphologyType>
-                        <ConstructionType>
-                            <Appellation sps_vocabulary="" sps_id=""/>
-                            <Thesaurus sps_vocabulary="" sps_id=""/>
-                        </ConstructionType>
-                    </ObjectKind>
-                </CompareWith>
-            </ObjectCorrelation>
-        </CrossReferences>
-    </DetailedObjectDocumentation>
-    <ObjectDocumentation>
-        <BibliographicReference>
-            <Chapters/>
-            <Pages/>
-            <Drawings/>
-            <Tables/>
-            <Link sps_type="" sps_id=""/>
-            <Photos/>
-        </BibliographicReference>
-        <ArchivalReference>
-            <Link sps_type="" sps_id=""/>
-            <Comment/>
-        </ArchivalReference>
-        <OtherClassification>
-            <Classification/>
-            <Source/>
-        </OtherClassification>
-        <Evidences>
-            <Appellation/>
-            <Category sps_vocabulary="" sps_id=""/>
-            <Chronology>
-                <AtSomeTimeWithin>
-                    <DateValue y="" x=""/>
-                </AtSomeTimeWithin>
-                <InTheCourseOf>
-                    <DateValue y="" x=""/>
-                </InTheCourseOf>
-                <EventRelated sps_vocabulary="" sps_id=""/>
-                <CulturalPeriod sps_vocabulary="" sps_id=""/>
-                <Justification/>
-            </Chronology>
-            <OriginatorOfEvidence>
-                <Person sps_type="" sps_id=""/>
-                <Organisation sps_type="" sps_id=""/>
-            </OriginatorOfEvidence>
-            <MobileObject sps_link="">
-                <CodeNumber sps_type="" sps_id=""/>
-                <Appellation/>
-                <ObjectKind>
-                    <FunctionType>
-                        <Appellation sps_vocabulary="" sps_id=""/>
-                        <Thesaurus sps_vocabulary="" sps_id=""/>
-                    </FunctionType>
-                    <MorphologyType>
-                        <Appellation sps_vocabulary="" sps_id=""/>
-                        <Thesaurus sps_vocabulary="" sps_id=""/>
-                    </MorphologyType>
-                    <ConstructionType>
-                        <Appellation sps_vocabulary="" sps_id=""/>
-                        <Thesaurus sps_vocabulary="" sps_id=""/>
-                    </ConstructionType>
-                </ObjectKind>
-            </MobileObject>
-            <Content>
-                <Description/>
-                <EvidenceReferences>
-                    <Date>
-                        <DateValue y="" x=""/>
-                    </Date>
-                    <Location sps_type="" sps_id=""/>
-                    <Person sps_type="" sps_id=""/>
-                    <Organisation sps_type="" sps_id=""/>
-                    <Event sps_type="" sps_id=""/>
-                    <MobileObject sps_link="">
-                        <CodeNumber sps_type="" sps_id=""/>
-                        <Appellation/>
-                        <ObjectKind>
-                            <FunctionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </FunctionType>
-                            <MorphologyType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </MorphologyType>
-                            <ConstructionType>
-                                <Appellation sps_vocabulary="" sps_id=""/>
-                                <Thesaurus sps_vocabulary="" sps_id=""/>
-                            </ConstructionType>
-                        </ObjectKind>
-                    </MobileObject>
-                </EvidenceReferences>
-            </Content>
-            <Place>
-                <Location sps_type="" sps_id=""/>
-                <Address/>
-                <Coordinates>
-                    <Values>
-                        <Χ1/>
-                        <Χ2/>
-                        <Υ1/>
-                        <Υ2/>
-                        <Ζ1/>
-                        <Ζ2/>
-                    </Values>
-                    <MeasurementMethod sps_vocabulary="" sps_id=""/>
-                    <MeasurementAccuracy/>
-                    <GeodeticCoordinatesSystem sps_vocabulary="" sps_id=""/>
-                </Coordinates>
-                <Image>
-                    <Link sps_type="" sps_id=""/>
-                    <Comment/>
-                </Image>
-            </Place>
-            <BibliographicReference>
-                <Chapters/>
-                <Pages/>
-                <Drawings/>
-                <Tables/>
-                <Link sps_type="" sps_id=""/>
-                <Photos/>
-            </BibliographicReference>
-        </Evidences>
-        <Texts>
-            <Title sps_html=""/>
-            <Paragraph/>
-            <Language sps_vocabulary="" sps_id=""/>
-            <CreationDate>
-                <DateValue y="" x=""/>
-            </CreationDate>
-            <Editor sps_type="" sps_id=""/>
-        </Texts>
-    </ObjectDocumentation>
-    <ObjectManagement>
-        <OtherAccession>
-            <AccessionID>
-                <CodeValue/>
-                <Category sps_vocabulary="" sps_id=""/>
-                <AttributedBy sps_type="" sps_id=""/>
-                <AttributionDate>
-                    <DateValue y="" x=""/>
-                </AttributionDate>
-                <ExpiryDate>
-                    <DateValue y="" x=""/>
-                </ExpiryDate>
-            </AccessionID>
-            <Remarks/>
-        </OtherAccession>
-        <Packaging>
-            <OfficialDocument>
-                <ReferenceNumber/>
-                <DigitalFile>
-                    <File sps_browse="all"/>
-                </DigitalFile>
-                <Comment/>
-            </OfficialDocument>
-            <MeasurementDimensions>
-                <Capacity sps_vocabulary="" sps_id=""/>
-                <Value>
-                    <From/>
-                    <To/>
-                </Value>
-                <MeasurementUnit sps_vocabulary="" sps_id=""/>
-            </MeasurementDimensions>
-            <Recommendations/>
-            <Notes/>
-        </Packaging>
-        <ValueEstimation>
-            <ValuationReferenceNumber>
-                <CodeValue/>
-                <Category sps_vocabulary="" sps_id=""/>
-                <AttributedBy sps_type="" sps_id=""/>
-                <AttributionDate>
-                    <DateValue y="" x=""/>
-                </AttributionDate>
-                <ExpiryDate>
-                    <DateValue y="" x=""/>
-                </ExpiryDate>
-            </ValuationReferenceNumber>
-            <Valuer>
-                <Person sps_type="" sps_id=""/>
-                <Organisation sps_type="" sps_id=""/>
-            </Valuer>
-            <Date>
-                <DateValue y="" x=""/>
-            </Date>
-            <Note/>
-            <Cost/>
-        </ValueEstimation>
-        <Deaccession>
-            <OfficialDocument>
-                <ReferenceNumber/>
-                <DigitalFile>
-                    <File sps_browse="all"/>
-                </DigitalFile>
-                <Comment/>
-            </OfficialDocument>
-            <DeaccessionType sps_vocabulary="" sps_id=""/>
-            <Description/>
-            <Date>
-                <DateValue y="" x=""/>
-            </Date>
-            <RelatedEvent sps_type="" sps_id=""/>
-            <Notes/>
-        </Deaccession>
-        <Rights>
-            <OfficialDocument>
-                <ReferenceNumber/>
-                <DigitalFile>
-                    <File sps_browse="all"/>
-                </DigitalFile>
-                <Comment/>
-            </OfficialDocument>
-            <Period>
-                <DateValue y="" x=""/>
-            </Period>
-            <Notes/>
-            <Requester>
-                <Person sps_type="" sps_id=""/>
-                <Organisation sps_type="" sps_id=""/>
-            </Requester>
-        </Rights>
-        <Acquisition>
-            <OfficialDocument>
-                <ReferenceNumber/>
-                <DigitalFile>
-                    <File sps_browse="all"/>
-                </DigitalFile>
-                <Comment/>
-            </OfficialDocument>
-            <AccessionType sps_vocabulary="" sps_id=""/>
-            <Date>
-                <DateValue y="" x=""/>
-            </Date>
-            <Location sps_type="" sps_id=""/>
-            <Description/>
-            <Reason/>
-            <Provisos/>
-            <PersonInvolved sps_type="" sps_id=""/>
-            <OrganisationInvolved sps_type="" sps_id=""/>
-            <Contract>
-                <Link sps_type="" sps_id=""/>
-                <Comment/>
-            </Contract>
-        </Acquisition>
-        <Locations>
-            <CurrentLocation>
-                <Position sps_vocabulary="" sps_id=""/>
-                <PositionTimeSpan>
-                    <DateValue y="" x=""/>
-                </PositionTimeSpan>
-                <Remarks/>
-                <Fitness sps_vocabulary="" sps_id=""/>
-            </CurrentLocation>
-            <PermanentLocation sps_vocabulary="" sps_id=""/>
-            <PreviousLocation>
-                <Position sps_vocabulary="" sps_id=""/>
-                <PositionTimeSpan>
-                    <DateValue y="" x=""/>
-                </PositionTimeSpan>
-                <Remarks/>
-            </PreviousLocation>
-        </Locations>
-        <Movement>
-            <OfficialDocument>
-                <ReferenceNumber/>
-                <DigitalFile>
-                    <File sps_browse="all"/>
-                </DigitalFile>
-                <Comment/>
-            </OfficialDocument>
-            <Type sps_vocabulary="" sps_id=""/>
-            <Purpose sps_vocabulary="" sps_id=""/>
-            <Notes/>
-            <Date>
-                <DateValue y="" x=""/>
-            </Date>
-            <Authoriser>
-                <Person sps_type="" sps_id=""/>
-                <Organisation sps_type="" sps_id=""/>
-            </Authoriser>
-            <Method sps_vocabulary="" sps_id=""/>
-        </Movement>
-        <LoanOut>
-            <OfficialDocument>
-                <ReferenceNumber/>
-                <DigitalFile>
-                    <File sps_browse="all"/>
-                </DigitalFile>
-                <Comment/>
-            </OfficialDocument>
-            <Period>
-                <DateValue y="" x=""/>
-            </Period>
-            <Objective sps_vocabulary="" sps_id=""/>
-            <DespatchAuthoriser>
-                <Person sps_type="" sps_id=""/>
-                <Organisation sps_type="" sps_id=""/>
-            </DespatchAuthoriser>
-            <RecipientAuthoriser>
-                <Person sps_type="" sps_id=""/>
-                <Organisation sps_type="" sps_id=""/>
-            </RecipientAuthoriser>
-            <Remarks/>
-            <Contract>
-                <Link sps_type="" sps_id=""/>
-                <Comment/>
-            </Contract>
-        </LoanOut>
-    </ObjectManagement>
-    <admin>
-        <id>0</id>
-        <uri_id/>
-        <lang/>
-        <organization/>
-        <creator/>
-        <saved/>
-        <locked/>
-        <status/>
-        <versions>
-            <versionId/>
-            <versionUser/>
-            <versionDate/>
-        </versions>
-    </admin>
+	<IdentityOfObject>
+		<CodeNumber>
+			<CodeValue/>
+			<Category sps_vocabulary="" sps_id=""/>
+			<AttributedBy sps_type="" sps_id=""/>
+			<AttributionDate>
+				<DateValue y="" x=""/>
+			</AttributionDate>
+			<ExpiryDate>
+				<DateValue y="" x=""/>
+			</ExpiryDate>
+		</CodeNumber>
+		<OtherCodeNumber>
+			<CodeValue/>
+			<Category sps_vocabulary="" sps_id=""/>
+			<AttributedBy sps_type="" sps_id=""/>
+			<AttributionDate>
+				<DateValue y="" x=""/>
+			</AttributionDate>
+			<ExpiryDate>
+				<DateValue y="" x=""/>
+			</ExpiryDate>
+		</OtherCodeNumber>
+		<OriginatorOfReference sps_type="" sps_id=""/>
+		<Department sps_type="" sps_id=""/>
+		<Collection>
+			<Appellation sps_vocabulary="" sps_id=""/>
+			<CollectionCodeNumber/>
+		</Collection>
+		<Category sps_vocabulary="" sps_id=""/>
+		<PrincipalCurrentDenomination/>
+		<PrincipalMaterial sps_type="" sps_id=""/>
+		<BasicColour sps_vocabulary="" sps_id=""/>
+		<IncludedIn sps_link="">
+			<CodeNumber sps_type="" sps_id=""/>
+			<Category sps_vocabulary="" sps_id=""/>
+		</IncludedIn>
+		<Composition>
+			<OverallPartNumber/>
+			<KindOfComposition sps_vocabulary="" sps_id=""/>
+			<Components>
+				<Description/>
+				<Component sps_link="">
+					<ComponentCodeNumber sps_type="" sps_id=""/>
+					<Category sps_vocabulary="" sps_id=""/>
+					<OverallNumber/>
+				</Component>
+			</Components>
+			<Accessory>
+				<Category sps_vocabulary="" sps_id=""/>
+				<OverallNumber/>
+				<Description/>
+			</Accessory>
+		</Composition>
+		<Image>
+			<Link sps_type="" sps_id=""/>
+			<Comment/>
+		</Image>
+		<Condition sps_vocabulary="" sps_id=""/>
+		<Description/>
+		<MonumentLocation sps_vocabulary="" sps_id=""/>
+	</IdentityOfObject>
+	<DetailedObjectDocumentation>
+		<ObjectDescription>
+			<ObjectName>
+				<Text/>
+				<Language sps_vocabulary="" sps_id=""/>
+				<NameType sps_vocabulary="" sps_id=""/>
+				<Translation>
+					<Text/>
+					<Language sps_vocabulary="" sps_id=""/>
+				</Translation>
+			</ObjectName>
+			<ObjectKind>
+				<FunctionType>
+					<Appellation sps_vocabulary="" sps_id=""/>
+					<Thesaurus sps_vocabulary="" sps_id=""/>
+				</FunctionType>
+				<MorphologyType>
+					<Appellation sps_vocabulary="" sps_id=""/>
+					<Thesaurus sps_vocabulary="" sps_id=""/>
+				</MorphologyType>
+				<ConstructionType>
+					<Appellation sps_vocabulary="" sps_id=""/>
+					<Thesaurus sps_vocabulary="" sps_id=""/>
+				</ConstructionType>
+			</ObjectKind>
+			<Depiction>
+				<Position sps_vocabulary="" sps_id=""/>
+				<Subject>
+					<IconographicType sps_vocabulary="" sps_id=""/>
+					<Description/>
+					<Reenactment>
+						<Photo>
+							<Link sps_type="" sps_id=""/>
+							<Comment/>
+						</Photo>
+						<Drawing>
+							<Link sps_type="" sps_id=""/>
+							<Comment/>
+						</Drawing>
+					</Reenactment>
+				</Subject>
+				<ReferentialElementsOfObject>
+					<Date>
+						<DateValue y="" x=""/>
+					</Date>
+					<Location sps_type="" sps_id=""/>
+					<Person sps_type="" sps_id=""/>
+					<Organisation sps_type="" sps_id=""/>
+					<Event sps_type="" sps_id=""/>
+					<MobileObject sps_link="">
+						<CodeNumber sps_type="" sps_id=""/>
+						<Appellation/>
+						<ObjectKind>
+							<FunctionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</FunctionType>
+							<MorphologyType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</MorphologyType>
+							<ConstructionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</ConstructionType>
+						</ObjectKind>
+					</MobileObject>
+				</ReferentialElementsOfObject>
+				<Colour sps_vocabulary="" sps_id=""/>
+				<TypeOfRepresentation sps_vocabulary="" sps_id=""/>
+				<Measurements/>
+				<Technique sps_vocabulary="" sps_id=""/>
+				<Material sps_type="" sps_id=""/>
+				<Condition sps_vocabulary="" sps_id=""/>
+				<Objective sps_vocabulary="" sps_id=""/>
+				<Chronology>
+					<AtSomeTimeWithin>
+						<DateValue y="" x=""/>
+					</AtSomeTimeWithin>
+					<InTheCourseOf>
+						<DateValue y="" x=""/>
+					</InTheCourseOf>
+					<EventRelated sps_vocabulary="" sps_id=""/>
+					<CulturalPeriod sps_vocabulary="" sps_id=""/>
+					<Justification/>
+				</Chronology>
+			</Depiction>
+			<Marking>
+				<Position sps_vocabulary="" sps_id=""/>
+				<Content>
+					<Language sps_vocabulary="" sps_id=""/>
+					<Transliteration/>
+					<Attribution/>
+					<Reenactment>
+						<Photo>
+							<Link sps_type="" sps_id=""/>
+							<Comment/>
+						</Photo>
+						<Drawing>
+							<Link sps_type="" sps_id=""/>
+							<Comment/>
+						</Drawing>
+					</Reenactment>
+				</Content>
+				<ReferentialElementsOfObject>
+					<Date>
+						<DateValue y="" x=""/>
+					</Date>
+					<Location sps_type="" sps_id=""/>
+					<Person sps_type="" sps_id=""/>
+					<Organisation sps_type="" sps_id=""/>
+					<Event sps_type="" sps_id=""/>
+					<MobileObject sps_link="">
+						<CodeNumber sps_type="" sps_id=""/>
+						<Appellation/>
+						<ObjectKind>
+							<FunctionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</FunctionType>
+							<MorphologyType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</MorphologyType>
+							<ConstructionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</ConstructionType>
+						</ObjectKind>
+					</MobileObject>
+				</ReferentialElementsOfObject>
+				<MarkingType sps_vocabulary="" sps_id=""/>
+				<Measurements/>
+				<Technique sps_vocabulary="" sps_id=""/>
+				<Material sps_type="" sps_id=""/>
+				<Condition sps_vocabulary="" sps_id=""/>
+				<Objective sps_vocabulary="" sps_id=""/>
+				<Chronology>
+					<AtSomeTimeWithin>
+						<DateValue y="" x=""/>
+					</AtSomeTimeWithin>
+					<InTheCourseOf>
+						<DateValue y="" x=""/>
+					</InTheCourseOf>
+					<EventRelated sps_vocabulary="" sps_id=""/>
+					<CulturalPeriod sps_vocabulary="" sps_id=""/>
+					<Justification/>
+				</Chronology>
+			</Marking>
+			<ObjectMeasurement>
+				<Appellation sps_vocabulary="" sps_id=""/>
+				<KindOfMeasurement sps_vocabulary="" sps_id=""/>
+				<MeasurementInstrument sps_vocabulary="" sps_id=""/>
+				<Size>
+					<Capacity sps_vocabulary="" sps_id=""/>
+					<Value>
+						<From/>
+						<To/>
+					</Value>
+					<MeasurementUnit sps_vocabulary="" sps_id=""/>
+				</Size>
+				<PersonResponsibleForMeasurement>
+					<Person sps_type="" sps_id=""/>
+					<Institution sps_type="" sps_id=""/>
+				</PersonResponsibleForMeasurement>
+				<Date>
+					<DateValue y="" x=""/>
+				</Date>
+				<Remarks/>
+			</ObjectMeasurement>
+			<ConditionCheck>
+				<DescriptionOfCondition sps_vocabulary="" sps_id=""/>
+				<TypeOfInspection sps_vocabulary="" sps_id=""/>
+				<PersonResponsibleForInspection sps_type="" sps_id=""/>
+				<Date>
+					<DateValue y="" x=""/>
+				</Date>
+				<Location sps_type="" sps_id=""/>
+				<Study>
+					<Link sps_type="" sps_id=""/>
+					<Comment/>
+				</Study>
+				<Description/>
+			</ConditionCheck>
+		</ObjectDescription>
+		<ObjectHistory>
+			<Construction>
+				<ConstructionPhase>
+					<Constructor>
+						<Person sps_type="" sps_id=""/>
+						<Organisation sps_type="" sps_id=""/>
+					</Constructor>
+					<Chronology>
+						<AtSomeTimeWithin>
+							<DateValue y="" x=""/>
+						</AtSomeTimeWithin>
+						<InTheCourseOf>
+							<DateValue y="" x=""/>
+						</InTheCourseOf>
+						<EventRelated sps_vocabulary="" sps_id=""/>
+						<CulturalPeriod sps_vocabulary="" sps_id=""/>
+						<Justification/>
+					</Chronology>
+					<Characterization sps_vocabulary="" sps_id=""/>
+					<PersonInvolved sps_type="" sps_id=""/>
+					<OrganisationInvolved sps_type="" sps_id=""/>
+					<ObjectInvolvedForMobileObject sps_link="">
+						<CodeNumber sps_type="" sps_id=""/>
+						<Appellation/>
+						<ObjectKind>
+							<FunctionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</FunctionType>
+							<MorphologyType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</MorphologyType>
+							<ConstructionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</ConstructionType>
+						</ObjectKind>
+					</ObjectInvolvedForMobileObject>
+					<ConciseDescription/>
+					<Location sps_type="" sps_id=""/>
+					<RelatedEvent>
+						<KindOfCross-Reference sps_vocabulary="" sps_id=""/>
+						<Event sps_type="" sps_id=""/>
+					</RelatedEvent>
+					<Material sps_type="" sps_id=""/>
+					<Objective sps_vocabulary="" sps_id=""/>
+					<Technique sps_vocabulary="" sps_id=""/>
+					<StateOfCompletion/>
+					<InfluencedBy sps_vocabulary="" sps_id=""/>
+					<Authenticity/>
+				</ConstructionPhase>
+			</Construction>
+			<Function>
+				<FunctionPhase>
+					<Appellation sps_vocabulary="" sps_id=""/>
+					<Chronology>
+						<AtSomeTimeWithin>
+							<DateValue y="" x=""/>
+						</AtSomeTimeWithin>
+						<InTheCourseOf>
+							<DateValue y="" x=""/>
+						</InTheCourseOf>
+						<EventRelated sps_vocabulary="" sps_id=""/>
+						<CulturalPeriod sps_vocabulary="" sps_id=""/>
+						<Justification/>
+					</Chronology>
+					<Characterization sps_vocabulary="" sps_id=""/>
+					<PersonInvolved sps_type="" sps_id=""/>
+					<OrganisationInvolved sps_type="" sps_id=""/>
+					<ObjectInvolvedForMobileObject sps_link="">
+						<CodeNumber sps_type="" sps_id=""/>
+						<Appellation/>
+						<ObjectKind>
+							<FunctionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</FunctionType>
+							<MorphologyType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</MorphologyType>
+							<ConstructionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</ConstructionType>
+						</ObjectKind>
+					</ObjectInvolvedForMobileObject>
+					<ConciseDescription/>
+					<Location sps_type="" sps_id=""/>
+					<Objective sps_vocabulary="" sps_id=""/>
+					<RelatedEvent>
+						<KindOfCross-Reference sps_vocabulary="" sps_id=""/>
+						<Event sps_type="" sps_id=""/>
+					</RelatedEvent>
+					<Technique sps_vocabulary="" sps_id=""/>
+				</FunctionPhase>
+				<Exhibition>
+					<Title sps_html=""/>
+					<Location sps_type="" sps_id=""/>
+					<Duration>
+						<DateValue y="" x=""/>
+					</Duration>
+					<Organizer sps_type="" sps_id=""/>
+					<PrintedMaterial>
+						<BibliographicReference>
+							<Chapters/>
+							<Pages/>
+							<Drawings/>
+							<Tables/>
+							<Link sps_type="" sps_id=""/>
+							<Photos/>
+						</BibliographicReference>
+						<ArchivalReference>
+							<Link sps_type="" sps_id=""/>
+							<Comment/>
+						</ArchivalReference>
+						<OtherClassification>
+							<Classification/>
+							<Source/>
+						</OtherClassification>
+						<Evidences>
+							<Appellation/>
+							<Category sps_vocabulary="" sps_id=""/>
+							<Chronology>
+								<AtSomeTimeWithin>
+									<DateValue y="" x=""/>
+								</AtSomeTimeWithin>
+								<InTheCourseOf>
+									<DateValue y="" x=""/>
+								</InTheCourseOf>
+								<EventRelated sps_vocabulary="" sps_id=""/>
+								<CulturalPeriod sps_vocabulary="" sps_id=""/>
+								<Justification/>
+							</Chronology>
+							<OriginatorOfEvidence>
+								<Person sps_type="" sps_id=""/>
+								<Organisation sps_type="" sps_id=""/>
+							</OriginatorOfEvidence>
+							<MobileObject sps_link="">
+								<CodeNumber sps_type="" sps_id=""/>
+								<Appellation/>
+								<ObjectKind>
+									<FunctionType>
+										<Appellation sps_vocabulary="" sps_id=""/>
+										<Thesaurus sps_vocabulary="" sps_id=""/>
+									</FunctionType>
+									<MorphologyType>
+										<Appellation sps_vocabulary="" sps_id=""/>
+										<Thesaurus sps_vocabulary="" sps_id=""/>
+									</MorphologyType>
+									<ConstructionType>
+										<Appellation sps_vocabulary="" sps_id=""/>
+										<Thesaurus sps_vocabulary="" sps_id=""/>
+									</ConstructionType>
+								</ObjectKind>
+							</MobileObject>
+							<Content>
+								<Description/>
+								<EvidenceReferences>
+									<Date>
+										<DateValue y="" x=""/>
+									</Date>
+									<Location sps_type="" sps_id=""/>
+									<Person sps_type="" sps_id=""/>
+									<Organisation sps_type="" sps_id=""/>
+									<Event sps_type="" sps_id=""/>
+									<MobileObject sps_link="">
+										<CodeNumber sps_type="" sps_id=""/>
+										<Appellation/>
+										<ObjectKind>
+											<FunctionType>
+												<Appellation sps_vocabulary="" sps_id=""/>
+												<Thesaurus sps_vocabulary="" sps_id=""/>
+											</FunctionType>
+											<MorphologyType>
+												<Appellation sps_vocabulary="" sps_id=""/>
+												<Thesaurus sps_vocabulary="" sps_id=""/>
+											</MorphologyType>
+											<ConstructionType>
+												<Appellation sps_vocabulary="" sps_id=""/>
+												<Thesaurus sps_vocabulary="" sps_id=""/>
+											</ConstructionType>
+										</ObjectKind>
+									</MobileObject>
+								</EvidenceReferences>
+							</Content>
+							<Place>
+								<Location sps_type="" sps_id=""/>
+								<Address/>
+								<Coordinates>
+									<Values>
+										<Χ1/>
+										<Χ2/>
+										<Υ1/>
+										<Υ2/>
+										<Ζ1/>
+										<Ζ2/>
+									</Values>
+									<MeasurementMethod sps_vocabulary="" sps_id=""/>
+									<MeasurementAccuracy/>
+									<GeodeticCoordinatesSystem sps_vocabulary="" sps_id=""/>
+								</Coordinates>
+								<Image>
+									<Link sps_type="" sps_id=""/>
+									<Comment/>
+								</Image>
+							</Place>
+							<BibliographicReference>
+								<Chapters/>
+								<Pages/>
+								<Drawings/>
+								<Tables/>
+								<Link sps_type="" sps_id=""/>
+								<Photos/>
+							</BibliographicReference>
+						</Evidences>
+						<Texts>
+							<Title sps_html=""/>
+							<Paragraph/>
+							<Language sps_vocabulary="" sps_id=""/>
+							<CreationDate>
+								<DateValue y="" x=""/>
+							</CreationDate>
+							<Editor sps_type="" sps_id=""/>
+						</Texts>
+					</PrintedMaterial>
+				</Exhibition>
+			</Function>
+			<FieldCollection>
+				<FieldCollectionEvent>
+					<Appellation sps_vocabulary="" sps_id=""/>
+					<Chronology>
+						<AtSomeTimeWithin>
+							<DateValue y="" x=""/>
+						</AtSomeTimeWithin>
+						<InTheCourseOf>
+							<DateValue y="" x=""/>
+						</InTheCourseOf>
+						<EventRelated sps_vocabulary="" sps_id=""/>
+						<CulturalPeriod sps_vocabulary="" sps_id=""/>
+						<Justification/>
+					</Chronology>
+					<Characterization sps_vocabulary="" sps_id=""/>
+					<PersonInvolved sps_type="" sps_id=""/>
+					<OrganisationInvolved sps_type="" sps_id=""/>
+					<ObjectInvolvedForMobileObject sps_link="">
+						<CodeNumber sps_type="" sps_id=""/>
+						<Appellation/>
+						<ObjectKind>
+							<FunctionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</FunctionType>
+							<MorphologyType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</MorphologyType>
+							<ConstructionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</ConstructionType>
+						</ObjectKind>
+					</ObjectInvolvedForMobileObject>
+					<ConciseDescription/>
+					<Location sps_type="" sps_id=""/>
+					<ExcavationLayer/>
+					<FieldCollectionNumber>
+						<CodeValue/>
+						<Category sps_vocabulary="" sps_id=""/>
+						<AttributedBy sps_type="" sps_id=""/>
+						<AttributionDate>
+							<DateValue y="" x=""/>
+						</AttributionDate>
+						<ExpiryDate>
+							<DateValue y="" x=""/>
+						</ExpiryDate>
+					</FieldCollectionNumber>
+					<FindingReport>
+						<BibliographicReference>
+							<Chapters/>
+							<Pages/>
+							<Drawings/>
+							<Tables/>
+							<Link sps_type="" sps_id=""/>
+							<Photos/>
+						</BibliographicReference>
+						<ArchivalReference>
+							<Link sps_type="" sps_id=""/>
+							<Comment/>
+						</ArchivalReference>
+						<OtherClassification>
+							<Classification/>
+							<Source/>
+						</OtherClassification>
+						<Evidences>
+							<Appellation/>
+							<Category sps_vocabulary="" sps_id=""/>
+							<Chronology>
+								<AtSomeTimeWithin>
+									<DateValue y="" x=""/>
+								</AtSomeTimeWithin>
+								<InTheCourseOf>
+									<DateValue y="" x=""/>
+								</InTheCourseOf>
+								<EventRelated sps_vocabulary="" sps_id=""/>
+								<CulturalPeriod sps_vocabulary="" sps_id=""/>
+								<Justification/>
+							</Chronology>
+							<OriginatorOfEvidence>
+								<Person sps_type="" sps_id=""/>
+								<Organisation sps_type="" sps_id=""/>
+							</OriginatorOfEvidence>
+							<MobileObject sps_link="">
+								<CodeNumber sps_type="" sps_id=""/>
+								<Appellation/>
+								<ObjectKind>
+									<FunctionType>
+										<Appellation sps_vocabulary="" sps_id=""/>
+										<Thesaurus sps_vocabulary="" sps_id=""/>
+									</FunctionType>
+									<MorphologyType>
+										<Appellation sps_vocabulary="" sps_id=""/>
+										<Thesaurus sps_vocabulary="" sps_id=""/>
+									</MorphologyType>
+									<ConstructionType>
+										<Appellation sps_vocabulary="" sps_id=""/>
+										<Thesaurus sps_vocabulary="" sps_id=""/>
+									</ConstructionType>
+								</ObjectKind>
+							</MobileObject>
+							<Content>
+								<Description/>
+								<EvidenceReferences>
+									<Date>
+										<DateValue y="" x=""/>
+									</Date>
+									<Location sps_type="" sps_id=""/>
+									<Person sps_type="" sps_id=""/>
+									<Organisation sps_type="" sps_id=""/>
+									<Event sps_type="" sps_id=""/>
+									<MobileObject sps_link="">
+										<CodeNumber sps_type="" sps_id=""/>
+										<Appellation/>
+										<ObjectKind>
+											<FunctionType>
+												<Appellation sps_vocabulary="" sps_id=""/>
+												<Thesaurus sps_vocabulary="" sps_id=""/>
+											</FunctionType>
+											<MorphologyType>
+												<Appellation sps_vocabulary="" sps_id=""/>
+												<Thesaurus sps_vocabulary="" sps_id=""/>
+											</MorphologyType>
+											<ConstructionType>
+												<Appellation sps_vocabulary="" sps_id=""/>
+												<Thesaurus sps_vocabulary="" sps_id=""/>
+											</ConstructionType>
+										</ObjectKind>
+									</MobileObject>
+								</EvidenceReferences>
+							</Content>
+							<Place>
+								<Location sps_type="" sps_id=""/>
+								<Address/>
+								<Coordinates>
+									<Values>
+										<Χ1/>
+										<Χ2/>
+										<Υ1/>
+										<Υ2/>
+										<Ζ1/>
+										<Ζ2/>
+									</Values>
+									<MeasurementMethod sps_vocabulary="" sps_id=""/>
+									<MeasurementAccuracy/>
+									<GeodeticCoordinatesSystem sps_vocabulary="" sps_id=""/>
+								</Coordinates>
+								<Image>
+									<Link sps_type="" sps_id=""/>
+									<Comment/>
+								</Image>
+							</Place>
+							<BibliographicReference>
+								<Chapters/>
+								<Pages/>
+								<Drawings/>
+								<Tables/>
+								<Link sps_type="" sps_id=""/>
+								<Photos/>
+							</BibliographicReference>
+						</Evidences>
+						<Texts>
+							<Title sps_html=""/>
+							<Paragraph/>
+							<Language sps_vocabulary="" sps_id=""/>
+							<CreationDate>
+								<DateValue y="" x=""/>
+							</CreationDate>
+							<Editor sps_type="" sps_id=""/>
+						</Texts>
+					</FindingReport>
+					<ResearchActivity>
+						<Name/>
+						<Duration>
+							<DateValue y="" x=""/>
+						</Duration>
+						<Researcher sps_type="" sps_id=""/>
+						<Institution sps_type="" sps_id=""/>
+					</ResearchActivity>
+					<RelatedFind>
+						<OverallNumber/>
+						<ObjectKind>
+							<FunctionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</FunctionType>
+							<MorphologyType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</MorphologyType>
+							<ConstructionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</ConstructionType>
+						</ObjectKind>
+					</RelatedFind>
+					<RelatedEvent>
+						<KindOfCross-Reference sps_vocabulary="" sps_id=""/>
+						<Event sps_type="" sps_id=""/>
+					</RelatedEvent>
+					<Objective sps_vocabulary="" sps_id=""/>
+					<Technique sps_vocabulary="" sps_id=""/>
+				</FieldCollectionEvent>
+			</FieldCollection>
+			<Intervention>
+				<InterventionPhase>
+					<Appellation sps_vocabulary="" sps_id=""/>
+					<Chronology>
+						<AtSomeTimeWithin>
+							<DateValue y="" x=""/>
+						</AtSomeTimeWithin>
+						<InTheCourseOf>
+							<DateValue y="" x=""/>
+						</InTheCourseOf>
+						<EventRelated sps_vocabulary="" sps_id=""/>
+						<CulturalPeriod sps_vocabulary="" sps_id=""/>
+						<Justification/>
+					</Chronology>
+					<Characterization sps_vocabulary="" sps_id=""/>
+					<PersonInvolved sps_type="" sps_id=""/>
+					<OrganisationInvolved sps_type="" sps_id=""/>
+					<ObjectInvolvedForMobileObject sps_link="">
+						<CodeNumber sps_type="" sps_id=""/>
+						<Appellation/>
+						<ObjectKind>
+							<FunctionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</FunctionType>
+							<MorphologyType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</MorphologyType>
+							<ConstructionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</ConstructionType>
+						</ObjectKind>
+					</ObjectInvolvedForMobileObject>
+					<ConciseDescription/>
+					<Location sps_type="" sps_id=""/>
+					<RelatedEvent>
+						<KindOfCross-Reference sps_vocabulary="" sps_id=""/>
+						<Event sps_type="" sps_id=""/>
+					</RelatedEvent>
+					<Material sps_type="" sps_id=""/>
+					<Objective sps_vocabulary="" sps_id=""/>
+					<Technique sps_vocabulary="" sps_id=""/>
+					<Conservator sps_type="" sps_id=""/>
+					<StateOfCompletion/>
+					<AlterationSigns/>
+				</InterventionPhase>
+			</Intervention>
+			<Possessions>
+				<Possession>
+					<Appellation sps_vocabulary="" sps_id=""/>
+					<Category sps_vocabulary="" sps_id=""/>
+					<Chronology>
+						<AtSomeTimeWithin>
+							<DateValue y="" x=""/>
+						</AtSomeTimeWithin>
+						<InTheCourseOf>
+							<DateValue y="" x=""/>
+						</InTheCourseOf>
+						<EventRelated sps_vocabulary="" sps_id=""/>
+						<CulturalPeriod sps_vocabulary="" sps_id=""/>
+						<Justification/>
+					</Chronology>
+					<Location sps_type="" sps_id=""/>
+					<ConciseDescription/>
+					<PersonInvolved sps_type="" sps_id=""/>
+					<OrganisationInvolved sps_type="" sps_id=""/>
+					<ObjectInvolvedForMobileObject sps_link="">
+						<CodeNumber sps_type="" sps_id=""/>
+						<Appellation/>
+						<ObjectKind>
+							<FunctionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</FunctionType>
+							<MorphologyType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</MorphologyType>
+							<ConstructionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</ConstructionType>
+						</ObjectKind>
+					</ObjectInvolvedForMobileObject>
+				</Possession>
+			</Possessions>
+		</ObjectHistory>
+		<CrossReferences>
+			<ObjectCorrelation>
+				<KindOfCross-Reference sps_vocabulary="" sps_id=""/>
+				<Description/>
+				<Event sps_type="" sps_id=""/>
+				<CompareWith sps_link="">
+					<CodeNumber sps_type="" sps_id=""/>
+					<Appellation/>
+					<ObjectKind>
+						<FunctionType>
+							<Appellation sps_vocabulary="" sps_id=""/>
+							<Thesaurus sps_vocabulary="" sps_id=""/>
+						</FunctionType>
+						<MorphologyType>
+							<Appellation sps_vocabulary="" sps_id=""/>
+							<Thesaurus sps_vocabulary="" sps_id=""/>
+						</MorphologyType>
+						<ConstructionType>
+							<Appellation sps_vocabulary="" sps_id=""/>
+							<Thesaurus sps_vocabulary="" sps_id=""/>
+						</ConstructionType>
+					</ObjectKind>
+				</CompareWith>
+			</ObjectCorrelation>
+		</CrossReferences>
+	</DetailedObjectDocumentation>
+	<ObjectDocumentation>
+		<BibliographicReference>
+			<Chapters/>
+			<Pages/>
+			<Drawings/>
+			<Tables/>
+			<Link sps_type="" sps_id=""/>
+			<Photos/>
+		</BibliographicReference>
+		<ArchivalReference>
+			<Link sps_type="" sps_id=""/>
+			<Comment/>
+		</ArchivalReference>
+		<OtherClassification>
+			<Classification/>
+			<Source/>
+		</OtherClassification>
+		<Evidences>
+			<Appellation/>
+			<Category sps_vocabulary="" sps_id=""/>
+			<Chronology>
+				<AtSomeTimeWithin>
+					<DateValue y="" x=""/>
+				</AtSomeTimeWithin>
+				<InTheCourseOf>
+					<DateValue y="" x=""/>
+				</InTheCourseOf>
+				<EventRelated sps_vocabulary="" sps_id=""/>
+				<CulturalPeriod sps_vocabulary="" sps_id=""/>
+				<Justification/>
+			</Chronology>
+			<OriginatorOfEvidence>
+				<Person sps_type="" sps_id=""/>
+				<Organisation sps_type="" sps_id=""/>
+			</OriginatorOfEvidence>
+			<MobileObject sps_link="">
+				<CodeNumber sps_type="" sps_id=""/>
+				<Appellation/>
+				<ObjectKind>
+					<FunctionType>
+						<Appellation sps_vocabulary="" sps_id=""/>
+						<Thesaurus sps_vocabulary="" sps_id=""/>
+					</FunctionType>
+					<MorphologyType>
+						<Appellation sps_vocabulary="" sps_id=""/>
+						<Thesaurus sps_vocabulary="" sps_id=""/>
+					</MorphologyType>
+					<ConstructionType>
+						<Appellation sps_vocabulary="" sps_id=""/>
+						<Thesaurus sps_vocabulary="" sps_id=""/>
+					</ConstructionType>
+				</ObjectKind>
+			</MobileObject>
+			<Content>
+				<Description/>
+				<EvidenceReferences>
+					<Date>
+						<DateValue y="" x=""/>
+					</Date>
+					<Location sps_type="" sps_id=""/>
+					<Person sps_type="" sps_id=""/>
+					<Organisation sps_type="" sps_id=""/>
+					<Event sps_type="" sps_id=""/>
+					<MobileObject sps_link="">
+						<CodeNumber sps_type="" sps_id=""/>
+						<Appellation/>
+						<ObjectKind>
+							<FunctionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</FunctionType>
+							<MorphologyType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</MorphologyType>
+							<ConstructionType>
+								<Appellation sps_vocabulary="" sps_id=""/>
+								<Thesaurus sps_vocabulary="" sps_id=""/>
+							</ConstructionType>
+						</ObjectKind>
+					</MobileObject>
+				</EvidenceReferences>
+			</Content>
+			<Place>
+				<Location sps_type="" sps_id=""/>
+				<Address/>
+				<Coordinates>
+					<Values>
+						<Χ1/>
+						<Χ2/>
+						<Υ1/>
+						<Υ2/>
+						<Ζ1/>
+						<Ζ2/>
+					</Values>
+					<MeasurementMethod sps_vocabulary="" sps_id=""/>
+					<MeasurementAccuracy/>
+					<GeodeticCoordinatesSystem sps_vocabulary="" sps_id=""/>
+				</Coordinates>
+				<Image>
+					<Link sps_type="" sps_id=""/>
+					<Comment/>
+				</Image>
+			</Place>
+			<BibliographicReference>
+				<Chapters/>
+				<Pages/>
+				<Drawings/>
+				<Tables/>
+				<Link sps_type="" sps_id=""/>
+				<Photos/>
+			</BibliographicReference>
+		</Evidences>
+		<Texts>
+			<Title sps_html=""/>
+			<Paragraph/>
+			<Language sps_vocabulary="" sps_id=""/>
+			<CreationDate>
+				<DateValue y="" x=""/>
+			</CreationDate>
+			<Editor sps_type="" sps_id=""/>
+		</Texts>
+	</ObjectDocumentation>
+	<ObjectManagement>
+		<OtherAccession>
+			<AccessionID>
+				<CodeValue/>
+				<Category sps_vocabulary="" sps_id=""/>
+				<AttributedBy sps_type="" sps_id=""/>
+				<AttributionDate>
+					<DateValue y="" x=""/>
+				</AttributionDate>
+				<ExpiryDate>
+					<DateValue y="" x=""/>
+				</ExpiryDate>
+			</AccessionID>
+			<Remarks/>
+		</OtherAccession>
+		<Packaging>
+			<OfficialDocument>
+				<ReferenceNumber/>
+				<DigitalFile>
+					<File sps_browse="all"/>
+				</DigitalFile>
+				<Comment/>
+			</OfficialDocument>
+			<MeasurementDimensions>
+				<Capacity sps_vocabulary="" sps_id=""/>
+				<Value>
+					<From/>
+					<To/>
+				</Value>
+				<MeasurementUnit sps_vocabulary="" sps_id=""/>
+			</MeasurementDimensions>
+			<Recommendations/>
+			<Notes/>
+		</Packaging>
+		<ValueEstimation>
+			<ValuationReferenceNumber>
+				<CodeValue/>
+				<Category sps_vocabulary="" sps_id=""/>
+				<AttributedBy sps_type="" sps_id=""/>
+				<AttributionDate>
+					<DateValue y="" x=""/>
+				</AttributionDate>
+				<ExpiryDate>
+					<DateValue y="" x=""/>
+				</ExpiryDate>
+			</ValuationReferenceNumber>
+			<Valuer>
+				<Person sps_type="" sps_id=""/>
+				<Organisation sps_type="" sps_id=""/>
+			</Valuer>
+			<Date>
+				<DateValue y="" x=""/>
+			</Date>
+			<Note/>
+			<Cost/>
+		</ValueEstimation>
+		<Deaccession>
+			<OfficialDocument>
+				<ReferenceNumber/>
+				<DigitalFile>
+					<File sps_browse="all"/>
+				</DigitalFile>
+				<Comment/>
+			</OfficialDocument>
+			<DeaccessionType sps_vocabulary="" sps_id=""/>
+			<Description/>
+			<Date>
+				<DateValue y="" x=""/>
+			</Date>
+			<RelatedEvent sps_type="" sps_id=""/>
+			<Notes/>
+		</Deaccession>
+		<Rights>
+			<OfficialDocument>
+				<ReferenceNumber/>
+				<DigitalFile>
+					<File sps_browse="all"/>
+				</DigitalFile>
+				<Comment/>
+			</OfficialDocument>
+			<Period>
+				<DateValue y="" x=""/>
+			</Period>
+			<Notes/>
+			<Requester>
+				<Person sps_type="" sps_id=""/>
+				<Organisation sps_type="" sps_id=""/>
+			</Requester>
+		</Rights>
+		<Acquisition>
+			<OfficialDocument>
+				<ReferenceNumber/>
+				<DigitalFile>
+					<File sps_browse="all"/>
+				</DigitalFile>
+				<Comment/>
+			</OfficialDocument>
+			<AccessionType sps_vocabulary="" sps_id=""/>
+			<Date>
+				<DateValue y="" x=""/>
+			</Date>
+			<Location sps_type="" sps_id=""/>
+			<Description/>
+			<Reason/>
+			<Provisos/>
+			<PersonInvolved sps_type="" sps_id=""/>
+			<OrganisationInvolved sps_type="" sps_id=""/>
+			<Contract>
+				<Link sps_type="" sps_id=""/>
+				<Comment/>
+			</Contract>
+		</Acquisition>
+		<Locations>
+			<CurrentLocation>
+				<Position sps_vocabulary="" sps_id=""/>
+				<PositionTimeSpan>
+					<DateValue y="" x=""/>
+				</PositionTimeSpan>
+				<Remarks/>
+				<Fitness sps_vocabulary="" sps_id=""/>
+			</CurrentLocation>
+			<PermanentLocation sps_vocabulary="" sps_id=""/>
+			<PreviousLocation>
+				<Position sps_vocabulary="" sps_id=""/>
+				<PositionTimeSpan>
+					<DateValue y="" x=""/>
+				</PositionTimeSpan>
+				<Remarks/>
+			</PreviousLocation>
+		</Locations>
+		<Movement>
+			<OfficialDocument>
+				<ReferenceNumber/>
+				<DigitalFile>
+					<File sps_browse="all"/>
+				</DigitalFile>
+				<Comment/>
+			</OfficialDocument>
+			<Type sps_vocabulary="" sps_id=""/>
+			<Purpose sps_vocabulary="" sps_id=""/>
+			<Notes/>
+			<Date>
+				<DateValue y="" x=""/>
+			</Date>
+			<Authoriser>
+				<Person sps_type="" sps_id=""/>
+				<Organisation sps_type="" sps_id=""/>
+			</Authoriser>
+			<Method sps_vocabulary="" sps_id=""/>
+		</Movement>
+		<LoanOut>
+			<OfficialDocument>
+				<ReferenceNumber/>
+				<DigitalFile>
+					<File sps_browse="all"/>
+				</DigitalFile>
+				<Comment/>
+			</OfficialDocument>
+			<Period>
+				<DateValue y="" x=""/>
+			</Period>
+			<Objective sps_vocabulary="" sps_id=""/>
+			<DespatchAuthoriser>
+				<Person sps_type="" sps_id=""/>
+				<Organisation sps_type="" sps_id=""/>
+			</DespatchAuthoriser>
+			<RecipientAuthoriser>
+				<Person sps_type="" sps_id=""/>
+				<Organisation sps_type="" sps_id=""/>
+			</RecipientAuthoriser>
+			<Remarks/>
+			<Contract>
+				<Link sps_type="" sps_id=""/>
+				<Comment/>
+			</Contract>
+		</LoanOut>
+	</ObjectManagement>
+	<CardIdentity>
+		<CardCodeNumber>
+			<CodeValue sps_fixed=""/>
+			<Category sps_vocabulary="" sps_id=""/>
+			<AttributedBy sps_type="" sps_id=""/>
+			<AttributionDate>
+				<DateValue y="" x=""/>
+			</AttributionDate>
+			<ExpiryDate>
+				<DateValue y="" x=""/>
+			</ExpiryDate>
+		</CardCodeNumber>
+		<Edition>
+			<EditionCode>
+				<CodeValue/>
+				<Category sps_vocabulary="" sps_id=""/>
+				<AttributedBy sps_type="" sps_id=""/>
+				<AttributionDate>
+					<DateValue y="" x=""/>
+				</AttributionDate>
+				<ExpiryDate>
+					<DateValue y="" x=""/>
+				</ExpiryDate>
+			</EditionCode>
+			<ScientificSupervisor sps_type="" sps_id=""/>
+			<ScientificAssociates sps_type="" sps_id=""/>
+		</Edition>
+	</CardIdentity>
+	<admin>
+		<id>0</id>
+		<uri_id/>
+		<lang/>
+		<organization/>
+		<creator/>
+		<saved/>
+		<locked/>
+		<status/>
+		<versions>
+			<versionId/>
+			<versionUser/>
+			<versionDate/>
+		</versions>
+	</admin>
 </KAP>

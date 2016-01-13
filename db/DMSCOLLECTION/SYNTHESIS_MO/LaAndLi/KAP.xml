@@ -8,217 +8,7 @@
         <ar>KAP</ar>
         <sv>KAP</sv>
         <nl>KAP</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity</xpath>
-        <gr>Ταυτότητα Δελτίου</gr>
-        <en>Card Identity</en>
-        <it>Identità scheda</it>
-        <fr>Fiche identité </fr>
-        <ar>هوية البطاقة</ar>
-        <sv>Blankettidentitet</sv>
-        <nl>Kaart identiteit</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/CardCodeNumber</xpath>
-        <gr>Κωδικός Δελτίου</gr>
-        <en>Card Code Number</en>
-        <it>Codice scheda</it>
-        <fr>Fiche code</fr>
-        <ar>رقم البطاقة الكودى</ar>
-        <sv>Blankettkodsnummer</sv>
-        <nl>Kaart codenummer</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/CardCodeNumber/CodeValue</xpath>
-        <gr>Τιμή</gr>
-        <en>Value</en>
-        <it>Valore</it>
-        <fr>Valeur</fr>
-        <ar>قيمة</ar>
-        <sv>Värde</sv>
-        <nl>Waarde</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/CardCodeNumber/Category</xpath>
-        <gr>Κατηγορία</gr>
-        <en>Category</en>
-        <it>#N/A</it>
-        <fr>Catégorie</fr>
-        <ar>#N/A</ar>
-        <sv>Kategori</sv>
-        <nl>Categorie</nl>
-        <vocabulary>KAPCodeCategory.xml</vocabulary>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/CardCodeNumber/AttributedBy</xpath>
-        <gr>Απόδοση Από</gr>
-        <en>Attributed by</en>
-        <it>Attribuzione da</it>
-        <fr>Attribution par</fr>
-        <ar>منسوب إلى</ar>
-        <sv>Tilldelats av</sv>
-        <nl>Toegekend door</nl>
-        <valueFrom type="">Person/Appellation</valueFrom>
-        <valueFrom type="">Organization/Appellation</valueFrom>
-        <valueFrom type="">Department/Appellation</valueFrom>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/CardCodeNumber/AttributionDate</xpath>
-        <gr>Ημ/νία Απόδοσης</gr>
-        <en>Attribution Date</en>
-        <it>Data di attribuzione</it>
-        <fr>Date attribution</fr>
-        <ar>تاريخ النشر</ar>
-        <sv>Tilldelat datum</sv>
-        <nl>Datum naamsvermelding</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/CardCodeNumber/AttributionDate/DateValue</xpath>
-        <gr>Ημερομηνία</gr>
-        <en>Date</en>
-        <it>Data</it>
-        <fr>Date</fr>
-        <ar>تاريخ</ar>
-        <sv>Datum</sv>
-        <nl>Datum</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/CardCodeNumber/ExpiryDate</xpath>
-        <gr>Ημ/νία Λήξης</gr>
-        <en>Expiry Date</en>
-        <it>Data scadenza</it>
-        <fr>Date fin de validité</fr>
-        <ar>تاريخ الإنتهاء</ar>
-        <sv>Utgångsdatum</sv>
-        <nl>Vervaldatum</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/CardCodeNumber/ExpiryDate/DateValue</xpath>
-        <gr>Ημερομηνία</gr>
-        <en>Date</en>
-        <it>Data</it>
-        <fr>Date</fr>
-        <ar>تاريخ</ar>
-        <sv>Datum</sv>
-        <nl>Datum</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/Edition</xpath>
-        <gr>Έκδοση</gr>
-        <en>Edition</en>
-        <it>Edizione</it>
-        <fr>Édition</fr>
-        <ar>إصدار</ar>
-        <sv>Upplaga</sv>
-        <nl>Editie</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/Edition/EditionCode</xpath>
-        <gr>Κωδικός Έκδοσης</gr>
-        <en>Edition Code</en>
-        <it>Codice edizione</it>
-        <fr>Code édition</fr>
-        <ar>رقم الإصدار الكودى</ar>
-        <sv>Upplaga kod</sv>
-        <nl>Editie Code</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/Edition/EditionCode/CodeValue</xpath>
-        <gr>Τιμή</gr>
-        <en>Value</en>
-        <it>Valore</it>
-        <fr>Valeur</fr>
-        <ar>قيمة</ar>
-        <sv>Värde</sv>
-        <nl>Waarde</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/Edition/EditionCode/Category</xpath>
-        <gr>Κατηγορία</gr>
-        <en>Category</en>
-        <it>#N/A</it>
-        <fr>Catégorie</fr>
-        <ar>#N/A</ar>
-        <sv>Kategori</sv>
-        <nl>Categorie</nl>
-        <vocabulary>KAPCodeCategory.xml</vocabulary>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/Edition/EditionCode/AttributedBy</xpath>
-        <gr>Απόδοση Από</gr>
-        <en>Attributed by</en>
-        <it>Attribuzione da</it>
-        <fr>Attribution par</fr>
-        <ar>منسوب إلى</ar>
-        <sv>Tilldelats av</sv>
-        <nl>Toegekend door</nl>
-        <valueFrom type="">Person/Appellation</valueFrom>
-        <valueFrom type="">Organization/Appellation</valueFrom>
-        <valueFrom type="">Department/Appellation</valueFrom>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/Edition/EditionCode/AttributionDate</xpath>
-        <gr>Ημ/νία Απόδοσης</gr>
-        <en>Attribution Date</en>
-        <it>Data di attribuzione</it>
-        <fr>Date attribution</fr>
-        <ar>تاريخ النشر</ar>
-        <sv>Tilldelat datum</sv>
-        <nl>Datum naamsvermelding</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/Edition/EditionCode/AttributionDate/DateValue</xpath>
-        <gr>Ημερομηνία</gr>
-        <en>Date</en>
-        <it>Data</it>
-        <fr>Date</fr>
-        <ar>تاريخ</ar>
-        <sv>Datum</sv>
-        <nl>Datum</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/Edition/EditionCode/ExpiryDate</xpath>
-        <gr>Ημ/νία Λήξης</gr>
-        <en>Expiry Date</en>
-        <it>Data scadenza</it>
-        <fr>Date fin de validité</fr>
-        <ar>تاريخ الإنتهاء</ar>
-        <sv>Utgångsdatum</sv>
-        <nl>Vervaldatum</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/Edition/EditionCode/ExpiryDate/DateValue</xpath>
-        <gr>Ημερομηνία</gr>
-        <en>Date</en>
-        <it>Data</it>
-        <fr>Date</fr>
-        <ar>تاريخ</ar>
-        <sv>Datum</sv>
-        <nl>Datum</nl>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/Edition/ScientificSupervisor</xpath>
-        <gr>Επιστημονικός Υπεύθυνος</gr>
-        <en>Scientific Supervisor</en>
-        <it>Responsabile scientifico</it>
-        <fr>Chef scientifique</fr>
-        <ar>المسئول العلمى</ar>
-        <sv>Vetenskaplig kontrollör</sv>
-        <nl>Wetenschappelijke supervisor</nl>
-        <valueFrom type="">Person/Appellation</valueFrom>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/CardIdentity/Edition/ScientificAssociates</xpath>
-        <gr>Επιστημονικοί Συνεργάτες</gr>
-        <en>Scientific Associates</en>
-        <it>Collaboratori scientifici</it>
-        <fr>Associés scientifiques</fr>
-        <ar>الفريق العلمى</ar>
-        <sv>Vetenskapliga kopplingar</sv>
-        <nl>Wetenschappelijke medewerkers</nl>
-        <valueFrom type="">Person/Appellation</valueFrom>
-    </node>
+    </node>    
     <node type="KAP">
         <xpath>KAP/IdentityOfObject</xpath>
         <gr>Ταυτότητα Αντικειμένου</gr>
@@ -8118,13 +7908,8 @@
         <xpath>KAP/ObjectManagement/Locations/CurrentLocation/Position</xpath>
         <gr>Θέση</gr>
         <en>Position</en>
-        <it>#N/A</it>
-        <fr>Disposition</fr>
-        <ar>#N/A</ar>
-        <sv>Placering</sv>
-        <nl>Standplaats</nl>
         <vocabulary>KAPObjectPosition.xml</vocabulary>
-    </node>	
+    </node>
     <node type="KAP">
         <xpath>KAP/ObjectManagement/Locations/CurrentLocation/PositionTimeSpan</xpath>
         <gr>Χρόνος Τοποθέτησης</gr>
@@ -8473,5 +8258,215 @@
         <xpath>KAP/ObjectManagement/LoanOut/Contract/Comment</xpath>
         <gr>Σχόλιο</gr>
         <en>Comment</en>
+    </node>
+	<node type="KAP">
+        <xpath>KAP/CardIdentity</xpath>
+        <gr>Ταυτότητα Δελτίου</gr>
+        <en>Card Identity</en>
+        <it>Identità scheda</it>
+        <fr>Fiche identité </fr>
+        <ar>هوية البطاقة</ar>
+        <sv>Blankettidentitet</sv>
+        <nl>Kaart identiteit</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/CardCodeNumber</xpath>
+        <gr>Κωδικός Δελτίου</gr>
+        <en>Card Code Number</en>
+        <it>Codice scheda</it>
+        <fr>Fiche code</fr>
+        <ar>رقم البطاقة الكودى</ar>
+        <sv>Blankettkodsnummer</sv>
+        <nl>Kaart codenummer</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/CardCodeNumber/CodeValue</xpath>
+        <gr>Τιμή</gr>
+        <en>Value</en>
+        <it>Valore</it>
+        <fr>Valeur</fr>
+        <ar>قيمة</ar>
+        <sv>Värde</sv>
+        <nl>Waarde</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/CardCodeNumber/Category</xpath>
+        <gr>Κατηγορία</gr>
+        <en>Category</en>
+        <it>#N/A</it>
+        <fr>Catégorie</fr>
+        <ar>#N/A</ar>
+        <sv>Kategori</sv>
+        <nl>Categorie</nl>
+        <vocabulary>KAPCodeCategory.xml</vocabulary>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/CardCodeNumber/AttributedBy</xpath>
+        <gr>Απόδοση Από</gr>
+        <en>Attributed by</en>
+        <it>Attribuzione da</it>
+        <fr>Attribution par</fr>
+        <ar>منسوب إلى</ar>
+        <sv>Tilldelats av</sv>
+        <nl>Toegekend door</nl>
+        <valueFrom type="">Person/Appellation</valueFrom>
+        <valueFrom type="">Organization/Appellation</valueFrom>
+        <valueFrom type="">Department/Appellation</valueFrom>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/CardCodeNumber/AttributionDate</xpath>
+        <gr>Ημ/νία Απόδοσης</gr>
+        <en>Attribution Date</en>
+        <it>Data di attribuzione</it>
+        <fr>Date attribution</fr>
+        <ar>تاريخ النشر</ar>
+        <sv>Tilldelat datum</sv>
+        <nl>Datum naamsvermelding</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/CardCodeNumber/AttributionDate/DateValue</xpath>
+        <gr>Ημερομηνία</gr>
+        <en>Date</en>
+        <it>Data</it>
+        <fr>Date</fr>
+        <ar>تاريخ</ar>
+        <sv>Datum</sv>
+        <nl>Datum</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/CardCodeNumber/ExpiryDate</xpath>
+        <gr>Ημ/νία Λήξης</gr>
+        <en>Expiry Date</en>
+        <it>Data scadenza</it>
+        <fr>Date fin de validité</fr>
+        <ar>تاريخ الإنتهاء</ar>
+        <sv>Utgångsdatum</sv>
+        <nl>Vervaldatum</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/CardCodeNumber/ExpiryDate/DateValue</xpath>
+        <gr>Ημερομηνία</gr>
+        <en>Date</en>
+        <it>Data</it>
+        <fr>Date</fr>
+        <ar>تاريخ</ar>
+        <sv>Datum</sv>
+        <nl>Datum</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/Edition</xpath>
+        <gr>Έκδοση</gr>
+        <en>Edition</en>
+        <it>Edizione</it>
+        <fr>Édition</fr>
+        <ar>إصدار</ar>
+        <sv>Upplaga</sv>
+        <nl>Editie</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/Edition/EditionCode</xpath>
+        <gr>Κωδικός Έκδοσης</gr>
+        <en>Edition Code</en>
+        <it>Codice edizione</it>
+        <fr>Code édition</fr>
+        <ar>رقم الإصدار الكودى</ar>
+        <sv>Upplaga kod</sv>
+        <nl>Editie Code</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/Edition/EditionCode/CodeValue</xpath>
+        <gr>Τιμή</gr>
+        <en>Value</en>
+        <it>Valore</it>
+        <fr>Valeur</fr>
+        <ar>قيمة</ar>
+        <sv>Värde</sv>
+        <nl>Waarde</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/Edition/EditionCode/Category</xpath>
+        <gr>Κατηγορία</gr>
+        <en>Category</en>
+        <it>#N/A</it>
+        <fr>Catégorie</fr>
+        <ar>#N/A</ar>
+        <sv>Kategori</sv>
+        <nl>Categorie</nl>
+        <vocabulary>KAPCodeCategory.xml</vocabulary>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/Edition/EditionCode/AttributedBy</xpath>
+        <gr>Απόδοση Από</gr>
+        <en>Attributed by</en>
+        <it>Attribuzione da</it>
+        <fr>Attribution par</fr>
+        <ar>منسوب إلى</ar>
+        <sv>Tilldelats av</sv>
+        <nl>Toegekend door</nl>
+        <valueFrom type="">Person/Appellation</valueFrom>
+        <valueFrom type="">Organization/Appellation</valueFrom>
+        <valueFrom type="">Department/Appellation</valueFrom>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/Edition/EditionCode/AttributionDate</xpath>
+        <gr>Ημ/νία Απόδοσης</gr>
+        <en>Attribution Date</en>
+        <it>Data di attribuzione</it>
+        <fr>Date attribution</fr>
+        <ar>تاريخ النشر</ar>
+        <sv>Tilldelat datum</sv>
+        <nl>Datum naamsvermelding</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/Edition/EditionCode/AttributionDate/DateValue</xpath>
+        <gr>Ημερομηνία</gr>
+        <en>Date</en>
+        <it>Data</it>
+        <fr>Date</fr>
+        <ar>تاريخ</ar>
+        <sv>Datum</sv>
+        <nl>Datum</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/Edition/EditionCode/ExpiryDate</xpath>
+        <gr>Ημ/νία Λήξης</gr>
+        <en>Expiry Date</en>
+        <it>Data scadenza</it>
+        <fr>Date fin de validité</fr>
+        <ar>تاريخ الإنتهاء</ar>
+        <sv>Utgångsdatum</sv>
+        <nl>Vervaldatum</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/Edition/EditionCode/ExpiryDate/DateValue</xpath>
+        <gr>Ημερομηνία</gr>
+        <en>Date</en>
+        <it>Data</it>
+        <fr>Date</fr>
+        <ar>تاريخ</ar>
+        <sv>Datum</sv>
+        <nl>Datum</nl>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/Edition/ScientificSupervisor</xpath>
+        <gr>Επιστημονικός Υπεύθυνος</gr>
+        <en>Scientific Supervisor</en>
+        <it>Responsabile scientifico</it>
+        <fr>Chef scientifique</fr>
+        <ar>المسئول العلمى</ar>
+        <sv>Vetenskaplig kontrollör</sv>
+        <nl>Wetenschappelijke supervisor</nl>
+        <valueFrom type="">Person/Appellation</valueFrom>
+    </node>
+    <node type="KAP">
+        <xpath>KAP/CardIdentity/Edition/ScientificAssociates</xpath>
+        <gr>Επιστημονικοί Συνεργάτες</gr>
+        <en>Scientific Associates</en>
+        <it>Collaboratori scientifici</it>
+        <fr>Associés scientifiques</fr>
+        <ar>الفريق العلمى</ar>
+        <sv>Vetenskapliga kopplingar</sv>
+        <nl>Wetenschappelijke medewerkers</nl>
+        <valueFrom type="">Person/Appellation</valueFrom>
     </node>
 </nodes>
