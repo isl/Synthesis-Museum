@@ -195,7 +195,7 @@ This file is part of the Synthesis Museum project.
 		</menu>
 	</menugroup>
 	<menugroup id="3" type="topcontent">
-		<menu id="Edit" img_src="/formating/images/editdoc.gif">			
+        <menu id="Edit" img_src="/formating/images/edit.png">
 			<actionPerType id="KAP">
 				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=KAP&amp;id=&amp;lang=" onclick="">editor</userRights>
 				<userRights href="javascript:void(0)" id="/FeXML_museum/Index?type=KAP&amp;id=&amp;lang=" onclick="">admin</userRights>
@@ -685,7 +685,7 @@ This file is part of the Synthesis Museum project.
 			</submenu>
 			<label>Versions</label>
 		</menu>
-		<menu id="Delete" img_src="/formating/images/deletedoc.gif">
+        <menu id="Delete" img_src="/formating/images/delete.png">
 			<submenu id="deleteSub">
 								<actionPerType id="KAP">
 					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=KAP&amp;status=&amp;mode=&amp;id=';" href="">admin</userRights>
@@ -897,7 +897,7 @@ This file is part of the Synthesis Museum project.
 					<userRights href="ListEntity?type=KAP&amp;status=allunpublished">editor</userRights>
 					<userRights href="ListEntity?type=KAP&amp;status=allunpublished">admin</userRights>
 				</actionPerType>
-				<label>taDikaMu</label>
+				<label>allunpublished</label>
 			</submenu>
 		</menu>
 		<menu id="Allwn">
@@ -908,7 +908,7 @@ This file is part of the Synthesis Museum project.
 					<userRights href="ListEntity?type=KAP&amp;status=org">admin</userRights>
 					<userRights href="ListEntity?type=KAP&amp;status=org">sysadmin</userRights>
 				</actionPerType>
-				<label>Allwn</label>
+				<label>org</label>
 			</submenu>
 		</menu>
 		<menu id="ProboliDimosieumenwn">

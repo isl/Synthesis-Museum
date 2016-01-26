@@ -65,8 +65,7 @@ b.	You will find the uploads folder at synthesis_mo/uploads
 
 4.	Replace the images located at the FIMS\web\formatting\images folder with the images from synthesis_mo\images
 
-5.	Replace footer.xsl located at FIMS\formating\xsl\ui with the footer.xsl from “synthesis_museum_configuration”. 
-
+5.	Replace page.css located at FIMS\formating\css with the page.css from synthesis_mo\css
 
 
 

@@ -106,6 +106,7 @@ This file is part of the Synthesis Museum project.
 			<userRights href="ListEntity?type=Archive">sysadmin</userRights>
 			<label>Arxeia</label>
 		</menu>
+        <label>documentation_entities</label>
 	</menugroup>
 	<menugroup type="left" id="2">
 		<menu id="DigitalArchive">
@@ -122,6 +123,7 @@ This file is part of the Synthesis Museum project.
 			<userRights href="ListEntity?type=InfoText">sysadmin</userRights>
 			<label>InfoText</label>
 		</menu>
+        <label>presentation_entities</label>
 	</menugroup>
 	<menugroup type="left" id="3">
 		<menu id="AdminOrg">
@@ -154,5 +156,6 @@ This file is part of the Synthesis Museum project.
 			<userRights href="Storage?action=list&amp;menu=sysadmin&amp;menuId=Backup">sysadmin</userRights>
 			<label>Backup</label>
 		</menu>
+        <label>admin_tools</label>
 	</menugroup>
 </leftmenu>

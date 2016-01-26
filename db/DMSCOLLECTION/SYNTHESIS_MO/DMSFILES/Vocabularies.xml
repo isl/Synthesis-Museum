@@ -52,8 +52,8 @@ This file is part of the Synthesis Museum project.
 		</PersonAppellation>
 		<PersonType>
 			<displayname>
-				<gr>Λεξιλόγιο Τύπου</gr>
-				<en>Vocabulary of Type</en>
+                <gr>Λεξιλόγιο Ρόλος-Ιδιότητα</gr>
+                <en>Vocabulary of Role-Capacity</en>
 				<fr>Vocabulaire de Qualite de Personne</fr>
 				<it>Lessico qualifica persona</it>
 				<ar>مفردات خاصية الشخص</ar>
@@ -133,7 +133,7 @@ This file is part of the Synthesis Museum project.
 		</displayname>
 		<GENGeopoliticalHierarchy>
 			<displayname>
-				<gr>Λεξιλόγιο Γεωπολιτικής Ιεραρχίας ??</gr>
+                <gr>Λεξιλόγιο Γεωπολιτικής Ιεραρχίας</gr>
 				<en>Vocabulary of Geopolitical Hierarchy</en>
 				<fr>****</fr>
 				<it>****</it>
