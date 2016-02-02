@@ -27,4 +27,157 @@ Authors : Konstantina Konsolaki, Georgios Samaritakis
 
 This file is part of the Synthesis Museum project.
 -->
-<nodes><node type="DigitalArchive"><xpath>DigitalArchive</xpath><gr>Ψηφιακό Αρχείο</gr><en>Digital Archive</en></node><node type="DigitalArchive"><xpath>DigitalArchive/IdentificationNumber</xpath><gr>Κωδικός Αναφοράς</gr><en>Identification Number</en></node><node type="DigitalArchive"><xpath>DigitalArchive/Title</xpath><gr>Τίτλος</gr><en>Title</en></node><node type="DigitalArchive"><xpath>DigitalArchive/Type</xpath><gr>Είδος</gr><en>Type</en><vocabulary>DigitalArchiveType.xml</vocabulary></node><node type="DigitalArchive"><xpath>DigitalArchive/ShortDescription</xpath><gr>Σύντομη περιγραφή</gr><en>Short Description</en></node><node type="DigitalArchive"><xpath>DigitalArchive/Purpose</xpath><gr>Σκοπός</gr><en>Purpose</en><vocabulary>GENPurpose.xml</vocabulary></node><node type="DigitalArchive"><xpath>DigitalArchive/DigitalFile</xpath><gr>Ψηφιακό Αρχείο</gr><en>DigitalFile</en></node><node type="DigitalArchive"><xpath>DigitalArchive/DigitalFile/File</xpath><gr>Αρχείο</gr><en>File</en></node><node type="DigitalArchive"><xpath>DigitalArchive/DigitalFile/Comment</xpath><gr>Σχόλιο</gr><en>Comment</en></node><node type="DigitalArchive"><xpath>DigitalArchive/DigitalRights</xpath><gr>Δικαιώματα</gr><en>Digital Rights</en><vocabulary>GENDigitalRights.xml</vocabulary></node><node type="DigitalArchive"><xpath>DigitalArchive/Creation</xpath><gr>Δημιουργία</gr><en>Creation</en></node><node type="DigitalArchive"><xpath>DigitalArchive/Creation/CreationDate</xpath><gr>Ημερομηνία δημιουργίας</gr><en>Creation Date</en></node><node type="DigitalArchive"><xpath>DigitalArchive/Creation/CreationDate/DateValue</xpath><gr>Τιμή</gr><en>Date</en></node><node type="DigitalArchive"><xpath>DigitalArchive/Creation/Type</xpath><gr>Είδος</gr><en>Type</en><vocabulary>DigitalArchiveCreationType.xml</vocabulary></node><node type="DigitalArchive"><xpath>DigitalArchive/Creation/Creator</xpath><gr>Δημιουργός</gr><en>Creator</en><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom></node><node type="DigitalArchive"><xpath>DigitalArchive/Creation/CreationPlace</xpath><gr>Τόπος δημιουργίας</gr><en>Creation Place</en></node><node type="DigitalArchive"><xpath>DigitalArchive/Creation/CreationPlace/GeopoliticalHierarchy</xpath><gr>Γεωπολιτική ιεραρχία</gr><en>Geopolitical Hierarchy</en><vocabulary>GENGeopoliticalHierarchy.xml</vocabulary></node><node type="DigitalArchive"><xpath>DigitalArchive/Creation/CreationPlace/Link</xpath><gr>Σύνδεσμος</gr><en>Link</en><valueFrom type="">Location/Name</valueFrom></node><node type="DigitalArchive"><xpath>DigitalArchive/Creation/Comment</xpath><gr>Σχόλιο</gr><en>Comment</en></node><node type="DigitalArchive"><xpath>DigitalArchive/Creation/TechnicalCharacteristics</xpath><gr>Τεχνικά χαρακτηριστικά</gr><en>Technical Characteristics</en></node><node type="DigitalArchive"><xpath>DigitalArchive/Source</xpath><gr>Πηγή</gr><en>Source</en></node><node type="DigitalArchive"><xpath>DigitalArchive/Source/IdentificationNumber</xpath><gr>Κωδικός Αναφοράς</gr><en>Identification Number</en><valueFrom type="">Archive/IdentificationNumber,Archive/Title</valueFrom></node><node type="DigitalArchive"><xpath>DigitalArchive/Source/AnyOtherNumber</xpath><gr>Άλλος αριθμός ταυτότητος</gr><en>AnyOtherNumber</en></node><node type="DigitalArchive"><xpath>DigitalArchive/Source/AnyOtherNumber/IdentificationNumber</xpath><gr>Κωδικός Αναφοράς</gr><en>Identification Number</en><valueFrom type="">Archive/IdentificationNumber,Archive/Title</valueFrom></node><node type="DigitalArchive"><xpath>DigitalArchive/Source/AnyOtherNumber/Link</xpath><gr>Σύνδεσμος</gr><en>Link</en><valueFrom type="">Archive/Title</valueFrom></node><node type="DigitalArchive"><xpath>DigitalArchive/Source/Type</xpath><gr>Είδος</gr><en>Type</en><vocabulary>DigitalArchiveSourceType.xml</vocabulary></node><node type="DigitalArchive"><xpath>DigitalArchive/Source/Description</xpath><gr>Περιγραφή</gr><en>Description</en></node><node type="DigitalArchive"><xpath>DigitalArchive/StorageLocation</xpath><gr>Αποθήκευση</gr><en>Storage Location</en></node><node type="DigitalArchive"><xpath>DigitalArchive/ReferenceTo</xpath><gr>Αναφέρεται σε</gr><en>Reference To</en></node><node type="DigitalArchive"><xpath>DigitalArchive/ReferenceTo/Entity</xpath><gr>Οντότητα</gr><en>Entity</en></node><node type="DigitalArchive"><xpath>DigitalArchive/ReferenceTo/Entity/EntityId</xpath><gr>Αριθμός ταυτότητας</gr><en>Entity Id</en><valueFrom type="">InfoText/Type, InfoText/Title</valueFrom><valueFrom type="">Event/Appellation</valueFrom><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom><valueFrom type="">Study/Title</valueFrom><valueFrom type="">Route/Title</valueFrom><valueFrom type="">Glossary/Type, Glossary/Term</valueFrom><valueFrom type="">Bibliography/Title</valueFrom></node><node type="DigitalArchive"><xpath>DigitalArchive/ReferenceTo/Entity/Relation</xpath><gr>Σχέση</gr><en>Relation</en><vocabulary>GENEntityRelationType.xml</vocabulary></node><node type="DigitalArchive"><xpath>DigitalArchive/ReferenceTo/Subject</xpath><gr>Θέμα</gr><en>Subject</en><vocabulary>GENEntitySubject.xml</vocabulary></node><node type="DigitalArchive"><xpath>DigitalArchive/ReferenceTo/Note</xpath><gr>Σημείωση</gr><en>Note</en></node><node type="DigitalArchive"><xpath>DigitalArchive/IsReferencedBy</xpath><gr>Αναφέρεται από</gr><en>Is Referenced By</en></node><node type="DigitalArchive"><xpath>DigitalArchive/IsReferencedBy/Entity</xpath><gr>Οντότητα</gr><en>Entity</en></node><node type="DigitalArchive"><xpath>DigitalArchive/IsReferencedBy/Entity/EntityId</xpath><gr>Αριθμός ταυτότητας</gr><en>EntityId</en><valueFrom type="">InfoText/Type, InfoText/Title</valueFrom><valueFrom type="">Event/Appellation</valueFrom><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom><valueFrom type="">Study/Title</valueFrom><valueFrom type="">Route/Title</valueFrom><valueFrom type="">Glossary/Type, Glossary/Term</valueFrom></node><node type="DigitalArchive"><xpath>DigitalArchive/IsReferencedBy/Entity/Relation</xpath><gr>Σχέση</gr><en>Relation</en><vocabulary>GENEntityRelationType.xml</vocabulary></node></nodes>
+<nodes>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive</xpath>
+		<gr>Ψηφιακό Αρχείο</gr>
+		<en>Digital Archive</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/IdentificationNumber</xpath>
+		<gr>Κωδικός Αναφοράς</gr>
+		<en>Identification Number</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Title</xpath>
+		<gr>Τίτλος</gr>
+		<en>Title</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Type</xpath>
+		<gr>Είδος</gr>
+		<en>Type</en>
+		<vocabulary>DigitalArchiveType.xml</vocabulary>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/ShortDescription</xpath>
+		<gr>Σύντομη περιγραφή</gr>
+		<en>Short Description</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Purpose</xpath>
+		<gr>Σκοπός</gr>
+		<en>Purpose</en>
+		<vocabulary>GENPurpose.xml</vocabulary>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/DigitalFile</xpath>
+		<gr>Ψηφιακό Αρχείο</gr>
+		<en>DigitalFile</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/DigitalFile/File</xpath>
+		<gr>Αρχείο</gr>
+		<en>File</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/DigitalFile/Comment</xpath>
+		<gr>Σχόλιο</gr>
+		<en>Comment</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/DigitalRights</xpath>
+		<gr>Δικαιώματα</gr>
+		<en>Digital Rights</en>
+		<vocabulary>GENDigitalRights.xml</vocabulary>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Creation</xpath>
+		<gr>Δημιουργία</gr>
+		<en>Creation</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Creation/CreationDate</xpath>
+		<gr>Ημερομηνία δημιουργίας</gr>
+		<en>Creation Date</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Creation/CreationDate/DateValue</xpath>
+		<gr>Τιμή</gr>
+		<en>Date</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Creation/Type</xpath>
+		<gr>Είδος</gr>
+		<en>Type</en>
+		<vocabulary>DigitalArchiveCreationType.xml</vocabulary>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Creation/Creator</xpath>
+		<gr>Δημιουργός</gr>
+		<en>Creator</en>
+		<valueFrom type="">Person/Appellation</valueFrom>
+		<valueFrom type="">Organization/Appellation</valueFrom>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Creation/CreationPlace</xpath>
+		<gr>Τόπος δημιουργίας</gr>
+		<en>Creation Place</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Creation/CreationPlace/GeopoliticalHierarchy</xpath>
+		<gr>Γεωπολιτική ιεραρχία</gr>
+		<en>Geopolitical Hierarchy</en>
+		<vocabulary>GENGeopoliticalHierarchy.xml</vocabulary>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Creation/CreationPlace/Link</xpath>
+		<gr>Σύνδεσμος</gr>
+		<en>Link</en>
+		<valueFrom type="">Location/Name</valueFrom>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Creation/Comment</xpath>
+		<gr>Σχόλιο</gr>
+		<en>Comment</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Creation/TechnicalCharacteristics</xpath>
+		<gr>Τεχνικά χαρακτηριστικά</gr>
+		<en>Technical Characteristics</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Source</xpath>
+		<gr>Πηγή</gr>
+		<en>Source</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Source/IdentificationNumber</xpath>
+		<gr>Κωδικός Αναφοράς</gr>
+		<en>Identification Number</en>
+		<valueFrom type="">Archive/IdentificationNumber,Archive/Title</valueFrom>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Source/AnyOtherNumber</xpath>
+		<gr>Άλλος αριθμός ταυτότητος</gr>
+		<en>AnyOtherNumber</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Source/AnyOtherNumber/IdentificationNumber</xpath>
+		<gr>Κωδικός Αναφοράς</gr>
+		<en>Identification Number</en>
+		<valueFrom type="">Archive/IdentificationNumber,Archive/Title</valueFrom>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Source/AnyOtherNumber/Link</xpath>
+		<gr>Σύνδεσμος</gr>
+		<en>Link</en>
+		<valueFrom type="">Archive/Title</valueFrom>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Source/Type</xpath>
+		<gr>Είδος</gr>
+		<en>Type</en>
+		<vocabulary>DigitalArchiveSourceType.xml</vocabulary>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/Source/Description</xpath>
+		<gr>Περιγραφή</gr>
+		<en>Description</en>
+	</node>
+	<node type="DigitalArchive">
+		<xpath>DigitalArchive/StorageLocation</xpath>
+		<gr>Αποθήκευση</gr>
+		<en>Storage Location</en>
+	</node>
+</nodes>
