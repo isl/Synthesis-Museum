@@ -27,4 +27,82 @@ Authors : Konstantina Konsolaki, Georgios Samaritakis
 
 This file is part of the Synthesis Museum project.
 -->
-<nodes><node type="Collection"><xpath>Collection</xpath><gr>Συλλογή</gr><en>Collection</en></node><node type="Collection"><xpath>Collection/IdentificationNumber</xpath><gr>Κωδικός Αναφοράς</gr><en>Identification Number</en></node><node type="Collection"><xpath>Collection/Title</xpath><gr>Τίτλος</gr><en>Title</en></node><node type="Collection"><xpath>Collection/HasSubject</xpath><gr>Θέμα</gr><en>Subject</en><vocabulary>CollectionSubject.xml</vocabulary></node><node type="Collection"><xpath>Collection/Type</xpath><gr>Είδος</gr><en>Type</en><vocabulary>CollectionType.xml</vocabulary></node><node type="Collection"><xpath>Collection/Condition</xpath><gr>Κατάσταση</gr><en>Condition</en><vocabulary>CollectionCondition.xml</vocabulary></node><node type="Collection"><xpath>Collection/FormerLocation</xpath><gr>Προηγούμενη Τοποθεσία</gr><en>Former Location</en><vocabulary>CollectionLocation.xml</vocabulary></node><node type="Collection"><xpath>Collection/CurrentLocation</xpath><gr>Τρέχουσα Τοποθεσία</gr><en>CurrentLocation</en><vocabulary>CollectionLocation.xml</vocabulary></node><node type="Collection"><xpath>Collection/Curator</xpath><gr>Επιμελητής</gr><en>Curator</en><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom></node><node type="Collection"><xpath>Collection/RightHeldBy</xpath><gr>Δικαιώματα</gr><en>Rights</en><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom></node><node type="Collection"><xpath>Collection/CurrentOwner</xpath><gr>Τρέχων Ιδιοκτήτης</gr><en>Current Owner</en><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom></node><node type="Collection"><xpath>Collection/FormerOwner</xpath><gr>Προηγούμενος Ιδιοκτήτης</gr><en>Former Owner</en><valueFrom type=""/></node><node type="Collection"><xpath>Collection/Description</xpath><gr>Περιγραφή</gr><en>Description</en></node><node type="Collection"><xpath>Collection/ConsistsOf</xpath><gr>Αποτελείται Από</gr><en>ConsistsOf</en><valueFrom type="">KAP/IdentityOfObject/PrincipalCurrentDenomination</valueFrom></node></nodes>
+<nodes>
+	<node type="Collection">
+		<xpath>Collection</xpath>
+		<gr>Συλλογή</gr>
+		<en>Collection</en>
+	</node>
+	<node type="Collection">
+		<xpath>Collection/IdentificationNumber</xpath>
+		<gr>Κωδικός Αναφοράς</gr>
+		<en>Identification Number</en>
+	</node>
+	<node type="Collection">
+		<xpath>Collection/Title</xpath>
+		<gr>Τίτλος</gr>
+		<en>Title</en>
+	</node>
+	<node type="Collection">
+		<xpath>Collection/HasSubject</xpath>
+		<gr>Θέμα</gr>
+		<en>Subject</en>
+		<vocabulary>CollectionSubject.xml</vocabulary>
+	</node>
+	<node type="Collection">
+		<xpath>Collection/Type</xpath>
+		<gr>Είδος</gr>
+		<en>Type</en>
+		<vocabulary>CollectionType.xml</vocabulary>
+	</node>
+	<node type="Collection">
+		<xpath>Collection/Condition</xpath>
+		<gr>Κατάσταση</gr>
+		<en>Condition</en>
+		<vocabulary>CollectionCondition.xml</vocabulary>
+	</node>
+	<node type="Collection">
+		<xpath>Collection/FormerLocation</xpath>
+		<gr>Προηγούμενη Τοποθεσία</gr>
+		<en>Former Location</en>
+		<vocabulary>CollectionLocation.xml</vocabulary>
+	</node>
+	<node type="Collection">
+		<xpath>Collection/CurrentLocation</xpath>
+		<gr>Τρέχουσα Τοποθεσία</gr>
+		<en>CurrentLocation</en>
+		<vocabulary>CollectionLocation.xml</vocabulary>
+	</node>
+	<node type="Collection">
+		<xpath>Collection/Curator</xpath>
+		<gr>Επιμελητής</gr>
+		<en>Curator</en>
+		<valueFrom type="">Person/Appellation</valueFrom>
+		<valueFrom type="">Organization/Appellation</valueFrom>
+	</node>
+	<node type="Collection">
+		<xpath>Collection/RightHeldBy</xpath>
+		<gr>Δικαιώματα</gr>
+		<en>Rights</en>
+		<valueFrom type="">Person/Appellation</valueFrom>
+		<valueFrom type="">Organization/Appellation</valueFrom>
+	</node>
+	<node type="Collection">
+		<xpath>Collection/CurrentOwner</xpath>
+		<gr>Τρέχων Ιδιοκτήτης</gr>
+		<en>Current Owner</en>
+		<valueFrom type="">Person/Appellation</valueFrom>
+		<valueFrom type="">Organization/Appellation</valueFrom>
+	</node>
+	<node type="Collection">
+		<xpath>Collection/FormerOwner</xpath>
+		<gr>Προηγούμενος Ιδιοκτήτης</gr>
+		<en>Former Owner</en>
+		<valueFrom type=""/>
+	</node>
+	<node type="Collection">
+		<xpath>Collection/Description</xpath>
+		<gr>Περιγραφή</gr>
+		<en>Description</en>
+	</node>
+</nodes>

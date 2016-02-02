@@ -27,5 +27,32 @@ Authors : Konstantina Konsolaki, Georgios Samaritakis
 
 This file is part of the Synthesis Museum project.
 -->
-<Collection><IdentificationNumber sps_fixed=""/><Title/><HasSubject sps_vocabulary="" sps_id=""/><Type sps_vocabulary="" sps_id=""/><Condition sps_vocabulary="" sps_id=""/><FormerLocation sps_vocabulary="" sps_id=""/><CurrentLocation sps_vocabulary="" sps_id=""/><Curator sps_type="" sps_id=""/><RightHeldBy sps_type="" sps_id=""/><CurrentOwner sps_type="" sps_id=""/><FormerOwner sps_type="" sps_id=""/><Description/><ConsistsOf sps_type="" sps_id=""/>&gt;
-	<admin><id>0</id><uri_id/><lang/><organization/><creator/><saved/><locked/><status/><versions><versionId/><versionUser/><versionDate/></versions></admin></Collection>
+<Collection>
+	<IdentificationNumber sps_fixed=""/>
+	<Title/>
+	<HasSubject sps_vocabulary="" sps_id=""/>
+	<Type sps_vocabulary="" sps_id=""/>
+	<Condition sps_vocabulary="" sps_id=""/>
+	<FormerLocation sps_vocabulary="" sps_id=""/>
+	<CurrentLocation sps_vocabulary="" sps_id=""/>
+	<Curator sps_type="" sps_id=""/>
+	<RightHeldBy sps_type="" sps_id=""/>
+	<CurrentOwner sps_type="" sps_id=""/>
+	<FormerOwner sps_type="" sps_id=""/>
+	<Description/>
+	<admin>
+		<id>0</id>
+		<uri_id/>
+		<lang/>
+		<organization/>
+		<creator/>
+		<saved/>
+		<locked/>
+		<status/>
+		<versions>
+			<versionId/>
+			<versionUser/>
+			<versionDate/>
+		</versions>
+	</admin>
+</Collection>
