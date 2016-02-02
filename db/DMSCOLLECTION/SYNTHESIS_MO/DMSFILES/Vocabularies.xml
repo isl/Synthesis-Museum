@@ -719,17 +719,7 @@ This file is part of the Synthesis Museum project.
 				<ar>***</ar>
 			</displayname>
 			<file>KAPComponentCategory.xml</file>
-		</KAPComponentCategory>
-		<KAPCollectionAppellation>
-			<displayname>
-				<gr>Λεξιλόγιο Ονομασίας Συλλογής</gr>
-				<en>Vocabulary of Collection Name</en>
-				<fr>***</fr>
-				<it>***</it>
-				<ar>***</ar>
-			</displayname>
-			<file>KAPCollectionAppellation.xml</file>
-		</KAPCollectionAppellation>
+		</KAPComponentCategory>		
 		<KAPCategoryType>
 			<displayname>
 				<gr>Λεξιλόγιο Κατηγορίας Διαχείρισης</gr>

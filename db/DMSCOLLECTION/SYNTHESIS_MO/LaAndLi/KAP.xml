@@ -228,18 +228,8 @@
         <ar>#N/A</ar>
         <sv>Namn</sv>
         <nl>Naam</nl>
-        <vocabulary>KAPCollectionAppellation.xml</vocabulary>
-    </node>
-    <node type="KAP">
-        <xpath>KAP/IdentityOfObject/Collection/CollectionCodeNumber</xpath>
-        <gr>Κωδικός Συλλογής</gr>
-        <en>Collection Code Number</en>
-        <it>#N/A</it>
-        <fr>Code</fr>
-        <ar>#N/A</ar>
-        <sv>Samlingsnummer</sv>
-        <nl>Collectie code-nummer</nl>
-    </node>
+        <valueFrom type="">Collection/Title</valueFrom>
+    </node>   
     <node type="KAP">
         <xpath>KAP/IdentityOfObject/Category</xpath>
         <gr>Κατηγορία</gr>

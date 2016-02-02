@@ -53,8 +53,7 @@ This file is part of the Synthesis Museum project.
 		<OriginatorOfReference sps_type="" sps_id=""/>
 		<Department sps_type="" sps_id=""/>
 		<Collection>
-			<Appellation sps_vocabulary="" sps_id=""/>
-			<CollectionCodeNumber/>
+			<Appellation sps_type="" sps_id=""/>
 		</Collection>
 		<Category sps_vocabulary="" sps_id=""/>
 		<PrincipalCurrentDenomination/>
