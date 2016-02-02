@@ -27,4 +27,198 @@ Authors : Konstantina Konsolaki, Georgios Samaritakis
 
 This file is part of the Synthesis Museum project.
 -->
-<nodes><node type="Archive"><xpath>Archive</xpath><gr>Αρχείο</gr><en>Archive</en></node><node type="Archive"><xpath>Archive/IdentificationNumber</xpath><gr>Κωδικός Αναφοράς</gr><en>Identification Number</en></node><node type="Archive"><xpath>Archive/Type</xpath><gr>Είδος</gr><en>Type</en><vocabulary>ArchiveFileType.xml</vocabulary></node><node type="Archive"><xpath>Archive/Language</xpath><gr>Γλώσσα</gr><en>Language</en><it>Lingua</it><fr>Langue</fr><ar>لغة</ar><sv>Språk</sv><nl>Taal</nl><vocabulary>ArchiveFileLanguage.xml</vocabulary></node><node type="Archive"><xpath>Archive/Creation</xpath><gr>Δημιουργία</gr><en>Creation</en></node><node type="Archive"><xpath>Archive/Creation/CreationDate</xpath><gr>Ημερομηνία δημιουργίας</gr><en>Creation Date</en></node><node type="Archive"><xpath>Archive/Creation/CreationDate/DateValue</xpath><gr>Ημερομηνία</gr><en>Date</en></node><node type="Archive"><xpath>Archive/Creation/Type</xpath><gr>Είδος</gr><en>Type</en><vocabulary>ArchiveCreationType.xml</vocabulary></node><node type="Archive"><xpath>Archive/Creation/Creator</xpath><gr>Δημιουργός</gr><en>Creator</en><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom></node><node type="Archive"><xpath>Archive/Creation/CreationPlace</xpath><gr>Τόπος δημιουργίας</gr><en>Creation Place</en></node><node type="Archive"><xpath>Archive/Creation/CreationPlace/GeopoliticalHierarchy</xpath><gr>Γεωπολιτική Ιεραρχία</gr><en>GeopoliticalHierarchy</en><vocabulary>GENGeopoliticalHierarchy.xml</vocabulary></node><node type="Archive"><xpath>Archive/Creation/CreationPlace/Link</xpath><gr>Σύνδεσμος</gr><en>Link</en><valueFrom type="">Location/Name</valueFrom></node><node type="Archive"><xpath>Archive/Creation/Comment</xpath><gr>Σχόλιο</gr><en>Comment</en></node><node type="Archive"><xpath>Archive/Creation/TechnicalCharacteristics</xpath><gr>Τεχνικά χαρακτηριστικά</gr><en>Technical Characteristics</en></node><node type="Archive"><xpath>Archive/Title</xpath><gr>Τίτλος</gr><en>Title</en></node><node type="Archive"><xpath>Archive/ShortDescription</xpath><gr>Σύντομη περιγραφή</gr><en>Short Description</en></node><node type="Archive"><xpath>Archive/ReferenceToDigitalArchive</xpath><gr>Σύνδεση Με Ψηφιακό Αρχείο</gr><en>Link to Digital Archive</en></node><node type="Archive"><xpath>Archive/ReferenceToDigitalArchive/Link</xpath><gr>Σύνδεσμος</gr><en>Link</en><valueFrom type="">DigitalArchive/Title</valueFrom></node><node type="Archive"><xpath>Archive/ReferenceToDigitalArchive/Comment</xpath><gr>Σχόλιο</gr><en>Comment</en></node><node type="Archive"><xpath>Archive/ReferenceTo</xpath><gr>Αναφέρεται σε</gr><en>Reference To</en></node><node type="Archive"><xpath>Archive/ReferenceTo/Entity</xpath><gr>Οντότητα</gr><en>Entity</en></node><node type="Archive"><xpath>Archive/ReferenceTo/Entity/EntityId</xpath><gr>Αριθμός ταυτότητας</gr><en>Entity Id</en><valueFrom type="">InfoText/Type, InfoText/Title</valueFrom><valueFrom type="">Event/Appellation</valueFrom><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom><valueFrom type="">Study/Title</valueFrom><valueFrom type="">Route/Title</valueFrom><valueFrom type="">Glossary/Type, Glossary/Term</valueFrom><valueFrom type="">Bibliography/Title</valueFrom></node><node type="Archive"><xpath>Archive/ReferenceTo/Entity/Relation</xpath><gr/><gr>Σχέση</gr><en>Relation</en><vocabulary>GENEntityRelationType.xml</vocabulary></node><node type="Archive"><xpath>Archive/ReferenceTo/Subject</xpath><gr>Θέμα</gr><en>Subject</en><vocabulary>GENEntitySubject.xml</vocabulary></node><node type="Archive"><xpath>Archive/ReferenceTo/Note</xpath><gr>Σημείωση</gr><en>Note</en></node><node type="Archive"><xpath>Archive/ArchiveCode</xpath><gr>Αρχειακός Κωδικός</gr><en>Archive Code Number</en><it>Codice d'archivio</it><fr>Code archive</fr><ar>الرقم الكودى للملف</ar><sv>Arkivkod nummer</sv><nl>Archiefcode nummer</nl></node><node type="Archive"><xpath>Archive/ArchiveCode/CodeValue</xpath><gr>Τιμή</gr><en>Value</en><it>Valore</it><fr>Valeur</fr><ar>قيمة</ar><sv>Värde</sv><nl>Waarde</nl></node><node type="Archive"><xpath>Archive/ArchiveCode/Category</xpath><gr>Κατηγορία</gr><en>Category</en><it>Categoria</it><fr>Catégorie</fr><ar>نوع</ar><sv>Kategori</sv><nl>Categorie</nl><vocabulary>ArchiveCodeCategory.xml</vocabulary></node><node type="Archive"><xpath>Archive/ArchiveCode/AttributedBy</xpath><gr>Απόδοση Από</gr><en>Attributed by</en><it>Attribuzione da</it><fr>Attribution par</fr><ar>منسوب إلى</ar><sv>Tilldelats av</sv><nl>Toegekend door</nl><valueFrom type="">Person/Appellation</valueFrom><valueFrom type="">Organization/Appellation</valueFrom><valueFrom type="">Department/Appellation</valueFrom><valueFrom type=""/></node><node type="Archive"><xpath>Archive/ArchiveCode/AttributionDate</xpath><gr>Ημ/νία Απόδοσης</gr><en>Attribution Date</en><it>Data di attribuzione</it><fr>Date attribution</fr><ar>تاريخ النشر</ar><sv>Tilldelat datum</sv><nl>Datum naamsvermelding</nl></node><node type="Archive"><xpath>Archive/ArchiveCode/AttributionDate/DateValue</xpath><gr>Ημερομηνία</gr><en>Date</en><it>Data</it><fr>Date</fr><ar>تاريخ</ar><sv>Datum</sv><nl>Datum</nl></node><node type="Archive"><xpath>Archive/ArchiveCode/ExpiryDate</xpath><gr>Ημ/νία Λήξης</gr><en>Expiry Date</en><it>Data scadenza</it><fr>Date fin de validité</fr><ar>تاريخ الإنتهاء</ar><sv>Utgångsdatum</sv><nl>Vervaldatum</nl></node><node type="Archive"><xpath>Archive/ArchiveCode/ExpiryDate/DateValue</xpath><gr>Ημερομηνία</gr><en>Date</en><it>Data</it><fr>Date</fr><ar>تاريخ</ar><sv>Datum</sv><nl>Datum</nl></node></nodes>
+<nodes>
+	<node type="Archive">
+		<xpath>Archive</xpath>
+		<gr>Αρχείο</gr>
+		<en>Archive</en>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/IdentificationNumber</xpath>
+		<gr>Κωδικός Αναφοράς</gr>
+		<en>Identification Number</en>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Type</xpath>
+		<gr>Είδος</gr>
+		<en>Type</en>
+		<vocabulary>ArchiveFileType.xml</vocabulary>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Language</xpath>
+		<gr>Γλώσσα</gr>
+		<en>Language</en>
+		<it>Lingua</it>
+		<fr>Langue</fr>
+		<ar>لغة</ar>
+		<sv>Språk</sv>
+		<nl>Taal</nl>
+		<vocabulary>ArchiveFileLanguage.xml</vocabulary>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Creation</xpath>
+		<gr>Δημιουργία</gr>
+		<en>Creation</en>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Creation/CreationDate</xpath>
+		<gr>Ημερομηνία δημιουργίας</gr>
+		<en>Creation Date</en>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Creation/CreationDate/DateValue</xpath>
+		<gr>Ημερομηνία</gr>
+		<en>Date</en>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Creation/Type</xpath>
+		<gr>Είδος</gr>
+		<en>Type</en>
+		<vocabulary>ArchiveCreationType.xml</vocabulary>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Creation/Creator</xpath>
+		<gr>Δημιουργός</gr>
+		<en>Creator</en>
+		<valueFrom type="">Person/Appellation</valueFrom>
+		<valueFrom type="">Organization/Appellation</valueFrom>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Creation/CreationPlace</xpath>
+		<gr>Τόπος δημιουργίας</gr>
+		<en>Creation Place</en>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Creation/CreationPlace/GeopoliticalHierarchy</xpath>
+		<gr>Γεωπολιτική Ιεραρχία</gr>
+		<en>GeopoliticalHierarchy</en>
+		<vocabulary>GENGeopoliticalHierarchy.xml</vocabulary>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Creation/CreationPlace/Link</xpath>
+		<gr>Σύνδεσμος</gr>
+		<en>Link</en>
+		<valueFrom type="">Location/Name</valueFrom>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Creation/Comment</xpath>
+		<gr>Σχόλιο</gr>
+		<en>Comment</en>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Creation/TechnicalCharacteristics</xpath>
+		<gr>Τεχνικά χαρακτηριστικά</gr>
+		<en>Technical Characteristics</en>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/Title</xpath>
+		<gr>Τίτλος</gr>
+		<en>Title</en>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/ShortDescription</xpath>
+		<gr>Σύντομη περιγραφή</gr>
+		<en>Short Description</en>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/ReferenceToDigitalArchive</xpath>
+		<gr>Σύνδεση Με Ψηφιακό Αρχείο</gr>
+		<en>Link to Digital Archive</en>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/ReferenceToDigitalArchive/Link</xpath>
+		<gr>Σύνδεσμος</gr>
+		<en>Link</en>
+		<valueFrom type="">DigitalArchive/Title</valueFrom>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/ReferenceToDigitalArchive/Comment</xpath>
+		<gr>Σχόλιο</gr>
+		<en>Comment</en>
+	</node>
+	<node type="Archive">
+		<xpath>Archive/ArchiveCode</xpath>
+		<gr>Αρχειακός Κωδικός</gr>
+		<en>Archive Code Number</en>
+		<it>Codice d'archivio</it>
+		<fr>Code archive</fr>
+		<ar>الرقم الكودى للملف</ar>
+		<sv>Arkivkod nummer</sv>
+		<nl>Archiefcode nummer</nl>
+	</node>
+		<node type="Archive">
+			<xpath>Archive/ArchiveCode/CodeValue</xpath>
+			<gr>Τιμή</gr>
+			<en>Value</en>
+			<it>Valore</it>
+			<fr>Valeur</fr>
+			<ar>قيمة</ar>
+			<sv>Värde</sv>
+			<nl>Waarde</nl>
+		</node>
+		<node type="Archive">
+			<xpath>Archive/ArchiveCode/Category</xpath>
+			<gr>Κατηγορία</gr>
+			<en>Category</en>
+			<it>Categoria</it>
+			<fr>Catégorie</fr>
+			<ar>نوع</ar>
+			<sv>Kategori</sv>
+			<nl>Categorie</nl>
+			<vocabulary>ArchiveCodeCategory.xml</vocabulary>
+		</node>
+		<node type="Archive">
+			<xpath>Archive/ArchiveCode/AttributedBy</xpath>
+			<gr>Απόδοση Από</gr>
+			<en>Attributed by</en>
+			<it>Attribuzione da</it>
+			<fr>Attribution par</fr>
+			<ar>منسوب إلى</ar>
+			<sv>Tilldelats av</sv>
+			<nl>Toegekend door</nl>
+			<valueFrom type="">Person/Appellation</valueFrom>
+			<valueFrom type="">Organization/Appellation</valueFrom>
+			<valueFrom type="">Department/Appellation</valueFrom>
+			<valueFrom type=""/>
+		</node>
+		<node type="Archive">
+			<xpath>Archive/ArchiveCode/AttributionDate</xpath>
+			<gr>Ημ/νία Απόδοσης</gr>
+			<en>Attribution Date</en>
+			<it>Data di attribuzione</it>
+			<fr>Date attribution</fr>
+			<ar>تاريخ النشر</ar>
+			<sv>Tilldelat datum</sv>
+			<nl>Datum naamsvermelding</nl>
+		</node>
+		<node type="Archive">
+			<xpath>Archive/ArchiveCode/AttributionDate/DateValue</xpath>
+			<gr>Ημερομηνία</gr>
+			<en>Date</en>
+			<it>Data</it>
+			<fr>Date</fr>
+			<ar>تاريخ</ar>
+			<sv>Datum</sv>
+			<nl>Datum</nl>
+		</node>
+		<node type="Archive">
+			<xpath>Archive/ArchiveCode/ExpiryDate</xpath>
+			<gr>Ημ/νία Λήξης</gr>
+			<en>Expiry Date</en>
+			<it>Data scadenza</it>
+			<fr>Date fin de validité</fr>
+			<ar>تاريخ الإنتهاء</ar>
+			<sv>Utgångsdatum</sv>
+			<nl>Vervaldatum</nl>
+		</node>
+		<node type="Archive">
+			<xpath>Archive/ArchiveCode/ExpiryDate/DateValue</xpath>
+			<gr>Ημερομηνία</gr>
+			<en>Date</en>
+			<it>Data</it>
+			<fr>Date</fr>
+			<ar>تاريخ</ar>
+			<sv>Datum</sv>
+			<nl>Datum</nl>
+		</node>
+	</nodes>

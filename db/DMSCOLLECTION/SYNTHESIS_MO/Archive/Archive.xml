@@ -27,4 +27,55 @@ Authors : Konstantina Konsolaki, Georgios Samaritakis
 
 This file is part of the Synthesis Museum project.
 -->
-<Archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Archive.xsd"><IdentificationNumber sps_fixed=""/><Type sps_vocabulary="" sps_id=""/><Language sps_vocabulary="" sps_id=""/><Creation><CreationDate><DateValue y="" x=""/></CreationDate><Type sps_vocabulary="" sps_id=""/><Creator sps_type="" sps_id=""/><CreationPlace><GeopoliticalHierarchy sps_vocabulary="" sps_id=""/><Link sps_type="" sps_id=""/></CreationPlace><Comment/><TechnicalCharacteristics/></Creation><Title/><ShortDescription/><ReferenceToDigitalArchive><Link sps_type="" sps_id=""/><Comment/></ReferenceToDigitalArchive><ReferenceTo><Entity><EntityId sps_type="" sps_id=""/><Relation sps_vocabulary="" sps_id=""/></Entity><Subject sps_vocabulary="" sps_id=""/><Note/></ReferenceTo><ArchiveCode><CodeValue/><Category sps_vocabulary="" sps_id=""/><AttributedBy sps_type="" sps_id=""/><AttributionDate><DateValue y="" x=""/></AttributionDate><ExpiryDate><DateValue y="" x=""/></ExpiryDate></ArchiveCode><admin><id>0</id><uri_id/><lang/><organization/><creator/><saved/><locked/><status/><versions><versionId/><versionUser/><versionDate/></versions><read/><write/></admin></Archive>
+<Archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Archive.xsd">
+	<IdentificationNumber sps_fixed=""/>
+	<Type sps_vocabulary="" sps_id=""/>
+	<Language sps_vocabulary="" sps_id=""/>
+	<Creation>
+		<CreationDate>
+			<DateValue y="" x=""/>
+		</CreationDate>
+		<Type sps_vocabulary="" sps_id=""/>
+		<Creator sps_type="" sps_id=""/>
+		<CreationPlace>
+			<GeopoliticalHierarchy sps_vocabulary="" sps_id=""/>
+			<Link sps_type="" sps_id=""/>
+		</CreationPlace>
+		<Comment/>
+		<TechnicalCharacteristics/>
+	</Creation>
+	<Title/>
+	<ShortDescription/>
+	<ReferenceToDigitalArchive>
+		<Link sps_type="" sps_id=""/>
+		<Comment/>
+	</ReferenceToDigitalArchive>	
+	<ArchiveCode>
+		<CodeValue/>
+		<Category sps_vocabulary="" sps_id=""/>
+		<AttributedBy sps_type="" sps_id=""/>
+		<AttributionDate>
+			<DateValue y="" x=""/>
+		</AttributionDate>
+		<ExpiryDate>
+			<DateValue y="" x=""/>
+		</ExpiryDate>
+	</ArchiveCode>
+	<admin>
+		<id>0</id>
+		<uri_id/>
+		<lang/>
+		<organization/>
+		<creator/>
+		<saved/>
+		<locked/>
+		<status/>
+		<versions>
+			<versionId/>
+			<versionUser/>
+			<versionDate/>
+		</versions>
+		<read/>
+		<write/>
+	</admin>
+</Archive>
