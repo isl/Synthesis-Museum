@@ -46,11 +46,21 @@ This file is part of the Synthesis Museum project.
 		<en>Title</en>
 	</node>
 	<node type="Collection">
+		<xpath>Collection/OtherCodeNumber</xpath>
+		<gr>Άλλος Κωδικός</gr>
+        <en>Other Code</en>
+        <it>Altro codice</it>
+        <fr>Autre code</fr>
+        <ar>رقم كودى أخر</ar>
+        <sv>Annan kod</sv>
+        <nl>Andere code</nl>
+	</node>
+	<node type="Collection">
 		<xpath>Collection/HasSubject</xpath>
 		<gr>Θέμα</gr>
 		<en>Subject</en>
 		<vocabulary>CollectionSubject.xml</vocabulary>
-	</node>
+	</node>		
 	<node type="Collection">
 		<xpath>Collection/Type</xpath>
 		<gr>Είδος</gr>

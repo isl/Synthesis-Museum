@@ -10,6 +10,7 @@
 			<xs:sequence>
 				<xs:element ref="IdentificationNumber"/>
 				<xs:element ref="Title"/>
+				<xs:element name="OtherCodeNumber" type="xs:string"/>
 				<xs:element name="HasSubject" type="term"/>
 				<xs:element name="Type" type="term"/>
 				<xs:element name="Condition" type="term"/>

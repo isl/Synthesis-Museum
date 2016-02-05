@@ -32,6 +32,7 @@ This file is part of the Synthesis Museum project.
 <Collection>
 	<IdentificationNumber sps_fixed=""/>
 	<Title/>
+	<OtherCodeNumber/>
 	<HasSubject sps_vocabulary="" sps_id=""/>
 	<Type sps_vocabulary="" sps_id=""/>
 	<Condition sps_vocabulary="" sps_id=""/>
