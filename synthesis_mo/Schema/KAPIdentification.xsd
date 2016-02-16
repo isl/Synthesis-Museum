@@ -27,7 +27,7 @@
 				</xsd:complexType>
 			</xsd:element>
 			<xsd:element ref="Department" maxOccurs="unbounded"/>
-			<xsd:element name="Collection">
+			<xsd:element name="Collection" maxOccurs="unbounded">
 				<xsd:complexType>
 					<xsd:sequence>
 						<xsd:element name="Appellation" type="link"/>
